@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: "Baloo2";
+    src: url("fonts/Baloo2-Variable.ttf") format("truetype-variations");
+    font-weight: 400 800;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1080px; height:1080px; overflow:hidden; }
+  .canvas {
+    width:1080px; height:1080px;
+    position:relative;
+    background:
+      radial-gradient(120% 120% at 12% 8%, #003EA9 0%, #0048B8 35%, #0053C5 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .texture {
+    position:absolute; inset:0;
+    background-image: repeating-radial-gradient(circle at 30% 40%, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 2px, transparent 3px, transparent 40px);
+    mix-blend-mode: overlay;
+    opacity:0.6;
+  }
+  .content {
+    position:relative;
+    width:880px;
+    text-align:center;
+    font-family:"Baloo2", sans-serif;
+    font-weight:750;
+    color:#FFFFFF;
+    font-size:64px;
+    line-height:1.18;
+    letter-spacing:-0.5px;
+    white-space:pre-wrap;
+  }
+  .eyebrow {
+    position:absolute;
+    top:70px;
+    left:50%;
+    transform:translateX(-50%);
+    font-family:"Baloo2", sans-serif;
+    font-weight:600;
+    color:rgba(255,255,255,0.85);
+    font-size:30px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+  .logo {
+    position:absolute;
+    bottom:56px;
+    right:64px;
+    height:70px;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="texture"></div>
+    <div class="eyebrow" id="eyebrow"></div>
+    <div class="content" id="headline"></div>
+    <img class="logo" src="logo.png" />
+  </div>
+</body>
+</html>
