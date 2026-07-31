@@ -1,0 +1,12 @@
+Antes de entregar una web, la pasamos por 4 filtros. No son opinión de diseño, son lo que determina si esa web vende o solo se ve bonita.
+
+→ Velocidad de carga real, medida en el celular, no solo en la compu del desarrollador
+→ Un objetivo claro por página (una web que quiere venderlo todo en una pantalla no vende nada)
+→ El botón de contacto o compra sin fricción, visible sin tener que buscarlo
+→ Seguimiento instalado desde el día uno, para saber qué funciona y qué no
+
+Si tu web actual no cumple con esto, no es necesariamente un problema de diseño — puede ser un problema de estructura.
+
+Guarda este post como checklist. Si quieres que revisemos tu web con estos 4 filtros, escríbenos por DM.
+
+#diseñoweb #desarrolloweb #paginaweb #pymes #conversion #empulsa #negociosdigitales
