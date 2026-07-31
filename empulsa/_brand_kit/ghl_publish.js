@@ -58,7 +58,8 @@ async function uploadFile(filePath) {
   return data.url;
 }
 
-async function schedulePost(imageUrl, caption, scheduleDateISO) {
+async function schedulePost(imageUrls, caption, scheduleDateISO) {
+  const urls = Array.isArray(imageUrls) ? imageUrls : [imageUrls];
   const accountId = process.env.GHL_IG_ACCOUNT_ID;
   if (!accountId) {
     throw new Error("Falta GHL_IG_ACCOUNT_ID en .env. Corre --list-accounts primero y copia el id de la cuenta de Instagram.");
@@ -66,7 +67,7 @@ async function schedulePost(imageUrl, caption, scheduleDateISO) {
   const body = {
     accountIds: [accountId],
     summary: caption,
-    media: [{ url: imageUrl, type: "image/png" }],
+    media: urls.map((url) => ({ url, type: "image/png" })),
     status: "scheduled",
     scheduleDate: scheduleDateISO,
     type: "post",
@@ -83,6 +84,7 @@ async function schedulePost(imageUrl, caption, scheduleDateISO) {
   if (!data.success) {
     throw new Error("GHL rechazó el post — revisa el mensaje de arriba (puede faltar userId, o el accountId no es válido).");
   }
+  return data;
 }
 
 async function main() {
@@ -109,7 +111,11 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error(err.message);
-  process.exit(1);
-});
+module.exports = { loadEnv, uploadFile, schedulePost, listAccounts };
+
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err.message);
+    process.exit(1);
+  });
+}

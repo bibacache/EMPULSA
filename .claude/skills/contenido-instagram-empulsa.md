@@ -159,14 +159,27 @@ Script: `empulsa/_brand_kit/ghl_publish.js` (usa `fetch`/`FormData` nativos de N
 3. Ejecutar `node ghl_publish.js --list-accounts` desde `empulsa/_brand_kit/` — es de solo lectura, no publica nada. Buscar en el resultado la cuenta de Instagram y copiar su `id` a `GHL_IG_ACCOUNT_ID` en `.env`.
 4. **Nunca** subir `.env` a git ni compartirlo — contiene credenciales reales de la cuenta.
 
-### Uso (por cada pieza de contenido)
+### Uso recomendado — una semana completa de una vez
+
+```bash
+cd empulsa/_brand_kit
+node publicar_semana.js ../contenido/semana-2026-08-03 --dry-run   # revisar antes sin tocar GHL
+node publicar_semana.js ../contenido/semana-2026-08-03             # programa de verdad
+```
+
+`publicar_semana.js` recorre la carpeta de la semana y, por cada subcarpeta:
+- **Carruseles** (varias `slide-N.png`): sube todas las imágenes y las programa como **un solo post multi-imagen** (carrusel real de Instagram), no un post por slide.
+- **Estáticos** (`post.png`): programa una imagen sola.
+- **Reels**: los **salta** — un reel es un guion (`guion.md`) + portada para grabar, no hay video que subir todavía. Los deja listados al final como pendientes de grabar.
+
+Usa los horarios del calendario estratégico ya definidos por día de semana (lunes 8am, martes 9am, etc. — ajustar en el propio script si el calendario cambia) y calcula la fecha real de cada día a partir del `semana-YYYY-MM-DD` del nombre de carpeta.
+
+### Uso pieza por pieza (alternativa, si no quieres programar toda la semana junta)
 
 ```bash
 cd empulsa/_brand_kit
 node ghl_publish.js --schedule "../contenido/2026-08-03-tema/slide-1.png" "../contenido/2026-08-03-tema/caption.txt" "2026-08-03T08:00:00-04:00"
 ```
-
-Esto sube la imagen al Media Storage de GHL y programa el post en Instagram para esa fecha/hora exacta (ajustar el offset de zona horaria del usuario, GHL usa ISO 8601).
 
 **Antes de programar contenido real:**
 - Confirmar con el usuario la fecha/hora de cada post contra el calendario acordado (Paso 1-4).
