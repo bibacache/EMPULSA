@@ -1,0 +1,39 @@
+[
+  {
+    "carpeta": "lunes-carrusel-educativo",
+    "tipo": "carrusel",
+    "programado_para": "2026-08-10T08:00:00-04:00",
+    "caption": "Automatizar mal la atención al cliente es peor que no automatizar nada.\n\n4 errores que vemos todo el tiempo:\n→ Responder todo con el mismo mensaje genérico, sin importar qué preguntó la persona\n→ No dejar ninguna salida hacia un humano cuando la conversación se complica\n→ Automatizar un proceso de venta que ni siquiera estaba ordenado antes\n→ Configurarlo una vez y nunca volver a revisar las conversaciones reales\n\nUna automatización buena se siente más rápida y más atenta, no más fría. Si la tuya se siente como un contestador robótico, no es un problema de tecnología — es un problema de diseño de la conversación.\n\nGuarda este post y revísalo antes de tu próximo ajuste. Si quieres que le echemos un ojo a la tuya, escríbenos por DM.\n\n#automatizacion #whatsappbusiness #marketingdigital #pymes #atencionalcliente #empulsa #negociosdigitales",
+    "imagenes": [
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/lunes-carrusel-educativo/slide-1.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/lunes-carrusel-educativo/slide-2.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/lunes-carrusel-educativo/slide-3.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/lunes-carrusel-educativo/slide-4.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/lunes-carrusel-educativo/slide-5.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/lunes-carrusel-educativo/slide-6.jpg"
+    ]
+  },
+  {
+    "carpeta": "jueves-carrusel-servicios",
+    "tipo": "carrusel",
+    "programado_para": "2026-08-13T08:00:00-04:00",
+    "caption": "Antes de entregar una web, la pasamos por 4 filtros. No son opinión de diseño, son lo que determina si esa web vende o solo se ve bonita.\n\n→ Velocidad de carga real, medida en el celular, no solo en la compu del desarrollador\n→ Un objetivo claro por página (una web que quiere venderlo todo en una pantalla no vende nada)\n→ El botón de contacto o compra sin fricción, visible sin tener que buscarlo\n→ Seguimiento instalado desde el día uno, para saber qué funciona y qué no\n\nSi tu web actual no cumple con esto, no es necesariamente un problema de diseño — puede ser un problema de estructura.\n\nGuarda este post como checklist. Si quieres que revisemos tu web con estos 4 filtros, escríbenos por DM.\n\n#diseñoweb #desarrolloweb #paginaweb #pymes #conversion #empulsa #negociosdigitales",
+    "imagenes": [
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/jueves-carrusel-servicios/slide-1.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/jueves-carrusel-servicios/slide-2.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/jueves-carrusel-servicios/slide-3.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/jueves-carrusel-servicios/slide-4.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/jueves-carrusel-servicios/slide-5.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/jueves-carrusel-servicios/slide-6.jpg"
+    ]
+  },
+  {
+    "carpeta": "domingo-estatico-marca",
+    "tipo": "estatico",
+    "programado_para": "2026-08-16T10:00:00-04:00",
+    "caption": "Automatizar no es reemplazar personas. Es dejar de perder tiempo en lo repetitivo para poder dedicarlo a lo que sí necesita a alguien pensando de verdad.\n\nEsa es la diferencia entre un negocio que usa la tecnología para crecer y uno que solo la usa para verse moderno.\n\n#automatizacion #negociosdigitales #marketingdigital #empulsa #transformaciondigital",
+    "imagenes": [
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/domingo-estatico-marca/post.jpg"
+    ]
+  }
+]

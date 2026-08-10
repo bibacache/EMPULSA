@@ -1,0 +1,38 @@
+[
+  {
+    "carpeta": "domingo-estatico-marca",
+    "tipo": "estatico",
+    "programado_para": "2026-08-30T10:00:00-04:00",
+    "caption": "Podríamos tomar más clientes de los que podemos atender bien. No lo hacemos.\n\nPreferimos crecer con pocos clientes bien atendidos que con muchos a medias — porque una campaña, una web o una automatización mal seguida no le sirve a nadie, ni siquiera al que la paga barato.\n\nEse ritmo es una decisión, no una limitación.\n\n#marketingdigital #empulsa #pymes #negociosdigitales #marcapersonal",
+    "imagenes": [
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/domingo-estatico-marca/post.jpg"
+    ]
+  },
+  {
+    "carpeta": "jueves-carrusel-servicios",
+    "tipo": "carrusel",
+    "programado_para": "2026-08-27T08:00:00-04:00",
+    "caption": "Hay tareas que un negocio repite todas las semanas y que no necesitan a alguien haciéndolas a mano cada vez.\n\n4 automatizaciones que más rápido le devuelven tiempo a un equipo:\n→ Respuesta automática cuando llegan mensajes fuera de horario\n→ Recordatorios de citas o reservas para bajar las inasistencias\n→ Seguimiento automático a leads que no contestaron al primer mensaje\n→ Reportes semanales que se arman solos, sin planillas a mano\n\nNinguna de estas reemplaza a tu equipo — le quita de encima lo repetitivo. Escríbenos por DM si quieres ver cuál te conviene primero.\n\n#automatizacion #marketingdigital #pymes #productividad #empulsa #negociosdigitales #eficiencia",
+    "imagenes": [
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/jueves-carrusel-servicios/slide-1.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/jueves-carrusel-servicios/slide-2.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/jueves-carrusel-servicios/slide-3.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/jueves-carrusel-servicios/slide-4.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/jueves-carrusel-servicios/slide-5.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/jueves-carrusel-servicios/slide-6.jpg"
+    ]
+  },
+  {
+    "carpeta": "lunes-carrusel-educativo",
+    "tipo": "carrusel",
+    "programado_para": "2026-08-24T08:00:00-04:00",
+    "caption": "Si tu tasa de apertura de email está bajo el 15%, casi nunca es un problema de contenido — es un problema de configuración básica.\n\n3 errores que vemos todo el tiempo en cuentas que recién empiezan a mandar campañas:\n→ Asunto genérico tipo \"Newsletter de agosto\" que no le dice nada a nadie\n→ Enviar siempre desde una dirección \"no-reply@\" en vez de una persona real\n→ Nunca limpiar la lista de contactos que llevan meses sin abrir un solo correo\n\nRevisa esto antes de tu próximo envío. Guarda este post y compártelo con quien maneje tus campañas de email.\n\n#emailmarketing #marketingdigital #pymes #estrategiadigital #empulsa #newsletter #negociosdigitales",
+    "imagenes": [
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/lunes-carrusel-educativo/slide-1.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/lunes-carrusel-educativo/slide-2.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/lunes-carrusel-educativo/slide-3.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/lunes-carrusel-educativo/slide-4.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/lunes-carrusel-educativo/slide-5.jpg"
+    ]
+  }
+]

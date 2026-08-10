@@ -17,10 +17,10 @@ Todo vive en `empulsa/_brand_kit/`:
 
 - `logo.png` — logo real de Empulsa (hoja + wordmark "empulsa"), con transparencia real. Extraído de `~/Documents/EMPULSA/LOGOTIPO.png`.
 - `template.html` — plantilla de post cuadrado 1080x1080: fondo degradado azul de marca, titular en blanco con tipografía redondeada bold, logo en la esquina inferior derecha.
-- `render_post.js` — script de Playwright que rellena la plantilla y exporta el PNG. Uso:
+- `render_post.js` — script de Playwright que rellena la plantilla y exporta JPEG (Instagram vía Make solo acepta JPEG, no PNG). Uso:
   ```bash
   cd empulsa/_brand_kit
-  node render_post.js "Texto del titular" "TEXTO EYEBROW OPCIONAL" "../contenido/carpeta/slide-1.png"
+  node render_post.js "Texto del titular" "TEXTO EYEBROW OPCIONAL" "../contenido/carpeta/slide-1.jpg"
   ```
 - `fonts/Baloo2-Variable.ttf` — tipografía redondeada bold (Google Fonts, OFL), aproximación fiel a la tipografía real de Empulsa (no se tiene el archivo de fuente oficial; si el usuario lo consigue, reemplazar aquí).
 
@@ -120,7 +120,7 @@ No incluyas datos de contacto (web, WhatsApp, teléfono) en el copy salvo que el
 Para cada slide, ejecuta desde `empulsa/_brand_kit/`:
 
 ```bash
-node render_post.js "<titular del slide>" "<eyebrow opcional, ej. EMPULSA o el número/categoría>" "<ruta de salida>.png"
+node render_post.js "<titular del slide>" "<eyebrow opcional, ej. EMPULSA o el número/categoría>" "<ruta de salida>.jpg"
 ```
 
 - Guarda las imágenes en la carpeta del post (ver Paso 4).
@@ -133,8 +133,31 @@ node render_post.js "<titular del slide>" "<eyebrow opcional, ej. EMPULSA o el n
 
 Estructura de carpetas en `empulsa/contenido/`:
 
-- Post individual: `empulsa/contenido/YYYY-MM-DD-tema-slug/` con `caption.txt` (copy + hashtags), `slide-1.png`, `slide-2.png`... (o `guion.md` si es reel).
+- Post individual: `empulsa/contenido/YYYY-MM-DD-tema-slug/` con `caption.txt` (copy + hashtags), `slide-1.jpg`, `slide-2.jpg`... (o `guion.md` si es reel).
 - Modo calendario: `empulsa/contenido/semana-YYYY-MM-DD/` con una subcarpeta por pieza, nombradas con el día y el pilar (ej. `lunes-reel-educativo/`, `martes-carrusel-servicios/`).
+
+**En modo calendario, además de las carpetas, genera `empulsa/contenido/semana-YYYY-MM-DD/manifest.json`** — es lo que lee la automatización de Make para programar en Instagram sin tener que descubrir nada dinámicamente. Solo incluye las piezas publicables (carruseles y estáticos — **nunca reels**, esos no tienen archivo de imagen listo). Formato exacto:
+
+```json
+[
+  {
+    "carpeta": "lunes-carrusel-educativo",
+    "tipo": "carrusel",
+    "programado_para": "2026-08-17T08:00:00-04:00",
+    "caption": "texto completo del caption.txt de esa carpeta",
+    "imagenes": [
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-1.jpg",
+      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-2.jpg"
+    ]
+  }
+]
+```
+
+Reglas del manifest:
+- `tipo`: `"carrusel"` (si hay varios `slide-N.jpg`) o `"estatico"` (si hay `post.jpg`).
+- `imagenes`: URLs `raw.githubusercontent.com` reales apuntando a los archivos ya subidos al repo, en el mismo orden que los slides (el repo es público, estas URLs funcionan directo sin autenticación).
+- `programado_para`: ISO 8601 con offset de Chile (`-04:00` o `-03:00` según horario de verano), calculado con el día real de esa semana y el horario del calendario estratégico (lunes 8am, martes 9am, miércoles 12pm, jueves 8am, viernes 12:30pm, sábado 11am, domingo 10am — ajustar si el calendario cambia).
+- `caption`: el texto completo, tal cual el `caption.txt` de esa carpeta.
 
 Al terminar, resume:
 1. Qué se generó (formato, pilar, cuántas piezas).
@@ -168,8 +191,8 @@ node publicar_semana.js ../contenido/semana-2026-08-03             # programa de
 ```
 
 `publicar_semana.js` recorre la carpeta de la semana y, por cada subcarpeta:
-- **Carruseles** (varias `slide-N.png`): sube todas las imágenes y las programa como **un solo post multi-imagen** (carrusel real de Instagram), no un post por slide.
-- **Estáticos** (`post.png`): programa una imagen sola.
+- **Carruseles** (varias `slide-N.jpg`): sube todas las imágenes y las programa como **un solo post multi-imagen** (carrusel real de Instagram), no un post por slide.
+- **Estáticos** (`post.jpg`): programa una imagen sola.
 - **Reels**: los **salta** — un reel es un guion (`guion.md`) + portada para grabar, no hay video que subir todavía. Los deja listados al final como pendientes de grabar.
 
 Usa los horarios del calendario estratégico ya definidos por día de semana (lunes 8am, martes 9am, etc. — ajustar en el propio script si el calendario cambia) y calcula la fecha real de cada día a partir del `semana-YYYY-MM-DD` del nombre de carpeta.
@@ -178,7 +201,7 @@ Usa los horarios del calendario estratégico ya definidos por día de semana (lu
 
 ```bash
 cd empulsa/_brand_kit
-node ghl_publish.js --schedule "../contenido/2026-08-03-tema/slide-1.png" "../contenido/2026-08-03-tema/caption.txt" "2026-08-03T08:00:00-04:00"
+node ghl_publish.js --schedule "../contenido/2026-08-03-tema/slide-1.jpg" "../contenido/2026-08-03-tema/caption.txt" "2026-08-03T08:00:00-04:00"
 ```
 
 **Antes de programar contenido real:**

@@ -1,5 +1,6 @@
 // Renderiza un post cuadrado 1080x1080 de Empulsa a partir de template.html
-// Uso: node render_post.js "<headline>" "<eyebrow opcional>" "<ruta_salida.png>"
+// Uso: node render_post.js "<headline>" "<eyebrow opcional>" "<ruta_salida.jpg>"
+// Salida en JPEG (no PNG): Instagram vía Make solo acepta JPEG para fotos/carruseles.
 const path = require("path");
 const fs = require("fs");
 const { chromium } = require(path.join(__dirname, "..", "..", "node_modules", "playwright"));
@@ -12,7 +13,7 @@ const launchOptions = fs.existsSync(FALLBACK_CHROMIUM) ? { executablePath: FALLB
 async function main() {
   const [headline, eyebrow, outPath] = process.argv.slice(2);
   if (!headline || !outPath) {
-    console.error('Uso: node render_post.js "<headline>" "<eyebrow>" "<salida.png>"');
+    console.error('Uso: node render_post.js "<headline>" "<eyebrow>" "<salida.jpg>"');
     process.exit(1);
   }
 
@@ -24,7 +25,7 @@ async function main() {
     document.getElementById("eyebrow").textContent = eyebrow || "";
   }, { headline, eyebrow });
   await page.waitForTimeout(150); // asegurar carga de fuente variable
-  await page.screenshot({ path: outPath });
+  await page.screenshot({ path: outPath, type: "jpeg", quality: 92 });
   await browser.close();
   console.log("Guardado en", outPath);
 }
