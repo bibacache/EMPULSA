@@ -145,17 +145,22 @@ Estructura de carpetas en `empulsa/contenido/`:
     "tipo": "carrusel",
     "programado_para": "2026-08-17T08:00:00-04:00",
     "caption": "texto completo del caption.txt de esa carpeta",
-    "imagenes": [
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-1.jpg",
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-2.jpg"
-    ]
+    "imagenes_json": "[{\"image_url\":\"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-1.jpg\",\"media_type\":\"IMAGE\"},{\"image_url\":\"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-2.jpg\",\"media_type\":\"IMAGE\"}]"
+  },
+  {
+    "carpeta": "domingo-estatico-marca",
+    "tipo": "estatico",
+    "programado_para": "2026-08-23T10:00:00-04:00",
+    "caption": "texto completo del caption.txt de esa carpeta",
+    "imagenes_json": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/domingo-estatico-marca/post.jpg"
   }
 ]
 ```
 
-Reglas del manifest:
+Reglas del manifest — **importante: `imagenes_json` cambia de forma según `tipo`, así Make no tiene que transformar nada, solo copiar campos**:
 - `tipo`: `"carrusel"` (si hay varios `slide-N.jpg`) o `"estatico"` (si hay `post.jpg`).
-- `imagenes`: URLs `raw.githubusercontent.com` reales apuntando a los archivos ya subidos al repo, en el mismo orden que los slides (el repo es público, estas URLs funcionan directo sin autenticación).
+- Si `tipo` es `"carrusel"`: `imagenes_json` es un **string con un array JSON ya serializado** (nota las comillas escapadas), con un objeto `{"image_url": "...", "media_type": "IMAGE"}` por cada slide, en orden, usando URLs `raw.githubusercontent.com` reales (el repo es público, funcionan sin autenticación).
+- Si `tipo` es `"estatico"`: `imagenes_json` es **directamente el string de la URL** de `post.jpg` (sin JSON, sin corchetes, solo la URL).
 - `programado_para`: ISO 8601 con offset de Chile (`-04:00` o `-03:00` según horario de verano), calculado con el día real de esa semana y el horario del calendario estratégico (lunes 8am, martes 9am, miércoles 12pm, jueves 8am, viernes 12:30pm, sábado 11am, domingo 10am — ajustar si el calendario cambia).
 - `caption`: el texto completo, tal cual el `caption.txt` de esa carpeta.
 

@@ -4,35 +4,20 @@
     "tipo": "estatico",
     "programado_para": "2026-08-23T10:00:00-04:00",
     "caption": "Las decisiones que hacen crecer un negocio se toman con datos, no con corazonadas.\n\nEso no significa ignorar la intuición — significa no quedarte solo con ella cuando hay información real disponible: qué anuncio convierte más, qué página se abandona más rápido, qué correo sí se abre.\n\nLa intuición ayuda a decidir qué probar. Los datos deciden qué mantener.\n\n#marketingdigital #negociosdigitales #empulsa #estrategiadigital #datadriven",
-    "imagenes": [
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/domingo-estatico-marca/post.jpg"
-    ]
+    "imagenes_json": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/domingo-estatico-marca/post.jpg"
   },
   {
     "carpeta": "jueves-carrusel-servicios",
     "tipo": "carrusel",
     "programado_para": "2026-08-20T08:00:00-04:00",
     "caption": "Antes de gastar el primer peso en una campaña de Meta Ads, pasa por 4 pasos. No son opinión, son lo que decide si esa plata se convierte en ventas o en alcance vacío.\n\n→ Definir a quién le hablamos, no solo cuánto presupuesto tiene la campaña\n→ Probar varios creativos en paralelo antes de escalar cualquiera de ellos\n→ Medir por resultado real (leads, ventas) y no por alcance o interacciones\n→ Ajustar cada semana según lo que muestran los datos, no según lo que \"se siente\" que está funcionando\n\nAsí se ve una campaña que está pensada para vender, no solo para publicarse.\n\n#metaads #facebookads #instagramads #marketingdigital #publicidaddigital #empulsa #pymes",
-    "imagenes": [
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-1.jpg",
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-2.jpg",
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-3.jpg",
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-4.jpg",
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-5.jpg",
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-6.jpg"
-    ]
+    "imagenes_json": "[{\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-1.jpg\", \"media_type\": \"IMAGE\"}, {\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-2.jpg\", \"media_type\": \"IMAGE\"}, {\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-3.jpg\", \"media_type\": \"IMAGE\"}, {\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-4.jpg\", \"media_type\": \"IMAGE\"}, {\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-5.jpg\", \"media_type\": \"IMAGE\"}, {\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/jueves-carrusel-servicios/slide-6.jpg\", \"media_type\": \"IMAGE\"}]"
   },
   {
     "carpeta": "lunes-carrusel-educativo",
     "tipo": "carrusel",
     "programado_para": "2026-08-17T08:00:00-04:00",
     "caption": "Gastar en Google Ads sin resultados casi siempre es un problema de configuración, no de presupuesto.\n\n3 errores que vemos todo el tiempo en cuentas nuevas:\n→ No cargar palabras clave negativas, así que el anuncio aparece en búsquedas que no tienen nada que ver\n→ Mandar todo el tráfico a la página de inicio en vez de una landing pensada para esa búsqueda\n→ Dejar la concordancia en \"amplia\" desde el día uno y nunca revisar qué términos reales están gatillando el anuncio\n\nAntes de subir el presupuesto, revisa esto. Guarda este post y compártelo con quien maneje tus campañas.\n\n#googleads #marketingdigital #pymes #publicidaddigital #empulsa #ppc #negociosdigitales",
-    "imagenes": [
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-1.jpg",
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-2.jpg",
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-3.jpg",
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-4.jpg",
-      "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-5.jpg"
-    ]
+    "imagenes_json": "[{\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-1.jpg\", \"media_type\": \"IMAGE\"}, {\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-2.jpg\", \"media_type\": \"IMAGE\"}, {\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-3.jpg\", \"media_type\": \"IMAGE\"}, {\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-4.jpg\", \"media_type\": \"IMAGE\"}, {\"image_url\": \"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-5.jpg\", \"media_type\": \"IMAGE\"}]"
   }
 ]
