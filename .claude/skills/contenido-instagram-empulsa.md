@@ -69,7 +69,7 @@ Cuenta real: [instagram.com/empulsa.cl](https://www.instagram.com/empulsa.cl/) �
 2. `Tu negocio, más rápido 🚀 Diseñamos webs, e-commerce y campañas que sí convierten 📩 DM para diagnóstico gratis`
 3. `Empresa de aceleramiento digital 🚀 Webs, e-commerce, Meta/Google Ads y automatización 📩 Hablemos`
 
-**Link en bio:** el usuario aún no tiene una URL o WhatsApp definido para poner ahí — dejar como pendiente explícito ("falta definir el link de bio: web, WhatsApp, o un link-in-bio tipo Linktree") en vez de inventar una URL. Preguntarlo de nuevo si en una sesión futura sigue sin resolverse y ya hace falta para una campaña.
+**Link en bio / WhatsApp:** el número real de contacto es **+56 9 3056 9940**. Úsalo cuando el usuario pida agregar un dato de contacto al copy. Todavía no hay una URL de web/link-in-bio definida para el campo de link de la bio — sigue pendiente eso específicamente, no el WhatsApp.
 
 **Historias destacadas (Highlights):** con 4 categorías alcanza para empezar, alineadas a los pilares de contenido de más abajo:
 - 🚀 Servicios (Webs, Ecommerce, Ads, Automatización)
@@ -111,7 +111,7 @@ Siempre acompaña con:
 - **Caption** completo para el pie de Instagram (gancho en la primera línea, desarrollo breve, CTA hacia guardar/compartir/comentar/DM).
 - **Hashtags** relevantes (5-10, mezcla de nicho + genéricos de marketing digital).
 
-No incluyas datos de contacto (web, WhatsApp, teléfono) en el copy salvo que el usuario lo pida explícitamente en esa sesión.
+Incluye el WhatsApp (+56 9 3056 9940) en el cierre del caption cuando el CTA invite a contactar — no hace falta que el usuario lo pida cada vez, ya es el dato de contacto oficial de Empulsa. No inventes web ni otros datos que no estén confirmados.
 
 ---
 
