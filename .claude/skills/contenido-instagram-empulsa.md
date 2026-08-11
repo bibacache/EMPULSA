@@ -145,22 +145,33 @@ Estructura de carpetas en `empulsa/contenido/`:
     "tipo": "carrusel",
     "programado_para": "2026-08-17T08:00:00-04:00",
     "caption": "texto completo del caption.txt de esa carpeta",
-    "imagenes_json": "[{\"image_url\":\"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-1.jpg\",\"media_type\":\"IMAGE\"},{\"image_url\":\"https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-2.jpg\",\"media_type\":\"IMAGE\"}]"
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-2.jpg",
+    "imagen_3": "",
+    "imagen_4": "",
+    "imagen_5": "",
+    "imagen_6": ""
   },
   {
     "carpeta": "domingo-estatico-marca",
     "tipo": "estatico",
     "programado_para": "2026-08-23T10:00:00-04:00",
     "caption": "texto completo del caption.txt de esa carpeta",
-    "imagenes_json": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/domingo-estatico-marca/post.jpg"
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/domingo-estatico-marca/post.jpg",
+    "imagen_2": "",
+    "imagen_3": "",
+    "imagen_4": "",
+    "imagen_5": "",
+    "imagen_6": ""
   }
 ]
 ```
 
-Reglas del manifest — **importante: `imagenes_json` cambia de forma según `tipo`, así Make no tiene que transformar nada, solo copiar campos**:
+Reglas del manifest — **importante: campos de imagen individuales (`imagen_1`...`imagen_6`), no un array serializado, así Make arma el post con referencias directas sin parsear nada**:
 - `tipo`: `"carrusel"` (si hay varios `slide-N.jpg`) o `"estatico"` (si hay `post.jpg`).
-- Si `tipo` es `"carrusel"`: `imagenes_json` es un **string con un array JSON ya serializado** (nota las comillas escapadas), con un objeto `{"image_url": "...", "media_type": "IMAGE"}` por cada slide, en orden, usando URLs `raw.githubusercontent.com` reales (el repo es público, funcionan sin autenticación).
-- Si `tipo` es `"estatico"`: `imagenes_json` es **directamente el string de la URL** de `post.jpg` (sin JSON, sin corchetes, solo la URL).
+- `imagen_1` a `imagen_6`: una URL `raw.githubusercontent.com` real por slide, en orden (el repo es público, funcionan sin autenticación). Los slots que no se usan quedan como string vacío `""` — **nunca los omitas del JSON**, siempre los 6 campos presentes.
+- **Los carruseles van de 2 a 6 slides, nunca más de 6** — la automatización de Make solo sabe armar carruseles hasta 6 imágenes. Si un carrusel necesitaría más de 6 slides, recórtalo a los 6 mejores puntos.
+- Para estáticos, `imagen_1` es la única con URL; `imagen_2` a `imagen_6` van vacías.
 - `programado_para`: ISO 8601 con offset de Chile (`-04:00` o `-03:00` según horario de verano), calculado con el día real de esa semana y el horario del calendario estratégico (lunes 8am, martes 9am, miércoles 12pm, jueves 8am, viernes 12:30pm, sábado 11am, domingo 10am — ajustar si el calendario cambia).
 - `caption`: el texto completo, tal cual el `caption.txt` de esa carpeta.
 
