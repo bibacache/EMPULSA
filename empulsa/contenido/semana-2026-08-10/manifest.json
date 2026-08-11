@@ -34,5 +34,29 @@
     "imagen_5": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/lunes-carrusel-educativo/slide-5.jpg",
     "imagen_6": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/lunes-carrusel-educativo/slide-6.jpg",
     "tipo": "carrusel"
+  },
+  {
+    "carpeta": "martes-carrusel-servicios",
+    "programado_para": "2026-08-11T09:00:00-04:00",
+    "caption": "El correo de bienvenida es el que menos se piensa y el que más se abre.\n\nCasi nadie lo tiene bien armado: o no existe, o es un \"gracias por suscribirte\" que no dice nada más.\n\nAsí funciona un flujo de bienvenida automatizado:\n→ Se presenta apenas alguien se suscribe, sin que tengas que acordarte\n→ Entrega algo de valor real, no solo un \"gracias\"\n→ Deja claro qué sigue, sin dejarlo en el aire\n\nPasa con cada persona nueva, siempre igual de bien, sin que nadie lo tenga que hacer a mano.\n\nGuarda este post. Si quieres armar el tuyo, escríbenos.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#emailmarketing #automatizacion #marketingdigital #pymes #empulsa #negociosdigitales",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/martes-carrusel-servicios/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/martes-carrusel-servicios/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/martes-carrusel-servicios/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/martes-carrusel-servicios/slide-4.jpg",
+    "imagen_5": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/martes-carrusel-servicios/slide-5.jpg",
+    "imagen_6": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/martes-carrusel-servicios/slide-6.jpg",
+    "tipo": "carrusel"
+  },
+  {
+    "carpeta": "miercoles-carrusel-educativo",
+    "programado_para": "2026-08-12T12:00:00-04:00",
+    "caption": "Si tus anuncios de Meta \"van bien\" en el panel pero las ventas reales no cuadran, sospecha del píxel antes que de la creatividad.\n\n3 señales de un píxel mal instalado:\n→ Mide eventos duplicados o no dispara en el checkout\n→ Meta termina optimizando tus campañas con información falsa\n→ Busca \"compradores parecidos\" a gente que nunca compró nada\n\nEl número se ve bien. La caja no.\n\nGuarda este post y revisa tu píxel hoy. Si quieres que lo revisemos nosotros, escríbenos.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#metaads #facebookads #marketingdigital #publicidaddigital #pymes #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/miercoles-carrusel-educativo/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/miercoles-carrusel-educativo/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/miercoles-carrusel-educativo/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/miercoles-carrusel-educativo/slide-4.jpg",
+    "imagen_5": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/miercoles-carrusel-educativo/slide-5.jpg",
+    "imagen_6": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-10/miercoles-carrusel-educativo/slide-6.jpg",
+    "tipo": "carrusel"
   }
 ]
