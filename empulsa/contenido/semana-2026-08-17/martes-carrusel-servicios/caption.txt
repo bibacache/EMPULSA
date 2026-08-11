@@ -1,0 +1,14 @@
+7 de cada 10 personas que agregan algo al carrito se van sin pagar. La mayoría de las tiendas no hace absolutamente nada al respecto.
+
+Así funciona una automatización de recuperación de carritos:
+→ Detecta el carrito abandonado a los pocos minutos
+→ Manda un recordatorio automático por email o WhatsApp
+→ Si no responde, un segundo mensaje con un empujón extra
+
+No hace falta recuperar todos. Con que vuelva 1 de cada 10, la automatización ya se pagó sola.
+
+Guarda este post. Si quieres implementarlo en tu tienda, escríbenos.
+
+📩 DM o WhatsApp +56 9 3056 9940
+
+#ecommerce #automatizacion #carritoabandonado #marketingdigital #pymes #empulsa

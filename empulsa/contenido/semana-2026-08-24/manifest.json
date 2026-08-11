@@ -34,5 +34,53 @@
     "imagen_5": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/lunes-carrusel-educativo/slide-5.jpg",
     "imagen_6": "",
     "tipo": "carrusel"
+  },
+  {
+    "carpeta": "martes-carrusel-servicios",
+    "programado_para": "2026-08-25T09:00:00-04:00",
+    "caption": "Cada vez que alguien quiere agendar una cita y nadie contesta a tiempo, esa cita casi nunca se recupera.\n\nUna automatización de agendamiento resuelve esto:\n→ Responde al instante apenas alguien quiere agendar\n→ Muestra los horarios disponibles al momento, sin ida y vuelta de mensajes\n→ Manda un recordatorio automático antes de la cita\n\nMenos citas perdidas por no contestar a tiempo, sin que nadie tenga que estar pegado al teléfono.\n\nGuarda este post. Si quieres implementarlo, escríbenos.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#automatizacion #agendamiento #marketingdigital #pymes #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/martes-carrusel-servicios/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/martes-carrusel-servicios/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/martes-carrusel-servicios/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/martes-carrusel-servicios/slide-4.jpg",
+    "imagen_5": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/martes-carrusel-servicios/slide-5.jpg",
+    "imagen_6": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/martes-carrusel-servicios/slide-6.jpg",
+    "tipo": "carrusel"
+  },
+  {
+    "carpeta": "miercoles-carrusel-educativo",
+    "programado_para": "2026-08-26T12:00:00-04:00",
+    "caption": "Si una campaña de Meta Ads que iba bien empezó a subir de costo sin que cambiaras nada, puede ser fatiga de anuncio.\n\nPasa cuando la misma persona ve tu anuncio demasiadas veces seguidas y deja de prestarle atención.\n\nSeñal clara: la frecuencia sube y el costo por resultado también, sin ningún otro cambio en la campaña.\n\nSolución simple: renovar el creativo cada 2-3 semanas, no dejar el mismo anuncio corriendo para siempre.\n\nRevisa la frecuencia de tus anuncios activos hoy.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#metaads #marketingdigital #publicidaddigital #pymes #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/miercoles-carrusel-educativo/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/miercoles-carrusel-educativo/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/miercoles-carrusel-educativo/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/miercoles-carrusel-educativo/slide-4.jpg",
+    "imagen_5": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/miercoles-carrusel-educativo/slide-5.jpg",
+    "imagen_6": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/miercoles-carrusel-educativo/slide-6.jpg",
+    "tipo": "carrusel"
+  },
+  {
+    "carpeta": "sabado-estatico-educativo",
+    "programado_para": "2026-08-29T11:00:00-04:00",
+    "caption": "Tip rápido: cada campo de más en tu formulario de contacto es una excusa para que alguien lo cierre antes de terminar.\n\nCon nombre, un dato de contacto (teléfono o correo) y una sola pregunta que te sirva para calificar, casi siempre alcanza. El resto se pregunta después, ya en la conversación.\n\nRevisa tu formulario hoy: ¿cuántos campos tiene realmente?\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#pymes #marketingdigital #conversion #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/sabado-estatico-educativo/post.jpg",
+    "imagen_2": "",
+    "imagen_3": "",
+    "imagen_4": "",
+    "imagen_5": "",
+    "imagen_6": "",
+    "tipo": "estatico"
+  },
+  {
+    "carpeta": "viernes-estatico-marca",
+    "programado_para": "2026-08-28T12:30:00-04:00",
+    "caption": "Automatizar un proceso que ya está roto no lo arregla. Solo hace que falle más rápido y le llegue a más gente a la vez.\n\nAntes de automatizar cualquier cosa, hay que asegurarse de que ese proceso funciona bien cuando lo hace una persona con atención real.\n\nLa automatización multiplica lo que ya tienes — para bien o para mal.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#automatizacion #marketingdigital #pymes #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-24/viernes-estatico-marca/post.jpg",
+    "imagen_2": "",
+    "imagen_3": "",
+    "imagen_4": "",
+    "imagen_5": "",
+    "imagen_6": "",
+    "tipo": "estatico"
   }
 ]

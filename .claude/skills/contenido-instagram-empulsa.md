@@ -39,8 +39,9 @@ Si `empulsa/_brand_kit/` no existe (proyecto nuevo o kit compartido), avisa al u
 
 Esto determina el formato y el enfoque de cada pieza. Si ha pasado mucho tiempo desde la última vez que se generó contenido con esta skill, vale la pena volver a buscar en la web si algo cambió antes de asumir que sigue vigente.
 
-- **Mezcla semanal que maximiza alcance + profundidad:** ~3-4 reels, 2-3 carruseles, 1-2 posts estáticos por semana.
-- **Reels** ganan en alcance (2-3x más que estático) pero premian la actualidad: publicar sobre lo que pasa esa semana, no contenido "atemporal" guardado hace meses. Terminan con una llamada a la acción concreta (comentar una palabra clave, enviar DM) — el algoritmo pondera los DMs generados mucho más que los likes.
+- **Mezcla semanal ideal (cuando haya forma de grabar):** ~3-4 reels, 2-3 carruseles, 1-2 posts estáticos por semana.
+- **⚠️ SIN REELS POR AHORA (temporal, hasta que el usuario avise lo contrario):** el usuario no tiene forma de grabarlos todavía. Mientras esto siga así, la mezcla semanal es **4 carruseles + 3 estáticos, 7 piezas, ninguna reel** — reparte los 4 pilares entre esas 7 piezas en vez de forzarlos en formato reel. No generes ninguna carpeta `*-reel-*` ni `guion.md` mientras esta restricción esté activa. Si el usuario menciona que ya puede grabar de nuevo, volver a la mezcla ideal con reels.
+- **Reels** (cuando sí se puedan grabar) ganan en alcance (2-3x más que estático) pero premian la actualidad: publicar sobre lo que pasa esa semana, no contenido "atemporal" guardado hace meses. Terminan con una llamada a la acción concreta (comentar una palabra clave, enviar DM) — el algoritmo pondera los DMs generados mucho más que los likes.
 - **Carruseles** tienen el engagement más alto y son el mejor formato para autoridad B2B: "cómo hacer X", errores comunes, mini-lecciones que la gente guarda para volver a verlas.
 - **Posts estáticos** para anuncios puntuales, citas de autoridad, o momentos de marca.
 - **Métrica que importa:** guardados, compartidos, visitas al perfil, DMs — no likes. El copy y el CTA deben empujar hacia guardar/compartir/comentar, no solo "dale like".
