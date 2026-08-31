@@ -1,0 +1,9 @@
+Tip rápido de sábado: ponle UTM a tus links antes de compartirlos.
+
+Sin eso, tu Google Analytics muestra que "llegó tráfico" pero no de dónde — ¿del post de Instagram, del email, de un anuncio? Un UTM es simplemente agregarle un par de parámetros al link para que quede marcado.
+
+Así sabes qué canal realmente te está trayendo gente, en vez de adivinar.
+
+Guarda este tip para tu próxima campaña.
+
+#marketingdigital #googleanalytics #tips #pymes #empulsa

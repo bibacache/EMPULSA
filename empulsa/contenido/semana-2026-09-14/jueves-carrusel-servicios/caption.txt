@@ -1,0 +1,15 @@
+Llega al carrito, pone sus datos, y en el paso de pago se va. No fue el producto — fue el checkout.
+
+Lo que revisamos al diseñar un checkout para ecommerce:
+→ Cuántos pasos hay que completar antes de poder pagar — cada paso extra es gente que se va
+→ Si se puede comprar sin crear una cuenta obligatoria
+→ Qué medios de pago aparecen y si son los que tu cliente realmente usa
+→ Si los costos de envío aparecen recién al final, como sorpresa
+
+Un checkout con fricción de más cuesta ventas que ya estaban prácticamente cerradas.
+
+Escríbenos por DM si quieres que revisemos el tuyo.
+
+📩 DM o WhatsApp +56 9 3056 9940
+
+#ecommerce #diseñoweb #paginaweb #marketingdigital #pymes #empulsa
