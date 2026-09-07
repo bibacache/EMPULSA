@@ -1,0 +1,12 @@
+Escribiste el correo perfecto, con el asunto perfecto, y aun así casi nadie lo abrió. Puede que ni siquiera haya llegado a la bandeja de entrada.
+
+SPF y DKIM son configuraciones técnicas que casi nadie revisa:
+→ Funcionan como la cédula de identidad de tu dominio: le confirman al servidor de correo que quien envía sí es quien dice ser
+→ Sin esa autenticación bien configurada, Gmail y Outlook desconfían por defecto y mandan el correo directo a spam o promociones
+→ Esto pasa antes de que el asunto o el diseño del correo tengan oportunidad de importar
+
+Si tus campañas de email rinden cada vez menos sin razón aparente, esto es lo primero que hay que revisar.
+
+Guarda este post para cuando configures tu próxima campaña de email.
+
+#emailmarketing #marketingdigital #automatizacion #entregabilidad #pymes #empulsa
