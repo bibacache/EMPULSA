@@ -1,0 +1,86 @@
+[
+  {
+    "carpeta": "lunes-carrusel-educativo",
+    "tipo": "carrusel",
+    "programado_para": "2026-09-28T08:00:00-03:00",
+    "caption": "Dos anuncios con el mismo texto pueden verse completamente distintos en Google. Uno ocupa media pantalla, el otro apenas dos líneas.\n\nLa diferencia suele estar en las extensiones de anuncio, algo que casi nadie revisa:\n→ Las extensiones (sitelinks, llamada, ubicación) agregan links, teléfono o dirección debajo del anuncio, sin costo extra por usarlas\n→ Un anuncio con extensiones ocupa más espacio en la página de resultados y deja menos lugar para la competencia\n→ Google además las toma en cuenta para la posición del anuncio, a igualdad de puja con uno que no las tiene\n\nRevisa ahora mismo si tus anuncios activos tienen extensiones — es gratis y toma un par de minutos configurarlas.\n\nGuarda este post para revisar tu próxima campaña de Google Ads.\n\n#googleads #marketingdigital #publicidaddigital #pymes #empulsa #ads",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/lunes-carrusel-educativo/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/lunes-carrusel-educativo/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/lunes-carrusel-educativo/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/lunes-carrusel-educativo/slide-4.jpg",
+    "imagen_5": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/lunes-carrusel-educativo/slide-5.jpg",
+    "imagen_6": ""
+  },
+  {
+    "carpeta": "martes-carrusel-servicios",
+    "tipo": "carrusel",
+    "programado_para": "2026-09-29T09:00:00-03:00",
+    "caption": "Una factura vencida hace tres semanas y nadie del equipo la ha vuelto a mencionar. Así se pierde plata sin que se note.\n\nAsí funciona una automatización de recordatorio de pagos pendientes:\n→ Al vencer el plazo, un mensaje automático recuerda el pago sin que nadie tenga que acordarse de hacerlo\n→ Si no hay respuesta en unos días, un segundo mensaje más directo se envía solo, por WhatsApp o email\n→ Todo queda registrado en un solo lugar, para que el equipo sepa qué sigue pendiente sin revisar planillas sueltas\n\nCobrar a tiempo no debería depender de que alguien se acuerde.\n\nEscríbenos por DM si quieres implementarla en tu negocio.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#automatizacion #pymes #marketingdigital #empulsa #gestiondecobros #ventas",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/martes-carrusel-servicios/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/martes-carrusel-servicios/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/martes-carrusel-servicios/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/martes-carrusel-servicios/slide-4.jpg",
+    "imagen_5": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/martes-carrusel-servicios/slide-5.jpg",
+    "imagen_6": ""
+  },
+  {
+    "carpeta": "miercoles-carrusel-educativo",
+    "tipo": "carrusel",
+    "programado_para": "2026-09-30T12:00:00-03:00",
+    "caption": "Mandas un correo al mes y te olvidan. Mandas uno cada dos días y te dan de baja. El problema casi nunca es el contenido — es la frecuencia.\n\nCómo encontrar el punto medio en email marketing:\n→ Muy poco (un correo cada varias semanas) hace que tu marca ya no sea reconocible cuando por fin vuelves a escribir\n→ Muy seguido sin contenido nuevo real hace que cada correo se sienta como spam, aunque el diseño esté cuidado\n→ La frecuencia correcta se prueba, no se adivina: mide bajas y aperturas antes y después de cambiar el ritmo de envío\n\nNo existe un número mágico de correos al mes — existe el ritmo que tu propia lista tolera.\n\nGuarda este post para revisar el calendario de tu próxima campaña de email.\n\n#emailmarketing #marketingdigital #automatizacion #pymes #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/miercoles-carrusel-educativo/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/miercoles-carrusel-educativo/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/miercoles-carrusel-educativo/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/miercoles-carrusel-educativo/slide-4.jpg",
+    "imagen_5": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/miercoles-carrusel-educativo/slide-5.jpg",
+    "imagen_6": ""
+  },
+  {
+    "carpeta": "jueves-carrusel-servicios",
+    "tipo": "carrusel",
+    "programado_para": "2026-10-01T08:00:00-03:00",
+    "caption": "Alguien llega a tu web, ve una advertencia de \"sitio no seguro\" en la barra de direcciones, y se va antes de leer una palabra.\n\nLo que revisamos al asegurar una web (más allá del diseño):\n→ El candado junto a tu URL significa que el sitio tiene certificado SSL — la conexión entre el visitante y tu web va cifrada\n→ Sin ese candado, Chrome y otros navegadores muestran una advertencia visible que espanta antes de que el contenido importe\n→ Google además usa esto como una señal más para el posicionamiento — no tenerlo no ayuda a aparecer mejor en las búsquedas\n\nRevisa ahora mismo si tu web tiene ese candado — toma cinco segundos verlo.\n\nEscríbenos por DM si quieres que revisemos la tuya.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#paginaweb #diseñoweb #seguridadweb #marketingdigital #pymes #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/jueves-carrusel-servicios/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/jueves-carrusel-servicios/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/jueves-carrusel-servicios/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/jueves-carrusel-servicios/slide-4.jpg",
+    "imagen_5": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/jueves-carrusel-servicios/slide-5.jpg",
+    "imagen_6": ""
+  },
+  {
+    "carpeta": "viernes-estatico-marca",
+    "tipo": "estatico",
+    "programado_para": "2026-10-02T12:30:00-03:00",
+    "caption": "Preferimos explicar lo que hacemos en simple, no usar jerga técnica para sonar más complicados de lo que somos.\n\nEs fácil impresionar con términos en inglés y siglas que nadie pregunta qué significan. Pero un cliente que no entiende qué se está haciendo con su plata no puede opinar, corregir el rumbo a tiempo ni confiar del todo en el proceso.\n\nPreferimos que cada cliente entienda, en sus propias palabras, qué estamos haciendo y por qué — aunque eso signifique explicar lo mismo dos veces.\n\n#marketingdigital #empulsa #pymes #transparencia #consultoriadigital",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/viernes-estatico-marca/post.jpg",
+    "imagen_2": "",
+    "imagen_3": "",
+    "imagen_4": "",
+    "imagen_5": "",
+    "imagen_6": ""
+  },
+  {
+    "carpeta": "sabado-estatico-educativo",
+    "tipo": "estatico",
+    "programado_para": "2026-10-03T11:00:00-03:00",
+    "caption": "Tip rápido de sábado: revisa dónde se están mostrando tus anuncios de Meta, no solo cuánto están gastando.\n\nEntra al administrador de anuncios, abre el desglose por \"ubicación\" de una campaña activa, y mira cuánto presupuesto se está yendo a Stories, Reels o Audience Network frente al feed.\n\nA veces gran parte de la plata se va a una ubicación donde el anuncio se ve cortado o mal adaptado, y nadie lo había revisado nunca.\n\nGuarda este tip para tu próxima revisión de campaña.\n\n#metaads #facebookads #marketingdigital #pymes #empulsa #publicidaddigital",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/sabado-estatico-educativo/post.jpg",
+    "imagen_2": "",
+    "imagen_3": "",
+    "imagen_4": "",
+    "imagen_5": "",
+    "imagen_6": ""
+  },
+  {
+    "carpeta": "domingo-estatico-marca",
+    "tipo": "estatico",
+    "programado_para": "2026-10-04T10:00:00-03:00",
+    "caption": "Cada negocio tiene su propia forma de hablarle a sus clientes. No la reemplazamos por una plantilla genérica solo porque sea más rápido de escribir.\n\nEs tentador reciclar el mismo copy, cambiar el logo, y llamarlo personalizado. Pero una clínica no le habla igual a sus pacientes que una tienda de ropa a sus compradores, y notar esa diferencia es parte del trabajo, no un detalle menor.\n\nPreferimos tomarnos el tiempo de entender cómo habla cada negocio antes de escribir la primera palabra.\n\n#marketingdigital #empulsa #pymes #identidaddemarca #estrategiadigital",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-09-28/domingo-estatico-marca/post.jpg",
+    "imagen_2": "",
+    "imagen_3": "",
+    "imagen_4": "",
+    "imagen_5": "",
+    "imagen_6": ""
+  }
+]

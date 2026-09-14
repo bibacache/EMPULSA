@@ -1,0 +1,14 @@
+Alguien llega a tu web, ve una advertencia de "sitio no seguro" en la barra de direcciones, y se va antes de leer una palabra.
+
+Lo que revisamos al asegurar una web (más allá del diseño):
+→ El candado junto a tu URL significa que el sitio tiene certificado SSL — la conexión entre el visitante y tu web va cifrada
+→ Sin ese candado, Chrome y otros navegadores muestran una advertencia visible que espanta antes de que el contenido importe
+→ Google además usa esto como una señal más para el posicionamiento — no tenerlo no ayuda a aparecer mejor en las búsquedas
+
+Revisa ahora mismo si tu web tiene ese candado — toma cinco segundos verlo.
+
+Escríbenos por DM si quieres que revisemos la tuya.
+
+📩 DM o WhatsApp +56 9 3056 9940
+
+#paginaweb #diseñoweb #seguridadweb #marketingdigital #pymes #empulsa

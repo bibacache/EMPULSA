@@ -1,0 +1,14 @@
+Una factura vencida hace tres semanas y nadie del equipo la ha vuelto a mencionar. Así se pierde plata sin que se note.
+
+Así funciona una automatización de recordatorio de pagos pendientes:
+→ Al vencer el plazo, un mensaje automático recuerda el pago sin que nadie tenga que acordarse de hacerlo
+→ Si no hay respuesta en unos días, un segundo mensaje más directo se envía solo, por WhatsApp o email
+→ Todo queda registrado en un solo lugar, para que el equipo sepa qué sigue pendiente sin revisar planillas sueltas
+
+Cobrar a tiempo no debería depender de que alguien se acuerde.
+
+Escríbenos por DM si quieres implementarla en tu negocio.
+
+📩 DM o WhatsApp +56 9 3056 9940
+
+#automatizacion #pymes #marketingdigital #empulsa #gestiondecobros #ventas
