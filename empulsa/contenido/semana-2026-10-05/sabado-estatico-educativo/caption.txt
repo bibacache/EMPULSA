@@ -1,0 +1,9 @@
+Tip rápido de sábado: entra a la herramienta gratuita "Rich Results Test" de Google, pega la URL de tu web, y revisa si detecta datos estructurados.
+
+Los datos estructurados son un código que le explica a Google qué es cada cosa en tu página (un producto, un precio, una reseña) para que la pueda mostrar de forma más completa en los resultados de búsqueda — con estrellas, precio o disponibilidad visibles antes de hacer clic.
+
+Si la herramienta no detecta nada, no es un error grave, pero es una oportunidad gratis que se está dejando pasar.
+
+Guarda este tip para revisar tu web esta semana.
+
+#seo #paginaweb #marketingdigital #pymes #empulsa #googleseo

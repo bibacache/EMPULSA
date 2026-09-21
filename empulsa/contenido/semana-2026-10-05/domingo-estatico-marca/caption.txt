@@ -1,0 +1,7 @@
+Antes de activar una automatización para un cliente, la probamos nosotros mismos completa, de principio a fin, como si fuéramos la persona que la va a recibir.
+
+Es fácil armar un flujo, revisarlo por encima, y darlo por bueno porque "en teoría" funciona. Pero un mensaje mal redactado, un paso que se salta, o un caso que no se consideró, solo se nota cuando alguien de verdad pasa por ahí.
+
+Preferimos encontrar esos errores nosotros mismos, en una prueba, antes de que los encuentre un cliente real.
+
+#automatizacion #marketingdigital #empulsa #pymes #calidad

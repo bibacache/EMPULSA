@@ -1,0 +1,14 @@
+Tu web se ve perfecta en la pantalla grande donde la diseñaron, y rota en el celular donde la mayoría de tus visitas realmente la ven.
+
+Lo que revisamos al construir una web mobile-first:
+→ No basta con achicar la ventana del navegador para probarla — la revisamos en celulares reales, con pantallas y conexiones distintas
+→ Los botones y menús se prueban con el dedo, no con el mouse: uno que se ve bien en desktop puede ser imposible de tocar en celular
+→ El orden del contenido se piensa primero para pantalla chica, y después se adapta hacia arriba a pantallas grandes — no al revés
+
+Más de la mitad del tráfico de la mayoría de los negocios llega desde el celular. Si tu web no está pensada para eso primero, le estás fallando a la mayoría de tus visitas.
+
+Escríbenos por DM si quieres que revisemos la tuya.
+
+📩 DM o WhatsApp +56 9 3056 9940
+
+#diseñoweb #paginaweb #marketingdigital #pymes #empulsa

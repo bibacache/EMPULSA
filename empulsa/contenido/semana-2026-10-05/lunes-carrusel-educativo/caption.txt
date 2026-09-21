@@ -1,0 +1,12 @@
+Tus mejores clientes ya le están diciendo a Meta a quién más mostrarle tus anuncios — casi nadie usa esa información.
+
+Cómo funciona un público similar (lookalike) en Meta Ads:
+→ Le subes a Meta una lista de tus clientes reales, o de quienes ya compraron en tu web
+→ El algoritmo busca patrones en común entre ellos que a simple vista no se notan — no es solo edad o ubicación
+→ Con esos patrones arma un público nuevo de gente parecida, en vez de mostrarle el anuncio a cualquiera
+
+Mientras más real y específica sea la lista de origen, mejor sale el público similar — una lista de "todos los que vieron el post" rinde menos que una de "los que de verdad compraron".
+
+Guarda este post para armar tu próximo público similar en Meta Ads.
+
+#metaads #facebookads #marketingdigital #publicidaddigital #pymes #empulsa
