@@ -1,0 +1,7 @@
+Tip rápido de sábado: entra a Google Search Console, ve a la sección "Páginas" (antes llamada "Cobertura"), y revisa cuántas páginas de tu web Google no está pudiendo indexar.
+
+Ahí aparece el motivo exacto de cada página excluida — un error del servidor, una página bloqueada sin querer, o contenido que Google considera duplicado. Si nunca has entrado a esa sección, es probable que tu web tenga páginas invisibles para Google sin que lo sepas.
+
+Guarda este tip para revisar tu web esta semana.
+
+#seo #paginaweb #googleseo #marketingdigital #pymes #empulsa
