@@ -1,228 +1,130 @@
 ---
 name: contenido-instagram-empulsa
-description: "Genera contenido orgánico para el Instagram de Empulsa (empresa de aceleramiento de negocios: Meta Ads, Google Ads, webs, email marketing, automatizaciones): copy + diseño de posts/carruseles con la marca real de Empulsa, guiones de reels, calendario semanal, y optimización del perfil (bio, highlights). Triggers: 'hazme un post para instagram', 'necesito contenido para empulsa', 'genera un carrusel sobre X', 'dame ideas de contenido', 'hazme el calendario de esta semana', 'guion para un reel sobre Y', 'contenido para redes de empulsa', 'mejora el instagram de empulsa', 'mejora la bio', 'mejora el perfil'."
+description: "Genera contenido orgánico para el Instagram de Empulsa (empresa de aceleramiento de negocios: Meta Ads, Google Ads, webs, email marketing, automatizaciones) con formatos creativos que NO repiten el mismo molde: chat de WhatsApp, boleta, tier list, buscador, carta manuscrita. Escribe el copy, genera las imágenes desde un JSON, los captions y el manifest semanal que lee la automatización de Make. Triggers: 'hazme un post para instagram', 'necesito contenido para empulsa', 'genera un carrusel sobre X', 'dame ideas de contenido', 'hazme el calendario de esta semana', 'contenido para redes de empulsa', 'mejora el instagram de empulsa'."
 ---
 
-# Contenido Instagram — Empulsa
+# Contenido Instagram Empulsa
 
-Genera contenido orgánico de Instagram para Empulsa (aceleramiento de negocios: Meta Ads, Google Ads, webs, email marketing, automatizaciones), con copy y diseño de marca reales, listo para publicar.
+Cuenta real: instagram.com/empulsa.cl. Empulsa acelera negocios de pymes chilenas con Meta Ads, Google Ads, webs, email marketing y automatizaciones.
 
-**Regla fundamental: el contenido tiene que servir para captar clientes hoy, no repetir fórmulas viejas.** No reciclar literalmente el contenido antiguo de la carpeta `Contenido Organico para Instagram+/` como plantilla de mensajes — esa carpeta es historia, no la fuente de verdad de qué funciona. Sí se reutiliza el brand kit real (logo, colores) porque eso es identidad de marca, no una decisión de contenido.
+## Regla fundamental: nada genérico
 
----
+El dueño de la cuenta descartó el estilo anterior por genérico: todo azul, la misma letra, puros consejos sobre un fondo plano. Todo lo que generes debe cumplir esto:
 
-## Recursos de marca (ya existen, no los inventes ni regeneres)
+1. **Cada pieza parte de una situación concreta** de una pyme chilena (un cliente que escribe y no recibe respuesta, un dueño que mira estadísticas cada 10 minutos, una búsqueda de emergencia). Nunca de un consejo abstracto.
+2. **El formato es parte del contenido**: el chat de WhatsApp cuenta la historia con mensajes, la boleta cobra lo que cuesta un error, etc. No uses el fondo azul degradado con titular blanco (`template.html` y `render_post.js` están OBSOLETOS, no los uses).
+3. **Cada formato tiene su propio mundo visual** (colores, tipografía). La marca aparece solo como `@empulsa.cl` chico abajo. No fuerces el azul de marca.
+4. **Nada inventado**: no inventes cifras, clientes, resultados ni casos. Las situaciones se presentan como ejemplo ("Ejemplo ilustrativo") cuando usen nombres o rubros ficticios (usa dominios `.example`).
+5. **Nada prometido que no esté armado**: no prometas resultados, precios, "gratis" ni plazos. Ofrece siempre una **demo en vivo**.
+6. **Sin guiones** (ni medios ni largos) en los textos de las piezas y captions. Usa punto, coma o dos puntos. Solo se permite la flecha `→` para listas.
+7. **Tuteo neutro chileno** ("tu", "escríbenos", "cuéntanos"). Nada de voseo ("sabés", "dedicás").
 
-Todo vive en `empulsa/_brand_kit/`:
+## Lo que sabemos de la cuenta (datos reales al 28 de septiembre de 2026)
 
-- `logo.png` — logo real de Empulsa (hoja + wordmark "empulsa"), con transparencia real. Extraído de `~/Documents/EMPULSA/LOGOTIPO.png`.
-- `template.html` — plantilla de post cuadrado 1080x1080: fondo degradado azul de marca, titular en blanco con tipografía redondeada bold, logo en la esquina inferior derecha.
-- `render_post.js` — script de Playwright que rellena la plantilla y exporta JPEG (Instagram vía Make solo acepta JPEG, no PNG). Uso:
-  ```bash
-  cd empulsa/_brand_kit
-  node render_post.js "Texto del titular" "TEXTO EYEBROW OPCIONAL" "../contenido/carpeta/slide-1.jpg"
-  ```
-- `fonts/Baloo2-Variable.ttf` — tipografía redondeada bold (Google Fonts, OFL), aproximación fiel a la tipografía real de Empulsa (no se tiene el archivo de fuente oficial; si el usuario lo consigue, reemplazar aquí).
+- 22 seguidores. El 88% de las visualizaciones viene de seguidores. Alcance total bajo: la prioridad es que la gente guarde, comente y comparta.
+- Rendimiento por día de la semana (visualizaciones promedio por pieza): Miércoles 49, Jueves 47, Lunes 40, Viernes 38, Domingo 38, Martes 32, **Sábado 24**. La hora no marcó diferencia.
+- El público no llega a ver carruseles largos: **3 a 5 slides**, máximo 6.
+- El texto tiene que leerse grande en el celular: frases cortas, pocas palabras por slide.
 
-**Colores de marca (extraídos por píxel de contenido real, no inventados):**
-- Azul degradado: `#003EA9` (esquina superior izquierda) → `#0053C5` (resto)
-- Crema del logo: `#F9ECD8`
-- Texto de titulares: blanco `#FFFFFF`
+## Formatos automatizables (los generas tú, sin imágenes externas)
 
-Si `empulsa/_brand_kit/` no existe (proyecto nuevo o kit compartido), avisa al usuario y pide el logo original — no lo reconstruyas a ojo desde una captura.
+Se generan con `empulsa/_brand_kit/render_formato.js` a partir de un JSON. Cada formato tiene un ejemplo completo en `empulsa/_brand_kit/ejemplos/<formato>.json`: **léelo antes de escribir el tuyo**. Las fuentes viajan en `_brand_kit/fonts/` (funciona igual en Mac y Linux).
 
-**Auto-instalación:** si falta Playwright, instala con `npm install playwright && npx playwright install chromium` (avisa: "preparando herramientas, tarda un momento la primera vez").
-
----
-
-## Estrategia de contenido (Instagram 2026 — investigado, no supuesto)
-
-Esto determina el formato y el enfoque de cada pieza. Si ha pasado mucho tiempo desde la última vez que se generó contenido con esta skill, vale la pena volver a buscar en la web si algo cambió antes de asumir que sigue vigente.
-
-- **Mezcla semanal ideal (cuando haya forma de grabar):** ~3-4 reels, 2-3 carruseles, 1-2 posts estáticos por semana.
-- **⚠️ SIN REELS POR AHORA (temporal, hasta que el usuario avise lo contrario):** el usuario no tiene forma de grabarlos todavía. Mientras esto siga así, la mezcla semanal es **4 carruseles + 3 estáticos, 7 piezas, ninguna reel** — reparte los 4 pilares entre esas 7 piezas en vez de forzarlos en formato reel. No generes ninguna carpeta `*-reel-*` ni `guion.md` mientras esta restricción esté activa. Si el usuario menciona que ya puede grabar de nuevo, volver a la mezcla ideal con reels.
-- **Reels** (cuando sí se puedan grabar) ganan en alcance (2-3x más que estático) pero premian la actualidad: publicar sobre lo que pasa esa semana, no contenido "atemporal" guardado hace meses. Terminan con una llamada a la acción concreta (comentar una palabra clave, enviar DM) — el algoritmo pondera los DMs generados mucho más que los likes.
-- **Carruseles** tienen el engagement más alto y son el mejor formato para autoridad B2B: "cómo hacer X", errores comunes, mini-lecciones que la gente guarda para volver a verlas.
-- **Posts estáticos** para anuncios puntuales, citas de autoridad, o momentos de marca.
-- **Métrica que importa:** guardados, compartidos, visitas al perfil, DMs — no likes. El copy y el CTA deben empujar hacia guardar/compartir/comentar, no solo "dale like".
-- **Contenido educativo que enseña algo real y termina ofreciendo una consulta/diagnóstico gratis por DM** rinde mejor que contenido puramente promocional.
-
-### Los 4 pilares de contenido de Empulsa (todos activos, rotar entre ellos)
-
-1. **Educativo / tips** — errores comunes, mini-lecciones de marketing digital (ads, web, email, automatización).
-2. **Servicios propios** — presentar Meta Ads, Google Ads, creación de webs, email marketing, automatizaciones como oferta concreta, sin sonar a folleto.
-3. **Casos de éxito / resultados** — resultados de clientes, métricas, antes/después (si el usuario no tiene datos reales de un caso, pregúntale — no inventes cifras ni clientes).
-4. **Marca / autoridad** — opinión, tendencias del sector, cómo trabaja Empulsa por dentro.
-
-### Tono de voz
-
-Profesional cercano: autoridad técnica real, pero directo, sin jerga corporativa hueca ni relleno. Nada de precios ni "ofertas especiales" en el copy.
-
----
-
-## Paso 0 — Optimizar el perfil (una sola vez, no en cada pieza de contenido)
-
-Cuenta real: [instagram.com/empulsa.cl](https://www.instagram.com/empulsa.cl/) — arrancando (pocos seguidores, casi sin historial), así que el perfil en sí es tan importante como el contenido: es lo primero que ve alguien que llega desde un post o un anuncio.
-
-**Bio:** máximo 150 caracteres, sin inventar datos que no existan (nada de "+100 clientes" si no es real). Estructura recomendada: gancho corto → qué hace Empulsa → CTA. Ejemplos listos para probar (pedirle al usuario que elija o ajuste, no imponer uno):
-
-1. `Aceleramos negocios que quieren vender más 🚀 Webs · Ecommerce · Ads · Automatización 📩 Escríbenos`
-2. `Tu negocio, más rápido 🚀 Diseñamos webs, e-commerce y campañas que sí convierten 📩 DM para diagnóstico gratis`
-3. `Empresa de aceleramiento digital 🚀 Webs, e-commerce, Meta/Google Ads y automatización 📩 Hablemos`
-
-**Link en bio / WhatsApp:** el número real de contacto es **+56 9 3056 9940**. Úsalo cuando el usuario pida agregar un dato de contacto al copy. Todavía no hay una URL de web/link-in-bio definida para el campo de link de la bio — sigue pendiente eso específicamente, no el WhatsApp.
-
-**Historias destacadas (Highlights):** con 4 categorías alcanza para empezar, alineadas a los pilares de contenido de más abajo:
-- 🚀 Servicios (Webs, Ecommerce, Ads, Automatización)
-- 💬 Casos (a llenar según vayan existiendo casos reales, no antes)
-- 🧠 Tips (contenido educativo evergreen)
-- 📩 Contacto (cómo escribir, horarios de respuesta)
-
-**Foto de perfil:** ya resuelta — usar `empulsa/_brand_kit/logo.png` (versión limpia, sin el halo gris del archivo original).
-
-No tocar la bio real del usuario directamente (no se puede editar Instagram desde acá) — esto es una propuesta para que el usuario la pegue manualmente. Confirmar con el usuario antes de asumir que ya la cambió.
-
----
-
-## Paso 1 — Entender qué necesita el usuario
-
-Pregunta (o infiere del mensaje) en qué modo trabajar:
-
-- **Modo tema:** el usuario da un tema concreto ("hazme un post sobre email marketing") → generar directamente ese post.
-- **Modo ideas:** el usuario pide ideas o no tiene tema claro → proponer 3-5 ideas concretas (mezclando los 4 pilares) y dejar que elija una antes de desarrollarla.
-- **Modo calendario:** el usuario pide contenido de la semana/mes → generar varias piezas de una vez siguiendo la mezcla semanal (reels/carruseles/estáticos) y rotando los 4 pilares.
-
-Si falta un dato que no se puede inventar (una cifra de un caso de éxito, un nombre de cliente, un detalle técnico específico de un servicio), pregúntalo — no lo rellenes con datos ficticios.
-
-**Excepción — ejecución autónoma sin usuario presente (agente programado/cron):** si esta skill corre en un agente recurrente sin nadie disponible para responder, no te quedes bloqueado. Reemplaza la pieza que necesitaba ese dato por contenido educativo o de servicios (los pilares que nunca dependen de datos externos), tal como se hizo la primera semana cuando no había un caso de éxito con métricas todavía. Deja constancia en el resumen final de qué pieza se sustituyó y por qué, para que el usuario lo revise cuando vuelva a interactuar.
-
----
-
-## Paso 2 — Elegir formato y escribir el contenido
-
-Según el tema y el pilar, decide el formato (reel, carrusel o estático) siguiendo la mezcla de la sección anterior.
-
-**Para reels:** escribe un guion corto con: Hook (primeros 2 segundos, la razón para no hacer scroll), Desarrollo (2-4 puntos concretos), CTA (comentar palabra clave o enviar DM). No hace falta generar video ni imagen, solo el guion en texto — opcionalmente una imagen de portada con `render_post.js`.
-
-**Para carruseles:** escribe un titular de portada + una idea por slide (numeradas si aplica) + slide de cierre con CTA suave. 4-7 slides típico.
-
-**Para estáticos:** un titular único, contundente, statement-style.
-
-Siempre acompaña con:
-- **Caption** completo para el pie de Instagram (gancho en la primera línea, desarrollo breve, CTA hacia guardar/compartir/comentar/DM).
-- **Hashtags** relevantes (5-10, mezcla de nicho + genéricos de marketing digital).
-
-Incluye el WhatsApp (+56 9 3056 9940) en el cierre del caption cuando el CTA invite a contactar — no hace falta que el usuario lo pida cada vez, ya es el dato de contacto oficial de Empulsa. No inventes web ni otros datos que no estén confirmados.
-
----
-
-## Paso 3 — Generar el diseño visual (carruseles y estáticos)
-
-Para cada slide, ejecuta desde `empulsa/_brand_kit/`:
+Uso (desde `empulsa/_brand_kit`):
 
 ```bash
-node render_post.js "<titular del slide>" "<eyebrow opcional, ej. EMPULSA o el número/categoría>" "<ruta de salida>.jpg"
+node render_formato.js "<spec.json>" "../contenido/semana-YYYY-MM-DD/<carpeta>"
 ```
 
-- Guarda las imágenes en la carpeta del post (ver Paso 4).
-- Revisa el PNG generado (ábrelo) antes de darlo por bueno: confirma que el texto no se corta y que cabe bien en el cuadro de 1080x1080. Si el titular es muy largo, acórtalo — la plantilla no reduce el tamaño de fuente automáticamente.
-- Los reels no necesitan render salvo que el usuario quiera una portada.
+Genera `slide-1.jpg`, `slide-2.jpg`... en 1080x1350 (4:5). Cada slide del JSON se define con estos campos (todos opcionales salvo lo indicado en el ejemplo):
 
----
+| Formato | Para qué sirve | Campos de cada slide |
+|---|---|---|
+| `whatsapp` | Historia de un mensaje que se pierde, un cliente que se enfría, una conversación reveladora. Ideal con CTA. | `banner` (texto grande arriba, para la portada), `contacto` (nombre del chat), `mensajes` [{`de`: "cliente" o "yo", `texto`, `hora`} o {`chip`: "4 horas después"}], `nota` (recuadro amarillo con la moraleja), o `cta` {`titulo`, `textos` [..], `telefono`} para el cierre |
+| `boleta` | "Lo que te cuesta X": una cuenta con líneas, total y sello. | `fondo` (color de la mesa), `subtitulo`, `titulo`, `meta` [[campo, valor]], `lineas` [{`cantidad`, `periodo`, `texto`}], `total`, `pie`, `sello`, `codigo` (false para ocultar el código de barras), `y` (posición vertical), `cta` {`titulo`, `texto`, `telefono`} |
+| `tierlist` | Ranking S a D de algo que la audiencia pueda ubicar (su web, su Instagram). Genera comentarios. | `titulo` + `filas` [["S","texto"],...] (usa "?" para la tabla vacía), o `zoom` {`letra`, `titulo`, `texto`}, o `cta` {`titulo`, `texto`, `telefono`} |
+| `buscador` | "Te buscaron y encontraron a otro": resultados de búsqueda falsos con un rubro de ejemplo. | `consulta`, `titulo`, `resultados` [{`url`, `titulo`, `descripcion`, `estrellas`, `tipo`: "fantasma" o "tuyo" o "separador" (con `texto`)}], `remate`, o `cta` |
+| `carta` | Pieza de marca cálida, casi sin venta: sobre, lista tachada, carta con posdata. Sin CTA. | `tipo`: "sobre" (`para`, `rotulo`), "lista" (`titulo`, `hechas` [..], `pendiente`, `remate`), "carta" (`destacado`, `texto`, `pd`, `firma`) |
 
-## Paso 4 — Guardar y presentar
+Estructura de una pieza (3 a 5 slides): **gancho** (portada con la situación), **desarrollo** (1 a 3 slides, una idea cada una), **cierre** (moraleja o CTA). Frases cortas.
 
-Estructura de carpetas en `empulsa/contenido/`:
+Reglas de longitud para que no se corte: titulares de portada hasta ~45 caracteres; en `carta` tipo `lista`, `titulo` corto (menos de 22 caracteres) y `remate` de una línea; en `tierlist` cada fila de una línea; máximo 4 mensajes por slide de `whatsapp`.
 
-- Post individual: `empulsa/contenido/YYYY-MM-DD-tema-slug/` con `caption.txt` (copy + hashtags), `slide-1.jpg`, `slide-2.jpg`... (o `guion.md` si es reel).
-- Modo calendario: `empulsa/contenido/semana-YYYY-MM-DD/` con una subcarpeta por pieza, nombradas con el día y el pilar (ej. `lunes-reel-educativo/`, `martes-carrusel-servicios/`).
+## Formatos con escena de Flow (solo manuales, NO los generes)
 
-**En modo calendario, además de las carpetas, genera `empulsa/contenido/semana-YYYY-MM-DD/manifest.json`** — es lo que lee la automatización de Make para programar en Instagram sin tener que descubrir nada dinámicamente. Solo incluye las piezas publicables (carruseles y estáticos — **nunca reels**, esos no tienen archivo de imagen listo). Formato exacto:
+Mapa del tesoro, autopsia, escape room, casino y carta de restaurante usan imágenes hechas por el dueño en Google Flow (Nano Banana 2) y texto en perspectiva. **El agente no debe generarlos ni inventar imágenes.** Si el usuario los entrega, van como piezas extra fuera de la rotación automática.
+
+## Semana automática (modo calendario)
+
+**5 piezas, de lunes a viernes. Sin sábado ni domingo** (el sábado es el día más flojo y las piezas de fin de semana requieren imágenes manuales). Ninguna reel.
+
+Asignación por defecto de formatos:
+
+- **Lunes, miércoles y jueves** (días fuertes): formatos con CTA a servicios. Rota entre `whatsapp`, `boleta` y `buscador`, cambiando el orden respecto a la semana anterior (revisa el `NOTAS.md` previo).
+- **Martes**: `tierlist` (pide comentarios, levanta el día más débil de la semana laboral).
+- **Viernes**: `carta` (marca, sin venta).
+
+**Horario:** todas las piezas se programan a las **11:00 hora de Chile** (`T11:00:00-03:00` en horario de verano, `-04:00` en invierno). La automatización de Make publica en la siguiente ejecución, alrededor de las 11:44. No pongas otras horas: no cambian el resultado.
+
+## Pilares y temas
+
+Rota los 4 pilares: educativo, servicios, casos, marca. Si no hay datos reales para un caso de éxito, sustitúyelo por educativo o servicios y déjalo anotado en `NOTAS.md`. **Antes de elegir tema, lee los `NOTAS.md` de todas las semanas anteriores** (están en `empulsa/contenido/semana-*/NOTAS.md`) para no repetir ángulos ya publicados. Aprovecha temas nuevos de Meta Ads, Google Ads, webs, email marketing, automatizaciones y atención al cliente.
+
+## Caption (uno por pieza, `caption.txt`)
+
+- Primera línea: el gancho con la situación, con un emoji.
+- Un breve desarrollo o una lista de 3 puntos con `→`.
+- Una idea de cierre que resuma la moraleja.
+- CTA suave: "Escríbenos y te mostramos una demo en vivo." y la línea `📩 DM o WhatsApp +56 9 3056 9940`. **En las piezas de tipo `carta` no pongas CTA ni teléfono.**
+- 4 a 6 hashtags, siempre incluye `#empulsa`.
+- Sin guiones, sin precios, sin promesas.
+
+## Procedimiento
+
+1. Calcula la semana: el lunes siguiente a la última carpeta `semana-YYYY-MM-DD` que exista. **Nunca sobrescribas una semana existente.**
+2. Lee los `NOTAS.md` anteriores y elige 5 situaciones nuevas.
+3. Por cada pieza: crea la carpeta `empulsa/contenido/semana-YYYY-MM-DD/<dia>-carrusel-<formato>-<tema>/` con:
+   - `spec.json` (el JSON del formato),
+   - `slide-N.jpg` (los genera `render_formato.js`),
+   - `caption.txt`.
+   El nombre de la carpeta **debe contener la palabra `carrusel`** (Make la usa para decidir cómo publicar).
+4. Si falta Playwright: `npm install playwright && npx playwright install chromium`.
+5. **Revisa visualmente cada slide** (ábrelas): texto completo, nada cortado ni pisado por el sello o el código de barras, tildes correctas. Si algo se corta, acorta el texto y vuelve a generar.
+6. Genera `manifest.json` de la semana (formato abajo).
+7. Escribe `NOTAS.md`: temas elegidos, formatos por día, qué se sustituyó y por qué.
+
+### Formato del `manifest.json`
+
+Lista de objetos, uno por pieza. Los 6 campos de imagen siempre presentes (vacíos con `""` si no se usan), campos individuales, no un array. Máximo 6 slides.
 
 ```json
-[
-  {
-    "carpeta": "lunes-carrusel-educativo",
-    "tipo": "carrusel",
-    "programado_para": "2026-08-17T08:00:00-04:00",
-    "caption": "texto completo del caption.txt de esa carpeta",
-    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-1.jpg",
-    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/lunes-carrusel-educativo/slide-2.jpg",
-    "imagen_3": "",
-    "imagen_4": "",
-    "imagen_5": "",
-    "imagen_6": ""
-  },
-  {
-    "carpeta": "domingo-estatico-marca",
-    "tipo": "estatico",
-    "programado_para": "2026-08-23T10:00:00-04:00",
-    "caption": "texto completo del caption.txt de esa carpeta",
-    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-08-17/domingo-estatico-marca/post.jpg",
-    "imagen_2": "",
-    "imagen_3": "",
-    "imagen_4": "",
-    "imagen_5": "",
-    "imagen_6": ""
-  }
-]
+{
+  "carpeta": "lunes-carrusel-whatsapp-agencia",
+  "tipo": "carrusel",
+  "programado_para": "2026-10-12T11:00:00-03:00",
+  "caption": "texto completo del caption.txt",
+  "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-12/lunes-carrusel-whatsapp-agencia/slide-1.jpg",
+  "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-12/lunes-carrusel-whatsapp-agencia/slide-2.jpg",
+  "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-12/lunes-carrusel-whatsapp-agencia/slide-3.jpg",
+  "imagen_4": "",
+  "imagen_5": "",
+  "imagen_6": ""
+}
 ```
 
-Reglas del manifest — **importante: campos de imagen individuales (`imagen_1`...`imagen_6`), no un array serializado, así Make arma el post con referencias directas sin parsear nada**:
-- `tipo`: `"carrusel"` (si hay varios `slide-N.jpg`) o `"estatico"` (si hay `post.jpg`).
-- `imagen_1` a `imagen_6`: una URL `raw.githubusercontent.com` real por slide, en orden (el repo es público, funcionan sin autenticación). Los slots que no se usan quedan como string vacío `""` — **nunca los omitas del JSON**, siempre los 6 campos presentes.
-- **Los carruseles van de 2 a 6 slides, nunca más de 6** — la automatización de Make solo sabe armar carruseles hasta 6 imágenes. Si un carrusel necesitaría más de 6 slides, recórtalo a los 6 mejores puntos.
-- Para estáticos, `imagen_1` es la única con URL; `imagen_2` a `imagen_6` van vacías.
-- `programado_para`: ISO 8601 con offset de Chile (`-04:00` o `-03:00` según horario de verano), calculado con el día real de esa semana y el horario del calendario estratégico (lunes 8am, martes 9am, miércoles 12pm, jueves 8am, viernes 12:30pm, sábado 11am, domingo 10am — ajustar si el calendario cambia).
-- `caption`: el texto completo, tal cual el `caption.txt` de esa carpeta.
+Los archivos deben estar en GitHub (rama `main`) para que las URLs `raw.githubusercontent.com` funcionen: Instagram descarga las imágenes desde ahí.
 
-Al terminar, resume:
-1. Qué se generó (formato, pilar, cuántas piezas).
-2. Dónde quedaron guardados los archivos.
-3. Qué datos faltaron y tuviste que preguntar (o qué quedó pendiente porque el usuario no lo tenía a mano).
-4. Si quiere ajustar el titular, el copy, o generar la siguiente pieza.
+### Cómo llega a Instagram
 
-No incluyas precios ni consejos de venta en el resumen.
+GitHub, luego la Ingesta de Make (diaria, lee el manifest de la semana en curso y crea los registros), luego el Publicador de Make (corre a las 03:44, 11:44 y 19:44 hora de Chile). No hay que hacer nada más. El antiguo paso con GoHighLevel (`ghl_publish.js`, `publicar_semana.js`) está en desuso.
 
----
+## Resumen final para el usuario
 
-## Paso 5 — Programar publicación automática (GoHighLevel)
+1. Qué formatos y temas se generaron, en qué día.
+2. Dónde quedaron los archivos.
+3. Qué se sustituyó o quedó pendiente.
+4. Recordar que no se publicó nada directamente: solo quedó listo para que la automatización lo tome.
 
-Empulsa ya tiene GoHighLevel (GHL) con Instagram conectado. En vez de armar hosting de imágenes propio o pasar por la Graph API de Meta directamente, se usa la **Social Media Posting API de GHL** (`services.leadconnectorhq.com`), que ya resuelve el hosting de la imagen (Media Storage propio) y la conexión con Instagram.
+## Perfil de Instagram (solo si el usuario lo pide, no en cada semana)
 
-Script: `empulsa/_brand_kit/ghl_publish.js` (usa `fetch`/`FormData` nativos de Node, no necesita dependencias nuevas).
-
-### Configuración (una sola vez)
-
-1. **Crear un Private Integration Token** en la subcuenta de Empulsa en GHL: Configuración de la subcuenta → *Integraciones privadas* → *Crear nueva integración* → activar los scopes `medias.write`, `socialplanner/account.readonly`, `socialplanner/post.write` → generar y copiar el token (solo se muestra una vez).
-2. Copiar `empulsa/_brand_kit/.env.example` como `.env` y completar `GHL_PRIVATE_TOKEN` y `GHL_LOCATION_ID` (el locationId aparece en la URL del panel de la subcuenta).
-3. Ejecutar `node ghl_publish.js --list-accounts` desde `empulsa/_brand_kit/` — es de solo lectura, no publica nada. Buscar en el resultado la cuenta de Instagram y copiar su `id` a `GHL_IG_ACCOUNT_ID` en `.env`.
-4. **Nunca** subir `.env` a git ni compartirlo — contiene credenciales reales de la cuenta.
-
-### Uso recomendado — una semana completa de una vez
-
-```bash
-cd empulsa/_brand_kit
-node publicar_semana.js ../contenido/semana-2026-08-03 --dry-run   # revisar antes sin tocar GHL
-node publicar_semana.js ../contenido/semana-2026-08-03             # programa de verdad
-```
-
-`publicar_semana.js` recorre la carpeta de la semana y, por cada subcarpeta:
-- **Carruseles** (varias `slide-N.jpg`): sube todas las imágenes y las programa como **un solo post multi-imagen** (carrusel real de Instagram), no un post por slide.
-- **Estáticos** (`post.jpg`): programa una imagen sola.
-- **Reels**: los **salta** — un reel es un guion (`guion.md`) + portada para grabar, no hay video que subir todavía. Los deja listados al final como pendientes de grabar.
-
-Usa los horarios del calendario estratégico ya definidos por día de semana (lunes 8am, martes 9am, etc. — ajustar en el propio script si el calendario cambia) y calcula la fecha real de cada día a partir del `semana-YYYY-MM-DD` del nombre de carpeta.
-
-### Uso pieza por pieza (alternativa, si no quieres programar toda la semana junta)
-
-```bash
-cd empulsa/_brand_kit
-node ghl_publish.js --schedule "../contenido/2026-08-03-tema/slide-1.jpg" "../contenido/2026-08-03-tema/caption.txt" "2026-08-03T08:00:00-04:00"
-```
-
-**Antes de programar contenido real:**
-- Confirmar con el usuario la fecha/hora de cada post contra el calendario acordado (Paso 1-4).
-- Si la API devuelve error pidiendo `userId`, obtenerlo con la Get User API de GHL y agregarlo a `.env` como `GHL_USER_ID` (algunos tipos de token lo requieren para posts no-draft).
-- Programar (`status: scheduled`) es reversible desde el panel de GHL; nunca uses `status: published` para probar — usa `scheduled` con fecha futura o revisa primero en modo `draft`.
-- Esto publica en la cuenta de Instagram real de Empulsa — confirmar con el usuario antes de ejecutar `--schedule` la primera vez, y avisar qué se programó y para cuándo.
+Bio máxima de 150 caracteres, sin datos inventados. Contacto oficial: WhatsApp +56 9 3056 9940. No se puede editar Instagram desde aquí: proponer el texto para que el usuario lo pegue. Highlights sugeridos: Servicios, Casos (solo con casos reales), Tips, Contacto.

@@ -42,3 +42,7 @@ Ninguno de estos pendientes bloquea la generación de contenido semanal (Paso 0 
 ## Publicación
 
 No se ejecutó `ghl_publish.js` ni `publicar_semana.js`, y no se programó ni publicó nada en GoHighLevel — ese paso queda pendiente para que el usuario lo haga manualmente con sus propias credenciales.
+
+## Actualización del 28 de septiembre de 2026
+
+Las piezas de esta semana fueron reemplazadas. Solo lunes a jueves, con carruseles creativos. Temas nuevos: autopsia de una campaña de Meta Ads, boleta de lo que cuesta no tener web, carta del restaurante (servicios como menú), buscador (te buscaron y apareció otro). Viernes 9 a domingo 11 sin publicación.

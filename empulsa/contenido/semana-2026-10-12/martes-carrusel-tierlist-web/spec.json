@@ -1,0 +1,69 @@
+{
+  "formato": "tierlist",
+  "slides": [
+    {
+      "titulo": "Tier list: la web de tu negocio",
+      "filas": [
+        [
+          "S",
+          "?"
+        ],
+        [
+          "A",
+          "?"
+        ],
+        [
+          "B",
+          "?"
+        ],
+        [
+          "C",
+          "?"
+        ],
+        [
+          "D",
+          "?"
+        ]
+      ]
+    },
+    {
+      "titulo": "¿Dónde queda la tuya?",
+      "filas": [
+        [
+          "S",
+          "Se entiende qué vendes en 5 segundos"
+        ],
+        [
+          "A",
+          "Carga rápido en el celular"
+        ],
+        [
+          "B",
+          "Fotos propias, no de stock"
+        ],
+        [
+          "C",
+          "Formulario con 12 campos"
+        ],
+        [
+          "D",
+          "El botón de contacto no funciona"
+        ]
+      ]
+    },
+    {
+      "zoom": {
+        "letra": "D",
+        "titulo": "El botón de contacto no funciona.",
+        "texto": "Alguien quiso comprarte y no pudo avisarte."
+      }
+    },
+    {
+      "cta": {
+        "titulo": "¿En qué tier está tu web?",
+        "texto": "Escríbenos y la revisamos juntos en una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

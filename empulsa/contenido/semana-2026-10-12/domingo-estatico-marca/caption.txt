@@ -1,5 +1,0 @@
-Cada automatización que armamos para un cliente queda documentada por escrito: qué hace, paso por paso, y qué revisar si algo falla.
-
-Es más rápido entregar un flujo y explicarlo de palabra. Pero si esa explicación se olvida o cambia quién administra la cuenta, el cliente queda dependiendo de que volvamos a explicar todo desde cero. Preferimos dejarlo escrito para que el negocio sea dueño de su propio sistema, no solo de nuestra memoria.
-
-#automatizacion #marketingdigital #empulsa #pymes #transparencia

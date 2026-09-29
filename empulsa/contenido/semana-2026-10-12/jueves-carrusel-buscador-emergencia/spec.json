@@ -1,0 +1,55 @@
+{
+  "formato": "buscador",
+  "slides": [
+    {
+      "consulta": "gásfiter urgente a domicilio",
+      "titulo": "A las 9 de la noche,\nel cliente llama al primero.",
+      "resultados": [
+        {
+          "url": "www.gasfiter24.example",
+          "titulo": "Gásfiter 24 horas | Llama ahora",
+          "descripcion": "Atención de urgencia, teléfono visible y horario claro.",
+          "estrellas": "★★★★★ 4,8 · 96 reseñas"
+        },
+        {
+          "url": "www.directorio.example",
+          "titulo": "Los 15 gásfiter de tu comuna",
+          "descripcion": "Listado sin teléfonos directos."
+        }
+      ]
+    },
+    {
+      "consulta": "gásfiter urgente a domicilio",
+      "resultados": [
+        {
+          "tipo": "fantasma",
+          "url": "Resultado 1",
+          "titulo": "Gásfiter 24 horas | Llama ahora"
+        },
+        {
+          "tipo": "fantasma",
+          "url": "Resultado 2",
+          "titulo": "Los 15 gásfiter de tu comuna"
+        },
+        {
+          "tipo": "separador",
+          "texto": "…más abajo…"
+        },
+        {
+          "tipo": "tuyo",
+          "url": "tu negocio",
+          "titulo": "Tu servicio, sin teléfono visible",
+          "descripcion": "En una urgencia nadie busca un formulario. Llama a quien puede contestar."
+        }
+      ],
+      "remate": "En urgencias\nno se compara. Se llama."
+    },
+    {
+      "cta": {
+        "titulo": "Que te encuentren y puedan llamarte en un clic.",
+        "texto": "Escríbenos y te mostramos en una demo en vivo cómo aparece hoy un negocio como el tuyo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

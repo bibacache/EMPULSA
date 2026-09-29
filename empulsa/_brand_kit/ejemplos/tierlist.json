@@ -1,0 +1,69 @@
+{
+  "formato": "tierlist",
+  "slides": [
+    {
+      "titulo": "Tier list: el Instagram de tu pyme",
+      "filas": [
+        [
+          "S",
+          "?"
+        ],
+        [
+          "A",
+          "?"
+        ],
+        [
+          "B",
+          "?"
+        ],
+        [
+          "C",
+          "?"
+        ],
+        [
+          "D",
+          "?"
+        ]
+      ]
+    },
+    {
+      "titulo": "¿Dónde queda el tuyo?",
+      "filas": [
+        [
+          "S",
+          "Reels con propuesta clara en 3 segundos"
+        ],
+        [
+          "A",
+          "Fotos propias con la oferta visible"
+        ],
+        [
+          "B",
+          "Highlights ordenados"
+        ],
+        [
+          "C",
+          "Solo fotos de stock y frases motivacionales"
+        ],
+        [
+          "D",
+          "Sin link en la bio, o link roto"
+        ]
+      ]
+    },
+    {
+      "zoom": {
+        "letra": "D",
+        "titulo": "Sin link en la bio, o link roto.",
+        "texto": "Quien te ve interesado no tiene cómo escribirte."
+      }
+    },
+    {
+      "cta": {
+        "titulo": "¿En qué tier está tu Instagram?",
+        "texto": "Escríbenos y lo revisamos juntos en una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

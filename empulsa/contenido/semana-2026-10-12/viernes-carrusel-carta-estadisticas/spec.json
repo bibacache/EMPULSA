@@ -1,0 +1,29 @@
+{
+  "formato": "carta",
+  "slides": [
+    {
+      "tipo": "sobre",
+      "para": "Para quien revisa\nlos anuncios antes de desayunar.",
+      "rotulo": "Abrir cuando los números se vean mal un lunes."
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Tus anuncios hoy:",
+      "hechas": [
+        "Mirar el alcance",
+        "Mirar el alcance otra vez",
+        "Cambiar la foto",
+        "Pausar y activar de nuevo"
+      ],
+      "pendiente": "Preguntarte qué querías lograr",
+      "remate": "Cambia la pregunta, no el anuncio."
+    },
+    {
+      "tipo": "carta",
+      "destacado": "Un anuncio no mejora por mirarlo más veces.",
+      "texto": "Mejora cuando sabes qué esperas de él.",
+      "pd": "P.D. Define una meta, déjalo correr una semana y recién ahí decide.",
+      "firma": "Con cariño, Empulsa"
+    }
+  ]
+}

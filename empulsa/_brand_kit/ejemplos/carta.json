@@ -1,0 +1,29 @@
+{
+  "formato": "carta",
+  "slides": [
+    {
+      "tipo": "sobre",
+      "para": "Para quien atiende, cobra, despacha\ny además sube las historias.",
+      "rotulo": "Abrir cuando el WhatsApp suene otra vez a las 11 de la noche."
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Lo que hiciste hoy:",
+      "hechas": [
+        "Abrir el local",
+        "Atender, cobrar, despachar",
+        "Contestar los \"¿precio?\"",
+        "Cuadrar la caja"
+      ],
+      "pendiente": "Pensar en cómo crece el negocio",
+      "remate": "Lo único que nunca alcanza a tacharse."
+    },
+    {
+      "tipo": "carta",
+      "destacado": "Nadie abrió un negocio para vivir dentro del celular.",
+      "texto": "Si hoy respondiste todo, ya hiciste más que suficiente.",
+      "pd": "P.D. Mañana el marketing se puede ordenar de a poco. Esta noche, descansa.",
+      "firma": "Con cariño, Empulsa"
+    }
+  ]
+}

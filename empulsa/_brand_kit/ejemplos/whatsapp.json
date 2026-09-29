@@ -1,0 +1,62 @@
+{
+  "formato": "whatsapp",
+  "slides": [
+    {
+      "banner": "Te escribieron a las 10:02.\nRespondiste a las 16:40.",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "texto": "Hola, vi su anuncio. ¿Cuánto cuesta y cuándo pueden empezar?",
+          "hora": "10:02"
+        }
+      ]
+    },
+    {
+      "mensajes": [
+        {
+          "de": "cliente",
+          "texto": "Hola, vi su anuncio. ¿Cuánto cuesta y cuándo pueden empezar?",
+          "hora": "10:02"
+        },
+        {
+          "chip": "4 horas después"
+        },
+        {
+          "de": "cliente",
+          "texto": "¿Hola? ¿Sigue por ahí?",
+          "hora": "14:15"
+        },
+        {
+          "de": "cliente",
+          "texto": "Ya contraté a otra empresa. Gracias igual.",
+          "hora": "15:30"
+        }
+      ]
+    },
+    {
+      "mensajes": [
+        {
+          "de": "cliente",
+          "texto": "Ya contraté a otra empresa. Gracias igual.",
+          "hora": "15:30"
+        },
+        {
+          "de": "yo",
+          "texto": "¡Hola! Recién veo tu mensaje. ¿En qué te puedo ayudar?",
+          "hora": "16:40"
+        }
+      ],
+      "nota": "El anuncio funcionó.\nLa respuesta no."
+    },
+    {
+      "cta": {
+        "titulo": "Responder rápido no debería depender de que estés mirando el celular.",
+        "textos": [
+          "Respuestas automáticas y seguimiento para que ningún mensaje se enfríe.",
+          "Escríbenos y te mostramos una demo en vivo."
+        ],
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

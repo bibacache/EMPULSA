@@ -1,0 +1,56 @@
+{
+  "formato": "boleta",
+  "slides": [
+    {
+      "fondo": "#2b3a55",
+      "subtitulo": "BOLETA N° 0002",
+      "titulo": "Lo que te cuesta no medir tus anuncios",
+      "meta": [
+        [
+          "Fecha",
+          "cada mes"
+        ],
+        [
+          "Atendió",
+          "la intuición"
+        ]
+      ]
+    },
+    {
+      "fondo": "#1f3b34",
+      "subtitulo": "DETALLE",
+      "lineas": [
+        {
+          "periodo": "cada mes",
+          "texto": "Presupuesto repartido sin saber qué funcionó"
+        },
+        {
+          "periodo": "cada campaña",
+          "texto": "Decisiones por intuición"
+        },
+        {
+          "periodo": "cada semana",
+          "texto": "Días esperando para corregir lo que ya falló"
+        }
+      ],
+      "codigo": false,
+      "y": 170
+    },
+    {
+      "fondo": "#5a1f1a",
+      "subtitulo": "TOTAL",
+      "total": "Plata que se va\nsin dejar aprendizaje",
+      "pie": "Se cobra cada mes",
+      "sello": "EVITABLE"
+    },
+    {
+      "fondo": "#efe6cf",
+      "y": 260,
+      "cta": {
+        "titulo": "Medir bien es lo más barato del marketing.",
+        "texto": "Escríbenos y te mostramos una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

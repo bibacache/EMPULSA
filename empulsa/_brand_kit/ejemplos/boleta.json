@@ -1,0 +1,56 @@
+{
+  "formato": "boleta",
+  "slides": [
+    {
+      "fondo": "#3b2a1a",
+      "subtitulo": "BOLETA N° 0001",
+      "titulo": "Lo que te cuesta no tener web",
+      "meta": [
+        [
+          "Fecha",
+          "todos los días"
+        ],
+        [
+          "Atendió",
+          "nadie"
+        ]
+      ]
+    },
+    {
+      "fondo": "#1f3b34",
+      "subtitulo": "DETALLE",
+      "lineas": [
+        {
+          "periodo": "todos los días",
+          "texto": "Clientes que te buscaron y no te encontraron"
+        },
+        {
+          "periodo": "cada comparación",
+          "texto": "Confianza que no transmitiste"
+        },
+        {
+          "periodo": "cada semana",
+          "texto": "Mensajes sin un lugar claro donde llegar"
+        }
+      ],
+      "codigo": false,
+      "y": 170
+    },
+    {
+      "fondo": "#5a1f1a",
+      "subtitulo": "TOTAL",
+      "total": "Lo que hoy\nno estás viendo",
+      "pie": "Se cobra cada mes",
+      "sello": "PENDIENTE"
+    },
+    {
+      "fondo": "#efe6cf",
+      "y": 260,
+      "cta": {
+        "titulo": "Esta cuenta se puede parar.",
+        "texto": "Escríbenos y te mostramos una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "formato": "buscador",
+  "slides": [
+    {
+      "consulta": "mejor pastelería cerca de mí",
+      "titulo": "Buscaron tu rubro.\nApareció otro.",
+      "resultados": [
+        {
+          "url": "www.dulceencanto.example",
+          "titulo": "Pastelería Dulce Encanto | Pedidos online",
+          "descripcion": "Tortas por encargo, carta con precios y reserva por WhatsApp.",
+          "estrellas": "★★★★★ 4,9 · 212 reseñas"
+        },
+        {
+          "url": "www.directorio.example",
+          "titulo": "Las 10 pastelerías de tu ciudad",
+          "descripcion": "Listado genérico sin información de contacto."
+        }
+      ]
+    },
+    {
+      "consulta": "mejor pastelería cerca de mí",
+      "resultados": [
+        {
+          "tipo": "fantasma",
+          "url": "Resultado 1",
+          "titulo": "Pastelería Dulce Encanto"
+        },
+        {
+          "tipo": "fantasma",
+          "url": "Resultado 2",
+          "titulo": "Las 10 pastelerías de tu ciudad"
+        },
+        {
+          "tipo": "separador",
+          "texto": "…página 3…"
+        },
+        {
+          "tipo": "tuyo",
+          "url": "tu negocio",
+          "titulo": "Tu pastelería, escondida entre el resto",
+          "descripcion": "Sin web, sin reseñas visibles. El cliente ya eligió antes de llegar a ti."
+        }
+      ],
+      "remate": "No te descartaron.\nNunca te vieron."
+    },
+    {
+      "cta": {
+        "titulo": "Estar donde te buscan no es suerte.",
+        "texto": "Escríbenos y te mostramos en una demo en vivo cómo aparece hoy un negocio como el tuyo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

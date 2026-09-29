@@ -1,0 +1,69 @@
+{
+  "formato": "whatsapp",
+  "slides": [
+    {
+      "banner": "Mucho alcance.\nCero ventas.",
+      "mensajes": [
+        {
+          "de": "yo",
+          "texto": "¿Cómo va la campaña?",
+          "hora": "09:10"
+        },
+        {
+          "de": "cliente",
+          "texto": "¡Excelente! 45.000 impresiones esta semana 🚀",
+          "hora": "09:12"
+        }
+      ]
+    },
+    {
+      "contacto": "Tu agencia",
+      "mensajes": [
+        {
+          "de": "yo",
+          "texto": "¿Cómo va la campaña?",
+          "hora": "09:10"
+        },
+        {
+          "de": "cliente",
+          "texto": "¡Excelente! 45.000 impresiones esta semana 🚀",
+          "hora": "09:12"
+        },
+        {
+          "de": "yo",
+          "texto": "¿Y cuántas ventas fueron?",
+          "hora": "09:13"
+        },
+        {
+          "chip": "escribiendo..."
+        }
+      ]
+    },
+    {
+      "contacto": "Tu agencia",
+      "mensajes": [
+        {
+          "de": "yo",
+          "texto": "¿Y cuántas ventas fueron?",
+          "hora": "09:13"
+        },
+        {
+          "de": "cliente",
+          "texto": "Eso depende de muchos factores 🙂",
+          "hora": "11:47"
+        }
+      ],
+      "nota": "Las impresiones no pagan el arriendo."
+    },
+    {
+      "cta": {
+        "titulo": "Un informe debería contestar una sola pregunta: ¿qué hago distinto ahora?",
+        "textos": [
+          "Te explicamos qué medir y por qué, sin jerga.",
+          "Escríbenos y te mostramos una demo en vivo."
+        ],
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}
