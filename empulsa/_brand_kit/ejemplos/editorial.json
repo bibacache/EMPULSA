@@ -1,0 +1,174 @@
+{
+  "formato": "editorial",
+  "slides": [
+    {
+      "titulo": "Te escriben a las 11 de la noche. [[¿Quién responde?]]",
+      "acento": "desliza →",
+      "bloque": {
+        "tipo": "chat",
+        "etiqueta": "Instagram · lunes 23:12",
+        "mensajes": [
+          {
+            "de": "cliente",
+            "texto": "Hola, ¿tienen hora para mañana?",
+            "hora": "23:12"
+          },
+          {
+            "de": "cliente",
+            "texto": "¿Hola? ¿Alguien por ahí?",
+            "hora": "23:40"
+          },
+          {
+            "de": "cliente",
+            "texto": "Mejor le pregunto a otro lugar.",
+            "hora": "23:58"
+          }
+        ]
+      }
+    },
+    {
+      "titulo": "Con un agente de IA [[responde al instante]].",
+      "acento": "con tu guion →",
+      "bloque": {
+        "tipo": "chat",
+        "etiqueta": "Mismo mensaje, 23:12",
+        "mensajes": [
+          {
+            "de": "cliente",
+            "texto": "Hola, ¿tienen hora para mañana?",
+            "hora": "23:12"
+          },
+          {
+            "de": "agente",
+            "texto": "¡Hola! Sí, tenemos mañana a las 10:30 o a las 16:00. ¿Cuál te acomoda?",
+            "hora": "23:12"
+          },
+          {
+            "de": "cliente",
+            "texto": "A las 16:00",
+            "hora": "23:13"
+          },
+          {
+            "de": "agente",
+            "texto": "Listo, quedó agendado. Te esperamos.",
+            "hora": "23:13"
+          }
+        ]
+      }
+    },
+    {
+      "titulo": "Y todo queda [[ordenado]] en tu CRM.",
+      "acento": "cada cliente, un paso →",
+      "bloque": {
+        "tipo": "pipeline",
+        "etiqueta": "CRM a tu medida",
+        "columnas": [
+          {
+            "titulo": "Nuevo",
+            "tarjetas": [
+              {
+                "nombre": "Camila",
+                "detalle": "Instagram"
+              },
+              {
+                "nombre": "Diego",
+                "detalle": "Formulario web"
+              },
+              {
+                "nombre": "Paula",
+                "detalle": "Anuncio"
+              }
+            ]
+          },
+          {
+            "titulo": "Respondido",
+            "tarjetas": [
+              {
+                "nombre": "Rodrigo",
+                "detalle": "WhatsApp"
+              },
+              {
+                "nombre": "Andrea",
+                "detalle": "Instagram"
+              }
+            ]
+          },
+          {
+            "titulo": "Agendado",
+            "tarjetas": [
+              {
+                "nombre": "Marcela",
+                "detalle": "mañana 16:00",
+                "caliente": true
+              },
+              {
+                "nombre": "Javier",
+                "detalle": "jueves 10:30",
+                "caliente": true
+              }
+            ]
+          },
+          {
+            "titulo": "Cliente",
+            "tarjetas": [
+              {
+                "nombre": "Felipe",
+                "detalle": "seguimiento"
+              }
+            ]
+          }
+        ],
+        "nota": "Ejemplo ilustrativo"
+      }
+    },
+    {
+      "titulo": "Todos tus canales, [[un solo lugar]].",
+      "acento": "sin perder a nadie →",
+      "bloque": {
+        "tipo": "flujo",
+        "etiqueta": "Cómo llegan tus clientes",
+        "entradas": [
+          {
+            "texto": "Instagram",
+            "color": "#E1306C"
+          },
+          {
+            "texto": "WhatsApp",
+            "color": "#25D366"
+          },
+          {
+            "texto": "Tu web",
+            "color": "#4a6cf7"
+          },
+          {
+            "texto": "Anuncios",
+            "color": "#1877F2"
+          }
+        ],
+        "centroEtiqueta": "TU CRM",
+        "centro": "Empulsa",
+        "salidas": [
+          {
+            "texto": "Respuesta"
+          },
+          {
+            "texto": "Cita"
+          },
+          {
+            "texto": "Seguimiento"
+          }
+        ]
+      }
+    },
+    {
+      "titulo": "¿Quieres verlo funcionando? [[Te lo mostramos en vivo]].",
+      "acento": "desde Concepción para todo Chile",
+      "bloque": {
+        "tipo": "cta",
+        "texto": "Web, Meta Ads, CRM y agente de IA para que ningún cliente se quede sin respuesta.",
+        "boton": "Escríbenos por WhatsApp →",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

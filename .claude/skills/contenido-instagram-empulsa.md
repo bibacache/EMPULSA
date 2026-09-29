@@ -1,11 +1,18 @@
 ---
 name: contenido-instagram-empulsa
-description: "Genera contenido orgánico para el Instagram de Empulsa (empresa de aceleramiento de negocios: Meta Ads, Google Ads, webs, email marketing, automatizaciones) con formatos creativos que NO repiten el mismo molde: chat de WhatsApp, boleta, tier list, buscador, carta manuscrita. Escribe el copy, genera las imágenes desde un JSON, los captions y el manifest semanal que lee la automatización de Make. Triggers: 'hazme un post para instagram', 'necesito contenido para empulsa', 'genera un carrusel sobre X', 'dame ideas de contenido', 'hazme el calendario de esta semana', 'contenido para redes de empulsa', 'mejora el instagram de empulsa'."
+description: "Genera contenido orgánico para el Instagram de Empulsa (agencia de Concepción que ofrece desarrollo web y SEO, Meta Ads, CRM a medida y agente de IA de atención) con formatos creativos que NO repiten el mismo molde: editorial, chat de WhatsApp, boleta, tier list, buscador, carta manuscrita. Escribe el copy, genera las imágenes desde un JSON, los captions y el manifest semanal que lee la automatización de Make. Triggers: 'hazme un post para instagram', 'necesito contenido para empulsa', 'genera un carrusel sobre X', 'dame ideas de contenido', 'hazme el calendario de esta semana', 'contenido para redes de empulsa', 'mejora el instagram de empulsa'."
 ---
 
 # Contenido Instagram Empulsa
 
-Cuenta real: instagram.com/empulsa.cl. Empulsa acelera negocios de pymes chilenas con Meta Ads, Google Ads, webs, email marketing y automatizaciones.
+Cuenta real: instagram.com/empulsa.cl. Empulsa es una agencia de Concepción que ofrece a negocios de Chile exactamente cuatro servicios:
+
+1. **Desarrollo web y SEO**: páginas web y posicionamiento en Google.
+2. **Campañas de Meta Ads**.
+3. **CRM a medida**: ordena cómo llegan, se agendan y se siguen los clientes por WhatsApp e Instagram. Se habla de "tu CRM"; **no menciones la plataforma de terceros sobre la que corre**.
+4. **Agente de IA de atención**: responde los chats con un guion armado junto al cliente.
+
+**No ofrezcas ni des a entender que Empulsa hace Google Ads, email marketing ni "automatizaciones" en general**: no son la oferta actual. Todo el contenido debe llevar, de forma directa o indirecta, a uno de esos 4 servicios.
 
 ## Regla fundamental: nada genérico
 
@@ -40,6 +47,7 @@ Genera `slide-1.jpg`, `slide-2.jpg`... en 1080x1350 (4:5). Cada slide del JSON s
 
 | Formato | Para qué sirve | Campos de cada slide |
 |---|---|---|
+| `editorial` | **El formato principal para explicar el CRM, el agente de IA, la web y los canales.** Fondo crema, titular serif con la frase clave marcada, un esquema visual y cierre con CTA. Imita a las cuentas de referencia que le gustan al dueño. | `kicker`, `titulo` (usa `[[frase clave]]` para el marcador amarillo), `acento` (frase corta abajo a la derecha, termina en `→` para invitar a deslizar), `bloque` con `tipo`: **chat** {`etiqueta`, `mensajes` [{`de`: "cliente" o "agente", `texto`, `hora`}]}, **pipeline** {`etiqueta`, `columnas` [{`titulo`, `tarjetas` [{`nombre`, `detalle`, `caliente`}]}], `nota`}, **flujo** {`etiqueta`, `entradas` [{`texto`, `color`}], `centroEtiqueta`, `centro`, `salidas` [{`texto`}]}, **lista** {`items` [..]}, **cta** {`texto`, `boton`, `telefono`, `pie`} |
 | `whatsapp` | Historia de un mensaje que se pierde, un cliente que se enfría, una conversación reveladora. Ideal con CTA. | `banner` (texto grande arriba, para la portada), `contacto` (nombre del chat), `mensajes` [{`de`: "cliente" o "yo", `texto`, `hora`} o {`chip`: "4 horas después"}], `nota` (recuadro amarillo con la moraleja), o `cta` {`titulo`, `textos` [..], `telefono`} para el cierre |
 | `boleta` | "Lo que te cuesta X": una cuenta con líneas, total y sello. | `fondo` (color de la mesa), `subtitulo`, `titulo`, `meta` [[campo, valor]], `lineas` [{`cantidad`, `periodo`, `texto`}], `total`, `pie`, `sello`, `codigo` (false para ocultar el código de barras), `y` (posición vertical), `cta` {`titulo`, `texto`, `telefono`} |
 | `tierlist` | Ranking S a D de algo que la audiencia pueda ubicar (su web, su Instagram). Genera comentarios. | `titulo` + `filas` [["S","texto"],...] (usa "?" para la tabla vacía), o `zoom` {`letra`, `titulo`, `texto`}, o `cta` {`titulo`, `texto`, `telefono`} |
@@ -47,6 +55,8 @@ Genera `slide-1.jpg`, `slide-2.jpg`... en 1080x1350 (4:5). Cada slide del JSON s
 | `carta` | Pieza de marca cálida, casi sin venta: sobre, lista tachada, carta con posdata. Sin CTA. | `tipo`: "sobre" (`para`, `rotulo`), "lista" (`titulo`, `hechas` [..], `pendiente`, `remate`), "carta" (`destacado`, `texto`, `pd`, `firma`) |
 
 Estructura de una pieza (3 a 5 slides): **gancho** (portada con la situación), **desarrollo** (1 a 3 slides, una idea cada una), **cierre** (moraleja o CTA). Frases cortas.
+
+Estructura típica de un carrusel `editorial` (4 o 5 slides): 1) el problema en una situación (chat donde el cliente se va), 2) la solución en acción (agente de IA respondiendo), 3) el orden que queda (pipeline del CRM), 4) el mapa de canales, 5) cierre con la demo en vivo. En `editorial` los nombres de personas son ficticios y el tablero lleva la nota "Ejemplo ilustrativo". Máximo ~55 caracteres por titular; máximo 4 mensajes por slide de chat; máximo 4 columnas y 3 tarjetas por columna en el pipeline; máximo 4 entradas y 3 salidas en el flujo.
 
 Reglas de longitud para que no se corte: titulares de portada hasta ~45 caracteres; en `carta` tipo `lista`, `titulo` corto (menos de 22 caracteres) y `remate` de una línea; en `tierlist` cada fila de una línea; máximo 4 mensajes por slide de `whatsapp`.
 
@@ -60,7 +70,7 @@ Mapa del tesoro, autopsia, escape room, casino y carta de restaurante usan imág
 
 Asignación por defecto de formatos:
 
-- **Lunes, miércoles y jueves** (días fuertes): formatos con CTA a servicios. Rota entre `whatsapp`, `boleta` y `buscador`, cambiando el orden respecto a la semana anterior (revisa el `NOTAS.md` previo).
+- **Lunes, miércoles y jueves** (días fuertes): formatos con CTA a servicios. Rota entre `editorial`, `whatsapp`, `boleta` y `buscador`, cambiando el orden respecto a la semana anterior (revisa el `NOTAS.md` previo). **Al menos 2 de las 5 piezas de la semana deben ser `editorial` o hablar directamente del CRM o del agente de IA**, que son el diferencial de Empulsa.
 - **Martes**: `tierlist` (pide comentarios, levanta el día más débil de la semana laboral).
 - **Viernes**: `carta` (marca, sin venta).
 
@@ -68,7 +78,7 @@ Asignación por defecto de formatos:
 
 ## Pilares y temas
 
-Rota los 4 pilares: educativo, servicios, casos, marca. Si no hay datos reales para un caso de éxito, sustitúyelo por educativo o servicios y déjalo anotado en `NOTAS.md`. **Antes de elegir tema, lee los `NOTAS.md` de todas las semanas anteriores** (están en `empulsa/contenido/semana-*/NOTAS.md`) para no repetir ángulos ya publicados. Aprovecha temas nuevos de Meta Ads, Google Ads, webs, email marketing, automatizaciones y atención al cliente.
+Rota los 4 pilares: educativo, servicios, casos, marca. Los temas se ligan siempre a uno de los 4 servicios (web y SEO, Meta Ads, CRM, agente de IA): por ejemplo, qué pasa con un cliente que escribe fuera de horario, cómo se ve un seguimiento ordenado en un CRM, por qué una web sin SEO no aparece, errores de una campaña de Meta Ads. Si no hay datos reales para un caso de éxito, sustitúyelo por educativo o servicios y déjalo anotado en `NOTAS.md`. **Antes de elegir tema, lee los `NOTAS.md` de todas las semanas anteriores** (están en `empulsa/contenido/semana-*/NOTAS.md`) para no repetir ángulos ya publicados. Prioriza temas nuevos de agente de IA de atención, CRM, web y SEO, y Meta Ads. **No propongas temas de Google Ads ni de email marketing.**
 
 ## Caption (uno por pieza, `caption.txt`)
 
@@ -77,7 +87,7 @@ Rota los 4 pilares: educativo, servicios, casos, marca. Si no hay datos reales p
 - Una idea de cierre que resuma la moraleja.
 - CTA suave: "Escríbenos y te mostramos una demo en vivo." y la línea `📩 DM o WhatsApp +56 9 3056 9940`. **En las piezas de tipo `carta` no pongas CTA ni teléfono.**
 - 4 a 6 hashtags, siempre incluye `#empulsa`.
-- Sin guiones, sin precios, sin promesas.
+- Sin guiones, sin precios, sin promesas. Hashtags acordes a los 4 servicios (por ejemplo #crm #agenteia #paginaweb #seo #metaads), sin #googleads ni #emailmarketing.
 
 ## Procedimiento
 

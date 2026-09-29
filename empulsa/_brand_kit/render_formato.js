@@ -1,7 +1,7 @@
 // Genera un carrusel 1080x1350 (4:5) de un formato creativo SIN imagen externa, a partir de un JSON.
 // Uso: node render_formato.js "<spec.json>" "<carpeta_salida>"   ->   slide-1.jpg, slide-2.jpg, ...
-// spec.json = { "formato": "whatsapp|boleta|carta|tierlist|buscador", "slides": [ {...}, ... ] }  (ver la skill para los campos)
-// Portable: usa solo fuentes incluidas en ./fonts (Inter, Courier Prime, Caveat), funciona igual en Mac y Linux.
+// spec.json = { "formato": "whatsapp|boleta|carta|tierlist|buscador|editorial", "slides": [ {...}, ... ] }  (ver la skill para los campos)
+// Portable: usa solo fuentes incluidas en ./fonts (Inter, Courier Prime, Caveat, Playfair Display), funciona igual en Mac y Linux.
 const path = require("path");
 const fs = require("fs");
 const { chromium } = require(path.join(__dirname, "..", "..", "node_modules", "playwright"));
@@ -12,6 +12,8 @@ const nl = (s = "") => esc(s).replace(/\n/g, "<br>");
 const FACES = `@font-face{font-family:Inter;src:url("${F("Inter-Variable.ttf")}");font-weight:100 900}
 @font-face{font-family:"Courier Prime";src:url("${F("CourierPrime-Regular.ttf")}");font-weight:400}
 @font-face{font-family:"Courier Prime";src:url("${F("CourierPrime-Bold.ttf")}");font-weight:700}
+@font-face{font-family:"Playfair Display";src:url("${F("PlayfairDisplay-Variable.ttf")}");font-weight:400 900;font-style:normal}
+@font-face{font-family:"Playfair Display";src:url("${F("PlayfairDisplay-Italic-Variable.ttf")}");font-weight:400 900;font-style:italic}
 @font-face{font-family:Caveat;src:url("${F("Caveat-Variable.ttf")}");font-weight:400 700}`;
 const SANS = `Inter,"Helvetica Neue",Arial,sans-serif`, MONO = `"Courier Prime","Courier New",monospace`, HAND = `Caveat,"Bradley Hand",cursive`;
 const wrap = (css, body) => `<!doctype html><html><head><meta charset="utf-8"><style>${FACES}
@@ -114,7 +116,42 @@ function buscador(s) {
   const res = (s.resultados || []).map((r) => r.tipo === "separador" ? `<div class="pg">${esc(r.texto)}</div>` : `<div class="res ${r.tipo === "fantasma" ? "ghost" : r.tipo === "tuyo" ? "you" : ""}"><div class="u">${esc(r.url || "")}</div><div class="h">${esc(r.titulo)}</div>${r.descripcion ? `<div class="d">${esc(r.descripcion)}</div>` : ""}${r.estrellas ? `<div class="s">${esc(r.estrellas)}</div>` : ""}</div>`).join("");
   return { ...h, body: `<div class="sb">${MAG}<span>${esc(s.consulta || "")}</span></div>${s.titulo ? `<div class="ttl">${nl(s.titulo)}</div>` : ""}${res}${s.remate ? `<div class="ttl" style="font-size:76px;margin-top:40px">${nl(s.remate)}</div>` : ""}` };
 }
-const FORMATOS = { whatsapp, boleta, carta, tierlist, buscador };
+
+/* ---------------- editorial (fondo crema, titular serif con marcador amarillo, esquema) ---------------- */
+const SERIF = `"Playfair Display",Georgia,serif`;
+const edCss = `body{background:#F5EFE3;color:#1b1a17}
+.kick{position:absolute;top:66px;left:0;right:0;text-align:center;font:400 27px ${MONO};letter-spacing:.05em}
+.h{position:absolute;top:130px;left:64px;right:64px;text-align:center;font:500 84px/1.1 ${SERIF}}.h mark{background:#FFF59D;color:inherit;padding:0 14px;border-radius:4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.bd{position:absolute;left:64px;right:64px;top:470px;bottom:170px;display:flex;flex-direction:column;justify-content:center}
+.lab{font:700 26px ${MONO};letter-spacing:.12em;text-transform:uppercase;text-align:center;color:#3a372f;margin-bottom:22px}
+.ft{position:absolute;left:64px;right:64px;bottom:58px;display:flex;justify-content:space-between;align-items:baseline}.ft b{font:700 34px ${SANS}}.ft i{font:italic 400 38px ${SERIF};color:#C8583A}.ft i s{font:400 36px ${SANS};font-style:normal;text-decoration:none;margin-left:8px}
+.card{background:#fff;border-radius:22px;box-shadow:0 6px 18px rgba(60,40,20,.10)}
+.chat{display:flex;flex-direction:column;gap:22px}.m{max-width:840px;padding:26px 32px 14px;border-radius:26px;font:500 46px/1.25 ${SANS};background:#fff;box-shadow:0 4px 12px rgba(60,40,20,.10)}
+.m small{display:block;font:400 25px ${MONO};color:#8a857a;margin-top:6px}.m.c{align-self:flex-start;border-top-left-radius:6px}.m.a{align-self:flex-end;background:#F6DDD2;border-top-right-radius:6px}.m.a em{display:block;font:700 22px ${MONO};letter-spacing:.12em;color:#C8583A;font-style:normal;margin-bottom:6px}
+.pipe{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.col{background:#EDE4D2;border-radius:20px;padding:20px 12px 26px;min-height:520px}.col h4{font:700 25px ${MONO};letter-spacing:.08em;text-transform:uppercase;text-align:center;margin-bottom:16px}
+.tk{padding:20px 14px;margin-bottom:16px;border-radius:14px;background:#fff;box-shadow:0 3px 10px rgba(60,40,20,.10);font:600 36px/1.15 ${SANS}}.tk small{display:block;font:400 25px ${MONO};color:#8a857a;margin-top:6px}
+.tk.hot{border-left:8px solid #C8583A}
+.flow{position:relative;height:640px;margin-top:10px}.flow svg{position:absolute;inset:0}.chip{position:absolute;display:flex;align-items:center;gap:12px;padding:14px 18px;border-radius:20px;background:#fff;box-shadow:0 4px 12px rgba(60,40,20,.10);font:700 26px ${MONO};letter-spacing:.06em;text-transform:uppercase}
+.chip i{display:block;width:46px;height:46px;border-radius:12px}.core{position:absolute;left:355px;top:225px;width:270px;height:190px;border-radius:26px;background:#fff;box-shadow:0 8px 22px rgba(60,40,20,.15);display:flex;flex-direction:column;align-items:center;justify-content:center;font:600 44px ${SERIF}}.core b{font:700 22px ${MONO};letter-spacing:.14em;color:#C8583A;margin-bottom:6px}
+.list{display:flex;flex-direction:column;gap:18px}.li{display:flex;align-items:center;gap:22px;padding:24px 28px}.li b{flex:none;width:58px;height:58px;border-radius:50%;background:#C8583A;color:#fff;display:flex;align-items:center;justify-content:center;font:700 34px ${SANS}}.li span{font:500 42px/1.2 ${SANS}}
+.cta{text-align:center}.cta p{font:400 44px/1.3 ${SERIF};margin-bottom:34px}.pill{display:inline-block;border:3px solid #C8583A;color:#C8583A;border-radius:14px;padding:16px 34px;font:700 34px ${MONO};letter-spacing:.08em;text-transform:uppercase}.tel{font:700 76px ${SANS};margin:30px 0 8px}`;
+const hl = (t = "") => nl(t).replace(/\[\[(.+?)\]\]/g, "<mark>$1</mark>");
+function editorial(s) {
+  const b = s.bloque || {};
+  let body = "";
+  if (b.tipo === "chat") body = `${b.etiqueta ? `<div class="lab">${esc(b.etiqueta)}</div>` : ""}<div class="chat">${(b.mensajes || []).map((m) => `<div class="m ${m.de === "agente" ? "a" : "c"}">${m.de === "agente" ? "<em>AGENTE IA</em>" : ""}${nl(m.texto)}<small>${esc(m.hora || "")}</small></div>`).join("")}</div>`;
+  else if (b.tipo === "pipeline") body = `${b.etiqueta ? `<div class="lab">${esc(b.etiqueta)}</div>` : ""}<div class="pipe">${(b.columnas || []).map((c) => `<div class="col"><h4>${esc(c.titulo)}</h4>${(c.tarjetas || []).map((t) => `<div class="tk ${t.caliente ? "hot" : ""}">${esc(t.nombre)}<small>${esc(t.detalle || "")}</small></div>`).join("")}</div>`).join("")}</div>${b.nota ? `<div class="lab" style="margin-top:22px;font-weight:400;font-size:22px">${esc(b.nota)}</div>` : ""}`;
+  else if (b.tipo === "flujo") {
+    const L = b.entradas || [], R = b.salidas || [];
+    const ys = (n) => Array.from({ length: n }, (_, i) => 30 + i * ((640 - 130) / Math.max(n - 1, 1)));
+    const ly = ys(L.length), ry = ys(R.length);
+    const paths = [...ly.map((y) => `<path d="M250 ${y + 30} C 300 ${y + 30}, 320 320, 355 320" />`), ...ry.map((y) => `<path d="M625 320 C 660 320, 690 ${y + 30}, ${R.length>1 && Math.abs(y+30-320)<40 ? 800 : 730} ${y + 30}" />`)].join("");
+    body = `${b.etiqueta ? `<div class="lab">${esc(b.etiqueta)}</div>` : ""}<div class="flow"><svg viewBox="0 0 952 640" fill="none" stroke="#C8583A" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round">${paths}</svg>${L.map((t, i) => `<div class="chip" style="left:0;top:${ly[i]}px"><i style="background:${t.color || "#ddd"}"></i>${esc(t.texto || t)}</div>`).join("")}<div class="core"><b>${esc(b.centroEtiqueta || "")}</b>${esc(b.centro || "")}</div>${R.map((t, i) => `<div class="chip" style="right:0;top:${ry[i]}px"><i style="background:${t.color || "#C8583A"}"></i>${esc(t.texto || t)}</div>`).join("")}</div>`;
+  } else if (b.tipo === "lista") body = `<div class="list">${(b.items || []).map((t) => `<div class="card li"><b>✓</b><span>${nl(t)}</span></div>`).join("")}</div>`;
+  else if (b.tipo === "cta") body = `<div class="cta"><p>${nl(b.texto || "")}</p><div class="pill">${esc(b.boton || "Te respondemos por WhatsApp")}</div><div class="tel">${esc(b.telefono || PHONE)}</div>${b.pie ? `<p style="font-size:32px;margin:12px 0 0;opacity:.75">${nl(b.pie)}</p>` : ""}</div>`;
+  return { css: edCss, handle: "display:none", body: `<div class="kick">${esc(s.kicker || "empulsa.cl")}</div><div class="h">${hl(s.titulo)}</div><div class="bd">${body}</div><div class="ft"><b>@empulsa.cl</b><i>${esc((s.acento || "").replace(/\s*→$/, ""))}${/→$/.test(s.acento || "") ? "<s>→</s>" : ""}</i></div>` };
+}
+const FORMATOS = { whatsapp, boleta, carta, tierlist, buscador, editorial };
 
 (async () => {
   const [specPath, outDir] = process.argv.slice(2);
