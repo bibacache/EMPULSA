@@ -1,0 +1,78 @@
+{
+  "formato": "editorial",
+  "slides": [
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Cada cliente que llega [[puede volver]].",
+      "acento": "desliza →",
+      "bloque": {
+        "tipo": "flujo",
+        "etiqueta": "De dónde vienen tus contactos",
+        "entradas": [
+          {
+            "texto": "Compra",
+            "color": "#4a6cf7"
+          },
+          {
+            "texto": "Registro",
+            "color": "#25D366"
+          },
+          {
+            "texto": "Carrito",
+            "color": "#E1306C"
+          }
+        ],
+        "centroEtiqueta": "TU EMAIL",
+        "centro": "Empulsa",
+        "salidas": [
+          {
+            "texto": "Bienvenida"
+          },
+          {
+            "texto": "Recordatorio"
+          },
+          {
+            "texto": "Vuelve"
+          }
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Tres correos que [[trabajan solos]].",
+      "acento": "sin hacer nada a mano →",
+      "bloque": {
+        "tipo": "lista",
+        "items": [
+          "Bienvenida cuando se registra",
+          "Recordatorio si dejó el carrito",
+          "Mensaje a quien hace tiempo no compra"
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Sin spam: [[el correo correcto]] en el momento correcto.",
+      "acento": "con la voz de tu negocio →",
+      "bloque": {
+        "tipo": "lista",
+        "items": [
+          "Escrito con la voz de tu negocio",
+          "Enviado en el momento justo",
+          "Medido para saber cuál funciona"
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "¿Quieres ver cómo se vería? [[Te lo mostramos en vivo]].",
+      "acento": "desde Concepción para todo Chile",
+      "bloque": {
+        "tipo": "cta",
+        "texto": "Email marketing para que quien ya te conoce vuelva a escribirte.",
+        "boton": "Escríbenos por WhatsApp →",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

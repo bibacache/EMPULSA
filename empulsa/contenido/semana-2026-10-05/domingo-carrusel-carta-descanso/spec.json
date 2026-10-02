@@ -1,0 +1,28 @@
+{
+  "formato": "carta",
+  "slides": [
+    {
+      "tipo": "sobre",
+      "para": "Para quien responde mensajes\nmientras cena.",
+      "rotulo": "Abrir cuando sientas que el negocio depende solo de ti."
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Tu domingo:",
+      "hechas": [
+        "Revisar el WhatsApp",
+        "Responder \"¿precio?\"",
+        "Mirar las ventas"
+      ],
+      "pendiente": "Descansar sin culpa",
+      "remate": "También se puede delegar."
+    },
+    {
+      "tipo": "carta",
+      "destacado": "Tu negocio puede trabajar aunque tú descanses.",
+      "texto": "Responder y dar seguimiento se puede hacer de otra forma.",
+      "pd": "P.D. Empieza por lo que más tiempo te quita.",
+      "firma": "Con cariño, Empulsa"
+    }
+  ]
+}

@@ -46,3 +46,7 @@ No se ejecutó `ghl_publish.js` ni `publicar_semana.js`, y no se programó ni pu
 ## Actualización del 28 de septiembre de 2026
 
 Las piezas de esta semana fueron reemplazadas. Solo lunes a jueves, con carruseles creativos. Temas nuevos: autopsia de una campaña de Meta Ads, boleta de lo que cuesta no tener web, carta del restaurante (servicios como menú), buscador (te buscaron y apareció otro). Viernes 9 a domingo 11 sin publicación.
+
+## Fin de semana 9 a 11 de octubre (agregado el 2 de octubre de 2026)
+
+Viernes 9: editorial CRM (seguimiento a interesados que se enfrían). Sábado 10: editorial email marketing (cliente que compró una vez y nadie le vuelve a escribir). Domingo 11: carta de marca sin CTA (dueño que responde mensajes mientras cena).

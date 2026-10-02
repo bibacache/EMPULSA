@@ -1,0 +1,116 @@
+{
+  "formato": "editorial",
+  "slides": [
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Te escriben interesados. [[¿Quién les da seguimiento?]]",
+      "acento": "desliza →",
+      "bloque": {
+        "tipo": "chat",
+        "etiqueta": "WhatsApp · viernes 18:02",
+        "mensajes": [
+          {
+            "de": "cliente",
+            "texto": "Hola, vi tu anuncio. ¿Me cotizas?",
+            "hora": "18:02"
+          },
+          {
+            "de": "cliente",
+            "texto": "¿Hola? ¿Sigues por ahí?",
+            "hora": "18:40"
+          },
+          {
+            "de": "cliente",
+            "texto": "Gracias, buscaré otra opción.",
+            "hora": "19:15"
+          }
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Con un CRM, [[nadie se pierde]] en el camino.",
+      "acento": "un cliente, una etapa →",
+      "bloque": {
+        "tipo": "lista",
+        "items": [
+          "Cada mensaje queda registrado",
+          "Cada cliente tiene su etapa",
+          "Nadie se queda sin respuesta"
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Ves en qué paso está [[cada cliente]].",
+      "acento": "CRM a tu medida →",
+      "bloque": {
+        "tipo": "pipeline",
+        "etiqueta": "CRM a tu medida",
+        "columnas": [
+          {
+            "titulo": "Nuevo",
+            "tarjetas": [
+              {
+                "nombre": "Camila",
+                "detalle": "Instagram"
+              },
+              {
+                "nombre": "Diego",
+                "detalle": "Web"
+              },
+              {
+                "nombre": "Paula",
+                "detalle": "Anuncio"
+              }
+            ]
+          },
+          {
+            "titulo": "Contactado",
+            "tarjetas": [
+              {
+                "nombre": "Rodrigo",
+                "detalle": "WhatsApp"
+              },
+              {
+                "nombre": "Andrea",
+                "detalle": "Instagram"
+              }
+            ]
+          },
+          {
+            "titulo": "Cotizado",
+            "tarjetas": [
+              {
+                "nombre": "Marcela",
+                "detalle": "espera respuesta",
+                "caliente": true
+              }
+            ]
+          },
+          {
+            "titulo": "Cerrado",
+            "tarjetas": [
+              {
+                "nombre": "Felipe",
+                "detalle": "cliente nuevo"
+              }
+            ]
+          }
+        ],
+        "nota": "Ejemplo ilustrativo"
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "¿Quieres verlo en tu negocio? [[Te lo mostramos en vivo]].",
+      "acento": "desde Concepción para todo Chile",
+      "bloque": {
+        "tipo": "cta",
+        "texto": "Ordenamos cómo llegan, se agendan y se siguen tus clientes por WhatsApp e Instagram.",
+        "boton": "Escríbenos por WhatsApp →",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

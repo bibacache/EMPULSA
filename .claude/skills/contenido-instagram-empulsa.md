@@ -1,18 +1,19 @@
 ---
 name: contenido-instagram-empulsa
-description: "Genera contenido orgánico para el Instagram de Empulsa (agencia de Concepción que ofrece desarrollo web y SEO, Meta Ads, CRM a medida y agente de IA de atención) con formatos creativos que NO repiten el mismo molde: editorial, chat de WhatsApp, boleta, tier list, buscador, carta manuscrita. Escribe el copy, genera las imágenes desde un JSON, los captions y el manifest semanal que lee la automatización de Make. Triggers: 'hazme un post para instagram', 'necesito contenido para empulsa', 'genera un carrusel sobre X', 'dame ideas de contenido', 'hazme el calendario de esta semana', 'contenido para redes de empulsa', 'mejora el instagram de empulsa'."
+description: "Genera contenido orgánico para el Instagram de Empulsa (agencia de Concepción que ofrece desarrollo web y SEO, Meta Ads, CRM a medida, agente de IA de atención y email marketing) con formatos creativos que NO repiten el mismo molde: editorial, chat de WhatsApp, boleta, tier list, buscador, carta manuscrita. Escribe el copy, genera las imágenes desde un JSON, los captions y el manifest semanal que lee la automatización de Make. Triggers: 'hazme un post para instagram', 'necesito contenido para empulsa', 'genera un carrusel sobre X', 'dame ideas de contenido', 'hazme el calendario de esta semana', 'contenido para redes de empulsa', 'mejora el instagram de empulsa'."
 ---
 
 # Contenido Instagram Empulsa
 
-Cuenta real: instagram.com/empulsa.cl. Empulsa es una agencia de Concepción que ofrece a negocios de Chile exactamente cuatro servicios:
+Cuenta real: instagram.com/empulsa.cl. Empulsa es una agencia de Concepción que ofrece a negocios de Chile exactamente cinco servicios:
 
 1. **Desarrollo web y SEO**: páginas web y posicionamiento en Google.
 2. **Campañas de Meta Ads**.
 3. **CRM a medida**: ordena cómo llegan, se agendan y se siguen los clientes por WhatsApp e Instagram. Se habla de "tu CRM"; **no menciones la plataforma de terceros sobre la que corre**.
 4. **Agente de IA de atención**: responde los chats con un guion armado junto al cliente.
+5. **Email marketing**: correos automáticos (bienvenida, carrito abandonado, reactivación) con la voz del negocio.
 
-**No ofrezcas ni des a entender que Empulsa hace Google Ads, email marketing ni "automatizaciones" en general**: no son la oferta actual. Todo el contenido debe llevar, de forma directa o indirecta, a uno de esos 4 servicios.
+**No ofrezcas ni des a entender que Empulsa hace Google Ads ni "automatizaciones" genéricas**: no son la oferta actual. Todo el contenido debe llevar, de forma directa o indirecta, a uno de esos 5 servicios.
 
 ## Regla fundamental: nada genérico
 
@@ -78,7 +79,7 @@ Asignación por defecto de formatos:
 
 ## Pilares y temas
 
-Rota los 4 pilares: educativo, servicios, casos, marca. Los temas se ligan siempre a uno de los 4 servicios (web y SEO, Meta Ads, CRM, agente de IA): por ejemplo, qué pasa con un cliente que escribe fuera de horario, cómo se ve un seguimiento ordenado en un CRM, por qué una web sin SEO no aparece, errores de una campaña de Meta Ads. Si no hay datos reales para un caso de éxito, sustitúyelo por educativo o servicios y déjalo anotado en `NOTAS.md`. **Antes de elegir tema, lee los `NOTAS.md` de todas las semanas anteriores** (están en `empulsa/contenido/semana-*/NOTAS.md`) para no repetir ángulos ya publicados. Prioriza temas nuevos de agente de IA de atención, CRM, web y SEO, y Meta Ads. **No propongas temas de Google Ads ni de email marketing.**
+Rota los 4 pilares de contenido: educativo, servicios, casos, marca. Los temas se ligan siempre a uno de los 5 servicios (web y SEO, Meta Ads, CRM, agente de IA, email marketing): por ejemplo, qué pasa con un cliente que escribe fuera de horario, cómo se ve un seguimiento ordenado en un CRM, por qué una web sin SEO no aparece, errores de una campaña de Meta Ads, qué le pasa a un cliente que compró una vez y nadie le vuelve a escribir. Si no hay datos reales para un caso de éxito, sustitúyelo por educativo o servicios y déjalo anotado en `NOTAS.md`. **Antes de elegir tema, lee los `NOTAS.md` de todas las semanas anteriores** (están en `empulsa/contenido/semana-*/NOTAS.md`) para no repetir ángulos ya publicados. Prioriza temas nuevos de agente de IA de atención, CRM, web y SEO, Meta Ads y email marketing. **No propongas temas de Google Ads.**
 
 ## Caption (uno por pieza, `caption.txt`)
 
@@ -87,7 +88,7 @@ Rota los 4 pilares: educativo, servicios, casos, marca. Los temas se ligan siemp
 - Una idea de cierre que resuma la moraleja.
 - CTA suave: "Escríbenos y te mostramos una demo en vivo." y la línea `📩 DM o WhatsApp +56 9 3056 9940`. **En las piezas de tipo `carta` no pongas CTA ni teléfono.**
 - 4 a 6 hashtags, siempre incluye `#empulsa`.
-- Sin guiones, sin precios, sin promesas. Hashtags acordes a los 4 servicios (por ejemplo #crm #agenteia #paginaweb #seo #metaads), sin #googleads ni #emailmarketing.
+- Sin guiones, sin precios, sin promesas. Hashtags acordes a los 5 servicios (por ejemplo #crm #agenteia #paginaweb #seo #metaads #emailmarketing), sin #googleads.
 
 ## Procedimiento
 

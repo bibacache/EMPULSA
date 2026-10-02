@@ -46,5 +46,41 @@
     "imagen_4": "",
     "imagen_5": "",
     "imagen_6": ""
+  },
+  {
+    "carpeta": "viernes-carrusel-editorial-crm",
+    "tipo": "carrusel",
+    "programado_para": "2026-10-09T11:00:00-03:00",
+    "caption": "Te escriben interesados. ¿Quién les da seguimiento? 📲\n\n→ Un mensaje sin respuesta a tiempo es un cliente que busca otra opción\n→ Con un CRM, cada cliente tiene su etapa y nadie se pierde\n→ Ves de un vistazo quién escribió, quién cotizó y quién falta por responder\n\nEl orden no es un lujo: es lo que evita que se te enfríen los clientes.\n\nEscríbenos y te mostramos una demo en vivo.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#crm #seguimientodeclientes #atencionalcliente #pymes #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/viernes-carrusel-editorial-crm/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/viernes-carrusel-editorial-crm/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/viernes-carrusel-editorial-crm/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/viernes-carrusel-editorial-crm/slide-4.jpg",
+    "imagen_5": "",
+    "imagen_6": ""
+  },
+  {
+    "carpeta": "sabado-carrusel-editorial-email",
+    "tipo": "carrusel",
+    "programado_para": "2026-10-10T11:00:00-03:00",
+    "caption": "Compró una vez. ¿Y después? 📩\n\n→ Cada cliente que se registra, compra o deja un carrito ya te conoce\n→ Un correo de bienvenida, un recordatorio y un mensaje para quien hace tiempo no vuelve trabajan solos\n→ La clave no es enviar más, es enviar el correo correcto en el momento correcto\n\nEstar presente cuando el cliente se acuerda de ti vale más que buscar uno nuevo.\n\nEscríbenos y te mostramos una demo en vivo.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#emailmarketing #fidelizacion #pymes #ecommerce #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/sabado-carrusel-editorial-email/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/sabado-carrusel-editorial-email/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/sabado-carrusel-editorial-email/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/sabado-carrusel-editorial-email/slide-4.jpg",
+    "imagen_5": "",
+    "imagen_6": ""
+  },
+  {
+    "carpeta": "domingo-carrusel-carta-descanso",
+    "tipo": "carrusel",
+    "programado_para": "2026-10-11T11:00:00-03:00",
+    "caption": "Para quien responde mensajes mientras cena.\n\nAbrir cuando sientas que el negocio depende solo de ti.\n\nTu domingo: revisar el WhatsApp, responder \"¿precio?\", mirar las ventas. Y lo único que no alcanzaste a hacer: descansar sin culpa.\n\nTu negocio puede trabajar aunque tú descanses. Responder y dar seguimiento se puede hacer de otra forma.\n\nEmpieza por lo que más tiempo te quita.\n\n#emprendedores #pymes #negociosdigitales #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/domingo-carrusel-carta-descanso/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/domingo-carrusel-carta-descanso/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-05/domingo-carrusel-carta-descanso/slide-3.jpg",
+    "imagen_4": "",
+    "imagen_5": "",
+    "imagen_6": ""
   }
 ]
