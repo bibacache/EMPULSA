@@ -1,0 +1,44 @@
+{
+  "formato": "buscador",
+  "slides": [
+    {
+      "consulta": "panadería el trigal",
+      "titulo": "Le recomendaron tu negocio.\nBuscó tu nombre.",
+      "resultados": [
+        {
+          "url": "facebook.com/eltrigal.example",
+          "titulo": "Panadería El Trigal",
+          "descripcion": "Última publicación hace 2 años. Sin horario ni dirección visible.",
+          "estrellas": "★★★☆☆ 3,1 · 8 reseñas"
+        },
+        {
+          "url": "www.directorio.example",
+          "titulo": "Negocios de tu comuna",
+          "descripcion": "Listado genérico sin información de contacto."
+        }
+      ]
+    },
+    {
+      "consulta": "panadería el trigal",
+      "resultados": [
+        { "tipo": "fantasma", "url": "Resultado 1", "titulo": "Panadería El Trigal (Facebook, 2024)" },
+        { "tipo": "fantasma", "url": "Resultado 2", "titulo": "Negocios de tu comuna" },
+        { "tipo": "separador", "texto": "…y nada más…" },
+        {
+          "tipo": "tuyo",
+          "url": "tu negocio",
+          "titulo": "Tu nombre, sin web propia",
+          "descripcion": "Solo una publicación vieja. Quien te buscó no supo si seguías abierto."
+        }
+      ],
+      "remate": "Te recomendaron.\nNo quedó claro que seguías ahí."
+    },
+    {
+      "cta": {
+        "titulo": "Que tu nombre lleve a algo actualizado.",
+        "texto": "Escríbenos y te mostramos en una demo en vivo cómo aparece hoy un negocio como el tuyo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

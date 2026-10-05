@@ -1,0 +1,39 @@
+{
+  "formato": "tierlist",
+  "slides": [
+    {
+      "titulo": "Tier list: cómo respondes tus mensajes",
+      "filas": [
+        ["S", "?"],
+        ["A", "?"],
+        ["B", "?"],
+        ["C", "?"],
+        ["D", "?"]
+      ]
+    },
+    {
+      "titulo": "¿Dónde queda el tuyo?",
+      "filas": [
+        ["S", "Responde en minutos, con precio y horario"],
+        ["A", "Responde el mismo día, falta algún dato"],
+        ["B", "Copia y pega la misma respuesta siempre"],
+        ["C", "Solo dice \"hora\" sin decir precio ni cómo seguir"],
+        ["D", "El mensaje queda en visto"]
+      ]
+    },
+    {
+      "zoom": {
+        "letra": "D",
+        "titulo": "El mensaje queda en visto.",
+        "texto": "Quien preguntó ya le escribió a otro negocio."
+      }
+    },
+    {
+      "cta": {
+        "titulo": "¿En qué tier está tu negocio?",
+        "texto": "Cuéntanos en comentarios. Escríbenos y lo revisamos juntos en una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

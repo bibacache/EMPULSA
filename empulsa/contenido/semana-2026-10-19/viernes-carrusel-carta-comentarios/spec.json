@@ -1,0 +1,29 @@
+{
+  "formato": "carta",
+  "slides": [
+    {
+      "tipo": "sobre",
+      "para": "Para quien contesta comentarios\ncon su celular, antes de dormir.",
+      "rotulo": "Abrir cuando sientas que nunca alcanza el día."
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Hoy también:",
+      "hechas": [
+        "Subiste la historia",
+        "Contestaste mensajes",
+        "Reenviaste el link",
+        "Revisaste las vistas"
+      ],
+      "pendiente": "Sentarte a planear la semana",
+      "remate": "Nunca alcanza el día."
+    },
+    {
+      "tipo": "carta",
+      "destacado": "Nadie abre un negocio para vivir pegado al celular.",
+      "texto": "Si hoy respondiste todo, ya hiciste harto.",
+      "pd": "P.D. El orden se puede armar de a poco. Esta noche, descansa.",
+      "firma": "Con cariño, Empulsa"
+    }
+  ]
+}

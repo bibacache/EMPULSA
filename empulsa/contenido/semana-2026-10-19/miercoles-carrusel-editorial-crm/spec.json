@@ -1,0 +1,79 @@
+{
+  "formato": "editorial",
+  "slides": [
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Un papelito, una libreta, [[la memoria]].",
+      "acento": "así se pierden clientes →",
+      "bloque": {
+        "tipo": "lista",
+        "items": [
+          "Un nombre anotado en un papel",
+          "Un número guardado en el celular de una sola persona",
+          "Nadie recuerda bien a quién le tocaba llamar"
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Con tu CRM, [[todo queda en un lugar]].",
+      "acento": "sin papelitos →",
+      "bloque": {
+        "tipo": "pipeline",
+        "etiqueta": "CRM a tu medida",
+        "columnas": [
+          {
+            "titulo": "Nuevo",
+            "tarjetas": [
+              { "nombre": "Camila", "detalle": "Instagram" },
+              { "nombre": "Diego", "detalle": "WhatsApp" }
+            ]
+          },
+          {
+            "titulo": "Contactado",
+            "tarjetas": [
+              { "nombre": "Andrea", "detalle": "Llamada" }
+            ]
+          },
+          {
+            "titulo": "Cotizado",
+            "tarjetas": [
+              { "nombre": "Marcela", "detalle": "espera respuesta", "caliente": true }
+            ]
+          },
+          {
+            "titulo": "Cliente",
+            "tarjetas": [
+              { "nombre": "Felipe", "detalle": "seguimiento" }
+            ]
+          }
+        ],
+        "nota": "Ejemplo ilustrativo"
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Sabes [[quién falta por llamar]].",
+      "acento": "cada mañana →",
+      "bloque": {
+        "tipo": "lista",
+        "items": [
+          "Lo que entró ayer, ordenado",
+          "Lo que falta por responder, visible",
+          "Nada depende de la memoria de una sola persona"
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "¿Quieres verlo en tu negocio? [[Te lo mostramos en vivo]].",
+      "acento": "desde Concepción para todo Chile",
+      "bloque": {
+        "tipo": "cta",
+        "texto": "Ordenamos cómo llegan, se agendan y se siguen tus clientes, sin depender de la memoria de nadie.",
+        "boton": "Escríbenos por WhatsApp →",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

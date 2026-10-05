@@ -1,0 +1,58 @@
+{
+  "formato": "editorial",
+  "slides": [
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Las mismas tres preguntas, [[todo el día]].",
+      "acento": "desliza →",
+      "bloque": {
+        "tipo": "chat",
+        "etiqueta": "WhatsApp · lunes 10:15",
+        "mensajes": [
+          { "de": "cliente", "texto": "Hola, ¿cuál es su horario de atención?", "hora": "10:15" },
+          { "de": "cliente", "texto": "¿Hacen despacho a domicilio?", "hora": "11:02" },
+          { "de": "cliente", "texto": "¿Dónde están ubicados?", "hora": "12:30" }
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Un agente de IA [[las responde por ti]].",
+      "acento": "con tu guion →",
+      "bloque": {
+        "tipo": "chat",
+        "etiqueta": "Mismo tipo de pregunta, con agente",
+        "mensajes": [
+          { "de": "cliente", "texto": "Hola, ¿cuál es su horario de atención?", "hora": "10:15" },
+          { "de": "agente", "texto": "¡Hola! Atendemos de lunes a sábado, de 9:00 a 19:00.", "hora": "10:15" },
+          { "de": "cliente", "texto": "¿Y hacen despacho a domicilio?", "hora": "10:16" },
+          { "de": "agente", "texto": "Sí, a toda la ciudad. ¿Quieres que te cuente los detalles?", "hora": "10:16" }
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "El mismo guion, [[las veces que haga falta]].",
+      "acento": "sin que nadie se canse →",
+      "bloque": {
+        "tipo": "lista",
+        "items": [
+          "Responde horario, ubicación y despacho",
+          "Sigue el guion armado junto a ti",
+          "Nunca dice \"ahora te reviso\" y se olvida"
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "¿Quieres ver cómo responde? [[Te lo mostramos en vivo]].",
+      "acento": "desde Concepción para todo Chile",
+      "bloque": {
+        "tipo": "cta",
+        "texto": "Un agente de IA con tu guion para que las preguntas repetidas no te quiten el día.",
+        "boton": "Escríbenos por WhatsApp →",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}
