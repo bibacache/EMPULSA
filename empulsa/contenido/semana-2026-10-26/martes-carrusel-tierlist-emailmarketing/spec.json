@@ -1,0 +1,39 @@
+{
+  "formato": "tierlist",
+  "slides": [
+    {
+      "titulo": "Tier list: tus correos a clientes",
+      "filas": [
+        ["S", "?"],
+        ["A", "?"],
+        ["B", "?"],
+        ["C", "?"],
+        ["D", "?"]
+      ]
+    },
+    {
+      "titulo": "¿Dónde queda el tuyo?",
+      "filas": [
+        ["S", "Bienvenida y carrito abandonado automáticos"],
+        ["A", "Un correo de bienvenida armado"],
+        ["B", "Correos sueltos, sin automatizar"],
+        ["C", "Solo promociones, nunca un gracias"],
+        ["D", "Nunca les escribes después de que compran"]
+      ]
+    },
+    {
+      "zoom": {
+        "letra": "D",
+        "titulo": "Nunca les escribes después de que compran.",
+        "texto": "Compraron una vez y para tu negocio dejaron de existir."
+      }
+    },
+    {
+      "cta": {
+        "titulo": "¿En qué tier están tus correos?",
+        "texto": "Escríbenos y te mostramos una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

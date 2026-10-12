@@ -1,0 +1,57 @@
+{
+  "formato": "editorial",
+  "slides": [
+    {
+      "titulo": "Preguntó por tu anuncio. [[Nadie respondió]]",
+      "acento": "la lead se enfrió →",
+      "bloque": {
+        "tipo": "chat",
+        "etiqueta": "Meta Ads · mensaje directo",
+        "mensajes": [
+          { "de": "cliente", "texto": "Hola, vi el anuncio. ¿Está disponible esta semana?", "hora": "09:14" },
+          { "de": "cliente", "texto": "¿Siguen viendo mensajes?", "hora": "09:50" },
+          { "de": "cliente", "texto": "Ya encontré otra opción, gracias", "hora": "11:30" }
+        ]
+      }
+    },
+    {
+      "titulo": "Un agente de IA [[responde al momento]]",
+      "acento": "mismo guion, mismo tono →",
+      "bloque": {
+        "tipo": "chat",
+        "etiqueta": "Mismo mensaje, 09:14",
+        "mensajes": [
+          { "de": "cliente", "texto": "Hola, vi el anuncio. ¿Está disponible esta semana?", "hora": "09:14" },
+          { "de": "agente", "texto": "¡Hola! Sí, tenemos espacio el jueves y el viernes. ¿Cuál te acomoda?", "hora": "09:14" },
+          { "de": "cliente", "texto": "El viernes", "hora": "09:15" },
+          { "de": "agente", "texto": "Quedó anotado. Te confirmamos por este mismo chat.", "hora": "09:15" }
+        ]
+      }
+    },
+    {
+      "titulo": "Y la lead del anuncio [[queda en tu CRM]]",
+      "acento": "nada se pierde →",
+      "bloque": {
+        "tipo": "pipeline",
+        "etiqueta": "Leads desde Meta Ads",
+        "columnas": [
+          { "titulo": "Nuevo", "tarjetas": [{ "nombre": "Lead anuncio A", "detalle": "hoy" }, { "nombre": "Lead anuncio B", "detalle": "ayer" }] },
+          { "titulo": "Contactado", "tarjetas": [{ "nombre": "Lead anuncio C", "detalle": "respondido" }] },
+          { "titulo": "Cotizado", "tarjetas": [{ "nombre": "Lead anuncio D", "detalle": "viernes", "caliente": true }] },
+          { "titulo": "Cliente", "tarjetas": [{ "nombre": "Lead anuncio E", "detalle": "seguimiento" }] }
+        ],
+        "nota": "Ejemplo ilustrativo"
+      }
+    },
+    {
+      "titulo": "¿Quieres ver cómo queda [[ordenado]]?",
+      "acento": "te lo mostramos en vivo",
+      "bloque": {
+        "tipo": "cta",
+        "texto": "Meta Ads, agente de IA y CRM trabajando juntos para que ninguna lead se enfríe.",
+        "boton": "Escríbenos por WhatsApp →",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

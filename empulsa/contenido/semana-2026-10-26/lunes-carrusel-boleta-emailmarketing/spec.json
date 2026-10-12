@@ -1,0 +1,50 @@
+{
+  "formato": "boleta",
+  "slides": [
+    {
+      "fondo": "#2f2a1a",
+      "subtitulo": "BOLETA N° 0004",
+      "titulo": "Lo que te cuesta\nno tener email marketing",
+      "meta": [
+        ["Fecha", "cada compra"],
+        ["Atendió", "nadie"]
+      ]
+    },
+    {
+      "fondo": "#1f3b34",
+      "subtitulo": "DETALLE",
+      "lineas": [
+        {
+          "periodo": "cada carro abandonado",
+          "texto": "Una compra que no se recupera"
+        },
+        {
+          "periodo": "cada compra única",
+          "texto": "Un cliente que nunca vuelve a saber de ti"
+        },
+        {
+          "periodo": "cada cumpleaños",
+          "texto": "Un saludo que no llega"
+        }
+      ],
+      "codigo": false,
+      "y": 170
+    },
+    {
+      "fondo": "#5a1f1a",
+      "subtitulo": "TOTAL",
+      "total": "Lo que hoy\nno estás cobrando",
+      "pie": "Se cobra cada mes",
+      "sello": "PENDIENTE"
+    },
+    {
+      "fondo": "#efe6cf",
+      "y": 260,
+      "cta": {
+        "titulo": "Esta cuenta se puede parar.",
+        "texto": "Escríbenos y te mostramos una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}
