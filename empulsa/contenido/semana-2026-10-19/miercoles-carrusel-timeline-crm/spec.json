@@ -1,0 +1,63 @@
+{
+  "formato": "timeline",
+  "slides": [
+    {
+      "titulo": "Sin CRM: un interesado en [[72 horas]]",
+      "nota": "Ejemplo ilustrativo",
+      "hitos": [
+        {
+          "hora": "Lunes 10:15",
+          "texto": "Pregunta por una cotización por Instagram",
+          "estado": "neutro"
+        },
+        {
+          "hora": "Martes 09:00",
+          "texto": "Nadie sabe a quién le tocaba responder",
+          "estado": "mal"
+        },
+        {
+          "hora": "Miércoles 16:30",
+          "texto": "Alguien lo recuerda y le escribe",
+          "estado": "mal"
+        },
+        {
+          "hora": "Jueves 10:00",
+          "texto": "Ya contrató a otro negocio",
+          "estado": "mal"
+        }
+      ]
+    },
+    {
+      "titulo": "Con CRM: las mismas [[72 horas]]",
+      "nota": "Ejemplo ilustrativo",
+      "hitos": [
+        {
+          "hora": "Lunes 10:15",
+          "texto": "Queda registrado en Nuevo, con quién lo atiende",
+          "estado": "ok"
+        },
+        {
+          "hora": "Martes 09:00",
+          "texto": "Aparece como pendiente de responder",
+          "estado": "ok"
+        },
+        {
+          "hora": "Miércoles 11:00",
+          "texto": "Se envía la cotización y pasa a Cotizado",
+          "estado": "ok"
+        },
+        {
+          "hora": "Jueves 10:00",
+          "texto": "Seguimiento listo para cerrar",
+          "estado": "ok"
+        }
+      ]
+    },
+    {
+      "cta": {
+        "titulo": "¿Quieres ver tu [[CRM a tu medida]]?",
+        "texto": "Cada cliente en un solo lugar, con su siguiente paso. Te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "formato": "antesdespues",
+  "slides": [
+    {
+      "portada": {
+        "titulo": "Tu negocio, [[antes y después]] de tener web",
+        "sub": "La misma pregunta en dos escenas: ¿el cliente te encuentra?"
+      }
+    },
+    {
+      "partido": {
+        "antes": {
+          "etiqueta": "Antes",
+          "items": [
+            "Solo una página de Facebook, sin horario ni dirección",
+            "El cliente duda si sigues abierto",
+            "Le escribe a otro negocio, por si acaso"
+          ]
+        },
+        "despues": {
+          "etiqueta": "Después",
+          "items": [
+            "Web con horario, mapa y botón de WhatsApp",
+            "El cliente confirma en segundos",
+            "Te escribe directo a ti"
+          ]
+        }
+      }
+    },
+    {
+      "partido": {
+        "antes": {
+          "etiqueta": "Antes",
+          "items": [
+            "Buscan tu rubro en tu comuna",
+            "Aparecen otros negocios, tú no"
+          ]
+        },
+        "despues": {
+          "etiqueta": "Después",
+          "items": [
+            "Tu web trabaja para aparecer cuando buscan lo que ofreces",
+            "Tu nombre lleva a información actual"
+          ]
+        }
+      }
+    },
+    {
+      "cierre": {
+        "titulo": "¿Cuál de los dos [[eres hoy]]?",
+        "texto": "Cuéntanos en comentarios. Si quieres verlo con tu negocio, te mostramos una demo en vivo.",
+        "pie": "Desde Concepción para todo Chile"
+      }
+    }
+  ]
+}

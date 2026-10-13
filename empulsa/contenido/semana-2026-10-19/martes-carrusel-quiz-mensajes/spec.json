@@ -1,0 +1,52 @@
+{
+  "formato": "quiz",
+  "slides": [
+    {
+      "pregunta": {
+        "kicker": "Pregunta rápida",
+        "pregunta": "Un cliente escribe a las 22:30 por un servicio. ¿Qué respuesta lo [[acerca más a comprar]]?",
+        "opciones": [
+          {
+            "l": "A",
+            "t": "Mañana a primera hora te respondo."
+          },
+          {
+            "l": "B",
+            "t": "Hola, ¿en qué te puedo ayudar?"
+          },
+          {
+            "l": "C",
+            "t": "Hola, depende de lo que necesites. ¿Me cuentas qué buscas y te agendo una hora?"
+          }
+        ]
+      }
+    },
+    {
+      "respuesta": {
+        "kicker": "Respuesta",
+        "correcta": "C",
+        "opciones": [
+          {
+            "l": "A",
+            "t": "Mañana a primera hora te respondo."
+          },
+          {
+            "l": "B",
+            "t": "Hola, ¿en qué te puedo ayudar?"
+          },
+          {
+            "l": "C",
+            "t": "Hola, depende de lo que necesites. ¿Me cuentas qué buscas y te agendo una hora?"
+          }
+        ],
+        "explicacion": "[[La C]] responde, pide un dato y deja el siguiente paso listo. Un agente de IA con guion puede hacerlo a cualquier hora."
+      }
+    },
+    {
+      "cta": {
+        "titulo": "¿Tus mensajes [[se contestan solos]] cuando tú no puedes?",
+        "texto": "Agente de IA con guion armado contigo. Te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

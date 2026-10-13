@@ -1,0 +1,33 @@
+{
+  "formato": "mito",
+  "slides": [
+    {
+      "portada": {
+        "titulo": "Agente de IA",
+        "sub": "Dos ideas sobre atender con IA"
+      }
+    },
+    {
+      "mito": {
+        "etiqueta": "Lo que se dice",
+        "frase": "Un agente de IA reemplaza a tu equipo.",
+        "veredicto": "MITO",
+        "explicacion": "Se ocupa de las preguntas repetidas. Tu equipo atiende lo que necesita a una persona."
+      }
+    },
+    {
+      "mito": {
+        "etiqueta": "Lo que se dice",
+        "frase": "Un agente de IA puede responder fuera de horario.",
+        "veredicto": "REALIDAD",
+        "explicacion": "A las 22:00 o un domingo, el cliente recibe respuesta con tu guion y no queda sin atender."
+      }
+    },
+    {
+      "cta": {
+        "titulo": "¿Quieres ver cómo [[responde el tuyo]]?",
+        "texto": "Armamos el guion contigo y te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 // Genera un carrusel 1080x1350 (4:5) de un formato creativo SIN imagen externa, a partir de un JSON.
 // Uso: node render_formato.js "<spec.json>" "<carpeta_salida>"   ->   slide-1.jpg, slide-2.jpg, ...
-// spec.json = { "formato": "whatsapp|boleta|carta|tierlist|buscador|editorial", "slides": [ {...}, ... ] }  (ver la skill para los campos)
+// spec.json = { "formato": "whatsapp|boleta|carta|tierlist|buscador|editorial|mito|email|antesdespues|timeline|quiz", "slides": [ {...}, ... ] }  (ver la skill para los campos)
 // Portable: usa solo fuentes incluidas en ./fonts (Inter, Courier Prime, Caveat, Playfair Display), funciona igual en Mac y Linux.
 const path = require("path");
 const fs = require("fs");
@@ -80,13 +80,13 @@ const caCss = `body{background:#3a2616;background-image:repeating-linear-gradien
 .note{margin-top:36px;font-size:78px;line-height:1.05;font-weight:700}
 .letter{left:110px;top:120px;width:860px;height:1090px;transform:rotate(-1.4deg);padding:90px 80px 70px;display:flex;flex-direction:column;gap:40px;justify-content:center}
 .letter .t{font-size:82px;line-height:1.1}.letter .g{font-size:100px;line-height:1;font-weight:700}.pd{font-size:66px;line-height:1.1;color:#5a3a1c}.sig{font-size:86px;font-weight:700;color:#8c1d12;text-align:right}
-.ring{position:absolute;right:60px;bottom:40px;width:230px;height:230px;border-radius:50%;border:16px solid rgba(110,70,30,.28)}
+.fx{display:flow-root}.fi{display:flex;flex-direction:column;gap:40px}.ring{position:absolute;right:60px;bottom:40px;width:230px;height:230px;border-radius:50%;border:16px solid rgba(110,70,30,.28)}
 .clip{position:absolute;right:120px;top:-30px;width:44px;height:150px;border:8px solid #9a9a9a;border-radius:24px;transform:rotate(-8deg);z-index:2}`;
 function carta(s) {
   let b = "";
   if (s.tipo === "sobre") b = `<div class="sheet env"><div class="flap"></div><div class="seal">E</div><div class="addr">${nl(s.para)}</div></div><div class="lbl">${nl(s.rotulo || "")}</div>`;
-  else if (s.tipo === "lista") b = `<div class="sheet list ruled"><h2>${nl(s.titulo)}</h2>${(s.hechas || []).map((t) => `<div class="it d">${esc(t)}</div>`).join("")}<div class="it p"><div class="circ"></div>${esc(s.pendiente)}</div><div class="note">${nl(s.remate || "")}</div></div>`;
-  else b = `<div class="sheet letter ruled"><div class="clip"></div><div class="ring"></div>${s.destacado ? `<div class="g">${nl(s.destacado)}</div>` : ""}${s.texto ? `<div class="t">${nl(s.texto)}</div>` : ""}${s.pd ? `<div class="pd">${nl(s.pd)}</div>` : ""}${s.firma ? `<div class="sig">${nl(s.firma)}</div>` : ""}</div>`;
+  else if (s.tipo === "lista") b = `<div class="sheet list ruled"><div class="fx" data-fit="950"><h2>${nl(s.titulo)}</h2>${(s.hechas || []).map((t) => `<div class="it d">${esc(t)}</div>`).join("")}<div class="it p"><div class="circ"></div>${esc(s.pendiente)}</div><div class="note">${nl(s.remate || "")}</div></div></div>`;
+  else b = `<div class="sheet letter ruled"><div class="clip"></div><div class="ring"></div><div class="fi" data-fit="930">${s.destacado ? `<div class="g">${nl(s.destacado)}</div>` : ""}${s.texto ? `<div class="t">${nl(s.texto)}</div>` : ""}${s.pd ? `<div class="pd">${nl(s.pd)}</div>` : ""}${s.firma ? `<div class="sig">${nl(s.firma)}</div>` : ""}</div></div>`;
   return { css: caCss, handle: "background:rgba(0,0,0,.5);color:#f4ead2", body: b };
 }
 /* ---------------- tierlist ---------------- */
@@ -104,7 +104,7 @@ function tierlist(s) {
   return { ...h, body: `<h1 ${s.filas && s.filas.length && !s.titulo ? "" : ""}>${nl(s.titulo || "")}</h1><div class="tb" style="top:${s.titulo && s.titulo.length > 30 ? 330 : 250}px">${filas}</div>` };
 }
 /* ---------------- buscador ---------------- */
-const buCss = `body{background:#f1f3f4;color:#202124}.sb{margin:70px 50px 0;height:140px;border-radius:70px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25);display:flex;align-items:center;padding:0 46px;font-size:54px;gap:24px}
+const buCss = `body{background:#f1f3f4;color:#202124}.fx{display:flow-root}.sb{margin:70px 50px 0;height:140px;border-radius:70px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25);display:flex;align-items:center;padding:0 46px;font-size:54px;gap:24px}
 .ttl{margin:50px 60px 0;font-size:90px;line-height:1.05;font-weight:800}.res{margin:30px 60px 0;background:#fff;border-radius:26px;padding:28px 40px;box-shadow:0 1px 4px rgba(0,0,0,.15)}
 .res .u{font-size:30px;color:#5f6368}.res .h{font-size:54px;color:#1a0dab;font-weight:600;margin:4px 0}.res .d{font-size:38px;color:#4d5156;line-height:1.25}.res .s{color:#e7a100;font-size:38px;margin-top:6px}
 .ghost{opacity:.35}.you{border:6px dashed #c0271e;background:#fff5f4}.pg{margin:30px 60px 0;font-size:52px;font-weight:800;color:#c0271e;text-align:center}
@@ -114,15 +114,15 @@ function buscador(s) {
   const h = { css: buCss, handle: "background:rgba(0,0,0,.08);color:#202124" };
   if (s.cta) return { ...h, body: `<div class="cta"><h1>${nl(s.cta.titulo)}</h1><p>${nl(s.cta.texto || "")}</p><div class="n">${esc(s.cta.telefono || PHONE)}</div></div>` };
   const res = (s.resultados || []).map((r) => r.tipo === "separador" ? `<div class="pg">${esc(r.texto)}</div>` : `<div class="res ${r.tipo === "fantasma" ? "ghost" : r.tipo === "tuyo" ? "you" : ""}"><div class="u">${esc(r.url || "")}</div><div class="h">${esc(r.titulo)}</div>${r.descripcion ? `<div class="d">${esc(r.descripcion)}</div>` : ""}${r.estrellas ? `<div class="s">${esc(r.estrellas)}</div>` : ""}</div>`).join("");
-  return { ...h, body: `<div class="sb">${MAG}<span>${esc(s.consulta || "")}</span></div>${s.titulo ? `<div class="ttl">${nl(s.titulo)}</div>` : ""}${res}${s.remate ? `<div class="ttl" style="font-size:76px;margin-top:40px">${nl(s.remate)}</div>` : ""}` };
+  return { ...h, body: `<div class="fx" data-fit="1250"><div class="sb">${MAG}<span>${esc(s.consulta || "")}</span></div>${s.titulo ? `<div class="ttl">${nl(s.titulo)}</div>` : ""}${res}${s.remate ? `<div class="ttl" style="font-size:76px;margin-top:40px">${nl(s.remate)}</div>` : ""}</div>` };
 }
 
 /* ---------------- editorial (fondo crema, titular serif con marcador amarillo, esquema) ---------------- */
 const SERIF = `"Playfair Display",Georgia,serif`;
 const edCss = `body{background:#F5EFE3;color:#1b1a17}
 .kick{position:absolute;top:66px;left:0;right:0;text-align:center;font:400 27px ${MONO};letter-spacing:.05em}
-.h{position:absolute;top:130px;left:64px;right:64px;text-align:center;font:500 84px/1.1 ${SERIF}}.h mark{background:#FFF59D;color:inherit;padding:0 14px;border-radius:4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
-.bd{position:absolute;left:64px;right:64px;top:470px;bottom:170px;display:flex;flex-direction:column;justify-content:center}
+.h{position:absolute;top:130px;left:64px;right:64px;text-align:center;font:500 84px/1.22 ${SERIF}}.h mark{background:linear-gradient(transparent 16%,#FFF59D 16%,#FFF59D 92%,transparent 92%);color:inherit;padding:0 14px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.bd{position:absolute;left:64px;right:64px;top:450px;bottom:170px;display:flex;flex-direction:column;justify-content:center}
 .lab{font:700 26px ${MONO};letter-spacing:.12em;text-transform:uppercase;text-align:center;color:#3a372f;margin-bottom:22px}
 .ft{position:absolute;left:64px;right:64px;bottom:58px;display:flex;justify-content:space-between;align-items:baseline}.ft b{font:700 34px ${SANS}}.ft i{font:italic 400 38px ${SERIF};color:#C8583A}.ft i s{font:400 36px ${SANS};font-style:normal;text-decoration:none;margin-left:8px}
 .card{background:#fff;border-radius:22px;box-shadow:0 6px 18px rgba(60,40,20,.10)}
@@ -149,9 +149,123 @@ function editorial(s) {
     body = `${b.etiqueta ? `<div class="lab">${esc(b.etiqueta)}</div>` : ""}<div class="flow"><svg viewBox="0 0 952 640" fill="none" stroke="#C8583A" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round">${paths}</svg>${L.map((t, i) => `<div class="chip" style="left:0;top:${ly[i]}px"><i style="background:${t.color || "#ddd"}"></i>${esc(t.texto || t)}</div>`).join("")}<div class="core"><b>${esc(b.centroEtiqueta || "")}</b>${esc(b.centro || "")}</div>${R.map((t, i) => `<div class="chip" style="right:0;top:${ry[i]}px"><i style="background:${t.color || "#C8583A"}"></i>${esc(t.texto || t)}</div>`).join("")}</div>`;
   } else if (b.tipo === "lista") body = `<div class="list">${(b.items || []).map((t) => `<div class="card li"><b>✓</b><span>${nl(t)}</span></div>`).join("")}</div>`;
   else if (b.tipo === "cta") body = `<div class="cta"><p>${nl(b.texto || "")}</p><div class="pill">${esc(b.boton || "Te respondemos por WhatsApp")}</div><div class="tel">${esc(b.telefono || PHONE)}</div>${b.pie ? `<p style="font-size:32px;margin:12px 0 0;opacity:.75">${nl(b.pie)}</p>` : ""}</div>`;
-  return { css: edCss, handle: "display:none", body: `<div class="kick">${esc(s.kicker || "empulsa.cl")}</div><div class="h">${hl(s.titulo)}</div><div class="bd">${body}</div><div class="ft"><b>@empulsa.cl</b><i>${esc((s.acento || "").replace(/\s*→$/, ""))}${/→$/.test(s.acento || "") ? "<s>→</s>" : ""}</i></div>` };
+  return { css: edCss, handle: "display:none", body: `<div class="kick">${esc(s.kicker || "empulsa.cl")}</div><div class="h">${hl(s.titulo)}</div><div class="bd"><div data-fit="730">${body}</div></div><div class="ft"><b>@empulsa.cl</b><i>${esc((s.acento || "").replace(/\s*→$/, ""))}${/→$/.test(s.acento || "") ? "<s>→</s>" : ""}</i></div>` };
 }
-const FORMATOS = { whatsapp, boleta, carta, tierlist, buscador, editorial };
+
+/* ============ FORMATOS NUEVOS: cada uno con su propio mundo visual y su propia dinámica ============ */
+const ctaCss = (fg, btn, btnFg) => `.ct{position:absolute;inset:0;padding:120px 70px 140px;display:flex;flex-direction:column;justify-content:center;gap:40px}.ct h1{font:800 92px/1.06 ${SANS};letter-spacing:-.02em;color:${fg}}.ct h1 mark{background:none;color:var(--ac)}.ct p{font:500 50px/1.25 ${SANS};opacity:.92}.ct .n{align-self:flex-start;background:${btn};color:${btnFg};font:800 50px ${SANS};border-radius:20px;padding:22px 32px}.ct .pie{font:500 38px/1.3 ${SANS};opacity:.7}`;
+// d = { titulo, texto, telefono, pie }. Si d.sinTelefono es true, es un cierre con pregunta (sin botón).
+const ctaHtml = (d = {}) => `<div class="ct"><h1>${hl(d.titulo || "")}</h1>${d.texto ? `<p>${nl(d.texto)}</p>` : ""}${d.sinTelefono ? "" : `<div class="n">${esc(d.telefono || PHONE)}</div>`}${d.pie ? `<div class="pie">${nl(d.pie)}</div>` : ""}</div>`;
+const OSC = "background:rgba(255,255,255,.14);color:#fff", CLR = "background:rgba(0,0,0,.08);color:#222";
+
+/* ---------------- mito: MITO / REALIDAD con sello ---------------- */
+const VER = { MITO: "#E5372D", REALIDAD: "#2EC46B", "A MEDIAS": "#FFB020" };
+const miCss = `body{background:#141414;color:#f4f1ea;--ac:#FFB020}.fx{display:flow-root}mark{background:none;color:var(--ac)}
+.mi{position:absolute;inset:0;padding:110px 70px 130px;display:flex;flex-direction:column;justify-content:center}
+.mi .k{font:700 34px ${MONO};letter-spacing:.14em;text-transform:uppercase;color:#9d9a92;margin-bottom:34px}
+.mi .q{font:800 86px/1.06 ${SANS};letter-spacing:-.02em}
+.mi .v{align-self:flex-start;margin:54px 0 44px;border:12px solid var(--c);color:var(--c);font:900 118px/1 ${SANS};padding:10px 38px;border-radius:14px;transform:rotate(-5deg)}
+.mi .x{font:500 52px/1.25 ${SANS};color:#e6e2d8;padding-left:34px;border-left:10px solid var(--c)}
+.mi .big{font:900 156px/.95 ${SANS};letter-spacing:-.03em}.mi .big span{color:#FFB020}.mi .sub{font:500 56px/1.2 ${SANS};margin-top:50px;color:#cfcac0}
+.mi .tag{align-self:flex-start;background:#E5372D;color:#fff;font:800 40px ${SANS};padding:10px 28px;border-radius:12px;transform:rotate(-3deg);margin-bottom:44px}
+${ctaCss("#f4f1ea", "#25D366", "#053")}`;
+function mito(s) {
+  const h = { css: miCss, handle: OSC };
+  if (s.cta || s.cierre) return { ...h, body: ctaHtml({ ...(s.cta || s.cierre), sinTelefono: !!s.cierre }) };
+  if (s.portada) return { ...h, body: `<div class="mi"><div class="fx" data-fit="1110"><div class="tag">¿MITO O REALIDAD?</div><div class="big">${nl(s.portada.titulo)}</div><div class="sub">${nl(s.portada.sub || "")}</div></div></div>` };
+  const m = s.mito, c = VER[m.veredicto] || "#FFB020";
+  return { ...h, body: `<div class="mi" style="--c:${c}"><div class="fx" data-fit="1110"><div class="k">${esc(m.etiqueta || "Lo que se dice")}</div><div class="q">${nl(m.frase)}</div><div class="v">${esc(m.veredicto)}</div><div class="x">${nl(m.explicacion)}</div></div></div>` };
+}
+
+/* ---------------- email: bandeja de entrada y correo abierto ---------------- */
+const emCss = `body{background:#FAF8F4;color:#222;--ac:#E8590C}.fx{display:flow-root}mark{background:none;color:var(--ac)}
+.eh{margin:60px 50px 0;height:118px;border-radius:59px;background:#EFEBE3;display:flex;align-items:center;padding:0 40px;gap:24px;font:500 42px ${SANS};color:#7b766b}
+.et{margin:44px 60px 0;font:800 74px/1.06 ${SANS};letter-spacing:-.02em}.et mark{background:none;color:var(--ac)}
+.el{margin:38px 0 0;background:#fff;border-top:2px solid #eee}
+.er{display:flex;gap:26px;padding:28px 50px;border-bottom:2px solid #eee;align-items:flex-start;border-left:12px solid transparent}
+.er .av{flex:none;width:92px;height:92px;border-radius:50%;color:#fff;font:700 46px ${SANS};display:flex;align-items:center;justify-content:center}
+.er .tx{flex:1;min-width:0}.er .de{font:700 42px ${SANS};display:flex;justify-content:space-between;gap:14px}.er .de i{font:400 30px ${SANS};font-style:normal;color:#8a857a;white-space:nowrap}
+.er .as{font:700 38px/1.2 ${SANS};margin-top:4px}.er .vi{font:400 34px/1.25 ${SANS};color:#6b665c;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.er.read .de,.er.read .as{font-weight:500}.er.hot{background:#FFF3E6;border-left-color:#E8590C}
+.rm{margin:44px 60px 0;font:800 70px/1.08 ${SANS};letter-spacing:-.02em}
+.mc{margin:58px 50px 0;background:#fff;border-radius:30px;box-shadow:0 8px 30px rgba(0,0,0,.12);padding:50px 50px 56px}
+.mc .as{font:800 62px/1.1 ${SANS};letter-spacing:-.01em}.mc .fr{display:flex;align-items:center;gap:22px;margin:30px 0 34px;padding-bottom:30px;border-bottom:2px solid #eee}
+.mc .fr .av{width:80px;height:80px;border-radius:50%;background:#E8590C;color:#fff;font:700 40px ${SANS};display:flex;align-items:center;justify-content:center}
+.mc .fr b{font:700 38px ${SANS};display:block}.mc .fr small{font:400 30px ${SANS};color:#8a857a}
+.mc p{font:400 46px/1.32 ${SANS};margin-bottom:26px}.mc .bt{display:inline-block;background:#E8590C;color:#fff;font:700 44px ${SANS};padding:24px 44px;border-radius:16px;margin-top:10px}
+.nt{margin:30px 60px 0;font:400 28px ${MONO};letter-spacing:.1em;text-transform:uppercase;color:#8a857a;text-align:center}
+${ctaCss("#222", "#E8590C", "#fff")}`;
+const AVC = ["#7B6CF6", "#2F9E6E", "#D9534F", "#C98A00", "#4F8FA3", "#8E5BB5"];
+function email(s) {
+  const h = { css: emCss, handle: CLR };
+  if (s.cta || s.cierre) return { ...h, body: ctaHtml({ ...(s.cta || s.cierre), sinTelefono: !!s.cierre }) };
+  if (s.bandeja) {
+    const b = s.bandeja;
+    const rows = (b.correos || []).map((c, i) => `<div class="er ${c.destacado ? "hot" : c.leido ? "read" : ""}"><div class="av" style="background:${c.destacado ? "#E8590C" : AVC[i % AVC.length]}">${esc((c.de || "?")[0])}</div><div class="tx"><div class="de"><span>${esc(c.de)}</span><i>${esc(c.hora || "")}</i></div><div class="as">${esc(c.asunto)}</div><div class="vi">${esc(c.vista || "")}</div></div></div>`).join("");
+    return { ...h, body: `<div class="fx" data-fit="1250"><div class="eh"><svg width="48" height="48" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="#7b766b" stroke-width="2.4" stroke-linecap="round"/></svg>${esc(b.buscar || "Buscar en el correo")}</div>${b.titulo ? `<div class="et">${hl(b.titulo)}</div>` : ""}<div class="el">${rows}</div>${b.remate ? `<div class="rm">${hl(b.remate)}</div>` : ""}</div>` };
+  }
+  const c = s.correo;
+  return { ...h, body: `<div class="fx" data-fit="1250">${c.titulo ? `<div class="et" style="margin-top:80px">${hl(c.titulo)}</div>` : ""}<div class="mc"><div class="as">${esc(c.asunto)}</div><div class="fr"><div class="av">${esc((c.de || "?")[0])}</div><div><b>${esc(c.de)}</b><small>para ti · ${esc(c.hora || "")}</small></div></div>${(c.parrafos || []).map((t) => `<p>${nl(t)}</p>`).join("")}${c.boton ? `<div class="bt">${esc(c.boton)}</div>` : ""}</div>${c.nota ? `<div class="nt">${esc(c.nota)}</div>` : ""}</div>` };
+}
+
+/* ---------------- antesdespues: pantalla partida ---------------- */
+const adCss = `body{background:#1F3D2E;color:#F3EEE2;--ac:#C6F432}.fx{display:flow-root}mark{background:none;color:var(--ac)}
+.top,.bot{position:absolute;left:0;right:0;padding:0 70px;display:flex;flex-direction:column;justify-content:center}
+.top{top:0;height:675px;background:#E7E3DB;color:#2a2823;padding-bottom:40px}.bot{top:675px;height:675px;padding-top:54px}
+.pill{align-self:flex-start;font:800 34px ${MONO};letter-spacing:.16em;text-transform:uppercase;border-radius:12px;padding:8px 24px;margin-bottom:24px}
+.top .pill{background:#2a2823;color:#E7E3DB}.bot .pill{background:#C6F432;color:#1F3D2E}
+.it2{font:600 50px/1.2 ${SANS};padding-left:70px;position:relative;margin-bottom:20px}.it2:before{position:absolute;left:0;top:0;font:800 54px ${SANS}}
+.top .it2:before{content:"✗";color:#C0392B}.bot .it2:before{content:"✓";color:#C6F432}
+.mid{position:absolute;left:50%;top:675px;width:112px;height:112px;margin:-56px 0 0 -56px;border-radius:50%;background:#C6F432;color:#1F3D2E;font:900 62px/112px ${SANS};text-align:center;z-index:2;box-shadow:0 6px 16px rgba(0,0,0,.3)}
+.pt{position:absolute;inset:0;padding:120px 70px 140px;display:flex;flex-direction:column;justify-content:center}.pt h1{font:800 104px/1.04 ${SANS};letter-spacing:-.02em}.pt h1 mark{background:none;color:var(--ac)}.pt p{font:500 54px/1.25 ${SANS};margin-top:44px;opacity:.9}
+${ctaCss("#F3EEE2", "#C6F432", "#1F3D2E")}`;
+function antesdespues(s) {
+  const h = { css: adCss, handle: OSC };
+  if (s.cta || s.cierre) return { ...h, body: ctaHtml({ ...(s.cta || s.cierre), sinTelefono: !!s.cierre }) };
+  if (s.portada) return { ...h, body: `<div class="pt"><h1>${hl(s.portada.titulo)}</h1>${s.portada.sub ? `<p>${nl(s.portada.sub)}</p>` : ""}</div>` };
+  const p = s.partido, li = (a) => (a.items || []).map((t) => `<div class="it2">${nl(t)}</div>`).join("");
+  return { ...h, body: `<div class="top"><div class="fx" data-fit="560"><div class="pill">${esc(p.antes.etiqueta || "Antes")}</div>${li(p.antes)}</div></div><div class="mid">↓</div><div class="bot"><div class="fx" data-fit="560"><div class="pill">${esc(p.despues.etiqueta || "Después")}</div>${li(p.despues)}</div></div>` };
+}
+
+/* ---------------- timeline: línea de tiempo vertical ---------------- */
+const TC = { mal: "#FF5A4D", ok: "#3DDC84", neutro: "#FFB020" };
+const tlCss = `body{background:#1B1A17;color:#F4EFE4;--ac:#FFB020}.fx{display:flow-root}mark{background:none;color:var(--ac)}
+.tl{position:absolute;inset:0;padding:100px 70px 130px;display:flex;flex-direction:column;justify-content:center}
+.tl h1{font:800 78px/1.06 ${SANS};letter-spacing:-.02em;margin-bottom:58px}.tl h1 mark{background:none;color:var(--ac)}
+.ev{position:relative;padding-left:170px;padding-bottom:52px}.ev:before{content:"";position:absolute;left:62px;top:16px;bottom:-16px;width:6px;background:#3a372f}.ev:last-of-type:before{display:none}
+.ev .dot{position:absolute;left:36px;top:12px;width:58px;height:58px;border-radius:50%;background:#1B1A17;border:9px solid var(--c)}
+.ev .hr{font:700 38px ${MONO};color:var(--c);letter-spacing:.06em}.ev .tx{font:600 52px/1.2 ${SANS};margin-top:6px}
+.tl .rm{margin-top:14px;font:800 60px/1.1 ${SANS};letter-spacing:-.01em;border-top:3px solid #3a372f;padding-top:40px}.tl .rm mark{background:none;color:var(--ac)}
+.tl .nt{margin-top:26px;font:400 26px ${MONO};letter-spacing:.1em;text-transform:uppercase;color:#8d887b}
+${ctaCss("#F4EFE4", "#FFB020", "#1B1A17")}`;
+function timeline(s) {
+  const h = { css: tlCss, handle: OSC };
+  if (s.cta || s.cierre) return { ...h, body: ctaHtml({ ...(s.cta || s.cierre), sinTelefono: !!s.cierre }) };
+  const evs = (s.hitos || []).map((e) => `<div class="ev" style="--c:${TC[e.estado] || TC.neutro}"><div class="dot"></div><div class="hr">${esc(e.hora)}</div><div class="tx">${nl(e.texto)}</div></div>`).join("");
+  return { ...h, body: `<div class="tl"><div class="fx" data-fit="1110"><h1>${hl(s.titulo || "")}</h1>${evs}${s.remate ? `<div class="rm">${hl(s.remate)}</div>` : ""}${s.nota ? `<div class="nt">${esc(s.nota)}</div>` : ""}</div></div>` };
+}
+
+/* ---------------- quiz: pregunta, opciones y respuesta ---------------- */
+const qzCss = `body{background:#2A1457;color:#fff;--ac:#FFD84D}.fx{display:flow-root}mark{background:none;color:var(--ac)}
+.qz{position:absolute;inset:0;padding:100px 64px 130px;display:flex;flex-direction:column;justify-content:center}
+.qz .k{font:800 36px ${SANS};letter-spacing:.12em;text-transform:uppercase;color:#FFD84D;margin-bottom:30px}
+.qz .q{font:800 76px/1.08 ${SANS};letter-spacing:-.02em;margin-bottom:54px}.qz .q mark{background:none;color:#FFD84D}
+.op{display:flex;align-items:center;gap:30px;background:#fff;color:#1a0f33;border-radius:26px;padding:28px 34px;margin-bottom:24px;font:600 44px/1.22 ${SANS}}
+.op b{flex:none;width:84px;height:84px;border-radius:50%;background:#FFD84D;color:#2A1457;font:900 48px ${SANS};display:flex;align-items:center;justify-content:center}
+.op.ok{background:#3DDC84}.op.ok b{background:#fff}.op.no{opacity:.32}
+.qz .ex{margin-top:34px;font:500 50px/1.25 ${SANS};color:#EDE6FF}.qz .ex strong{color:#FFD84D}
+${ctaCss("#fff", "#FFD84D", "#2A1457")}`;
+function quiz(s) {
+  const h = { css: qzCss, handle: OSC };
+  if (s.cta || s.cierre) return { ...h, body: ctaHtml({ ...(s.cta || s.cierre), sinTelefono: !!s.cierre }) };
+  const q = s.pregunta || s.respuesta;
+  const ops = (q.opciones || []).map((o) => `<div class="op ${s.respuesta ? (o.l === q.correcta ? "ok" : "no") : ""}"><b>${esc(o.l)}</b><span>${nl(o.t)}</span></div>`).join("");
+  const head = s.pregunta ? `<div class="k">${esc(q.kicker || "Pregunta rápida")}</div><div class="q">${hl(q.pregunta)}</div>` : `<div class="k">${esc(q.kicker || "Respuesta")}</div>`;
+  const ex = s.respuesta ? `<div class="ex">${hl(q.explicacion || "")}</div>` : "";
+  return { ...h, body: `<div class="qz"><div class="fx" data-fit="1110">${head}${ops}${ex}</div></div>` };
+}
+
+const FORMATOS = { whatsapp, boleta, carta, tierlist, buscador, editorial, mito, email, antesdespues, timeline, quiz };
 
 (async () => {
   const [specPath, outDir] = process.argv.slice(2);
@@ -169,6 +283,12 @@ const FORMATOS = { whatsapp, boleta, carta, tierlist, buscador, editorial };
     await page.goto("file://" + tmp);
     await page.evaluate(() => document.fonts.ready);
     await page.waitForTimeout(150);
+    const fit = await page.evaluate(() => [...document.querySelectorAll("[data-fit]")].map((el) => {
+      const max = +el.dataset.fit; let z = 1; el.style.zoom = 1;
+      while (el.getBoundingClientRect().height > max && z > 0.5) { z = Math.round((z - 0.02) * 100) / 100; el.style.zoom = z; }
+      return { z, h: Math.round(el.getBoundingClientRect().height), max };
+    }));
+    fit.forEach((f) => { if (f.h > f.max) console.warn("AVISO slide " + (i + 1) + ": no cabe (" + f.h + " > " + f.max + "), acorta el texto"); else if (f.z < 1) console.log("  slide " + (i + 1) + ": ajustado a " + f.z); });
     const out = path.join(outDir, `slide-${i + 1}.jpg`);
     await page.screenshot({ path: out, type: "jpeg", quality: 92 });
     console.log(out);

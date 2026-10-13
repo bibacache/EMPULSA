@@ -1,6 +1,6 @@
 ---
 name: contenido-instagram-empulsa
-description: "Genera contenido orgánico para el Instagram de Empulsa (agencia de Concepción que ofrece desarrollo web y SEO, Meta Ads, CRM a medida, agente de IA de atención y email marketing) con formatos creativos que NO repiten el mismo molde: editorial, chat de WhatsApp, boleta, tier list, buscador, carta manuscrita. Escribe el copy, genera las imágenes desde un JSON, los captions y el manifest semanal que lee la automatización de Make. Triggers: 'hazme un post para instagram', 'necesito contenido para empulsa', 'genera un carrusel sobre X', 'dame ideas de contenido', 'hazme el calendario de esta semana', 'contenido para redes de empulsa', 'mejora el instagram de empulsa'."
+description: "Genera contenido orgánico para el Instagram de Empulsa (agencia de Concepción que ofrece desarrollo web y SEO, Meta Ads, CRM a medida, agente de IA de atención y email marketing) con formatos creativos que NO repiten el mismo molde: editorial, chat de WhatsApp, boleta, tier list, buscador, carta manuscrita, mito o realidad, bandeja de correo, antes y después, línea de tiempo y quiz. Escribe el copy, genera las imágenes desde un JSON, los captions y el manifest semanal que lee la automatización de Make. Triggers: 'hazme un post para instagram', 'necesito contenido para empulsa', 'genera un carrusel sobre X', 'dame ideas de contenido', 'hazme el calendario de esta semana', 'contenido para redes de empulsa', 'mejora el instagram de empulsa'."
 ---
 
 # Contenido Instagram Empulsa
@@ -53,13 +53,18 @@ Genera `slide-1.jpg`, `slide-2.jpg`... en 1080x1350 (4:5). Cada slide del JSON s
 | `boleta` | "Lo que te cuesta X": una cuenta con líneas, total y sello. | `fondo` (color de la mesa), `subtitulo`, `titulo`, `meta` [[campo, valor]], `lineas` [{`cantidad`, `periodo`, `texto`}], `total`, `pie`, `sello`, `codigo` (false para ocultar el código de barras), `y` (posición vertical), `cta` {`titulo`, `texto`, `telefono`} |
 | `tierlist` | Ranking S a D de algo que la audiencia pueda ubicar (su web, su Instagram). Genera comentarios. | `titulo` + `filas` [["S","texto"],...] (usa "?" para la tabla vacía), o `zoom` {`letra`, `titulo`, `texto`}, o `cta` {`titulo`, `texto`, `telefono`} |
 | `buscador` | "Te buscaron y encontraron a otro": resultados de búsqueda falsos con un rubro de ejemplo. | `consulta`, `titulo`, `resultados` [{`url`, `titulo`, `descripcion`, `estrellas`, `tipo`: "fantasma" o "tuyo" o "separador" (con `texto`)}], `remate`, o `cta` |
+| `mito` | "Mito o realidad": una creencia común y un sello MITO, REALIDAD o A MEDIAS con su explicación. Dinámica de desmentir. | `portada` {`titulo`, `sub`}, o `mito` {`etiqueta`, `frase`, `veredicto`: "MITO" o "REALIDAD" o "A MEDIAS", `explicacion`}, o `cta` {`titulo`, `texto`, `telefono`} o `cierre` (igual a cta pero sin teléfono, para cerrar con una pregunta) |
+| `email` | Email marketing visto desde la bandeja del cliente: qué correo se abre y cómo se ve uno bien hecho. | `bandeja` {`buscar`, `titulo`, `correos` [{`de`, `asunto`, `vista`, `hora`, `leido`, `destacado`}], `remate`}, o `correo` {`titulo`, `de`, `hora`, `asunto`, `parrafos` [..], `boton`, `nota`}, o `cta` / `cierre` |
+| `antesdespues` | Pantalla partida: arriba el problema (antes), abajo la solución (después). Sirve para web, SEO y orden interno. | `portada` {`titulo`, `sub`}, o `partido` {`antes` {`etiqueta`, `items` [..]}, `despues` {`etiqueta`, `items` [..]}} (máximo 3 ítems por lado), o `cta` / `cierre` |
+| `timeline` | Línea de tiempo vertical de lo que le pasa a un cliente en horas o días, con y sin el servicio. | `titulo`, `hitos` [{`hora`, `texto`, `estado`: "mal" o "ok" o "neutro"}] (máximo 4), `remate`, `nota`, o `cta` / `cierre` |
+| `quiz` | Pregunta con 3 opciones y una slide de respuesta. Genera comentarios. | `pregunta` {`kicker`, `pregunta`, `opciones` [{`l`, `t`}]}, o `respuesta` {`kicker`, `correcta`, `opciones`, `explicacion`}, o `cta` / `cierre` |
 | `carta` | Pieza de marca cálida, casi sin venta: sobre, lista tachada, carta con posdata. Sin CTA. | `tipo`: "sobre" (`para`, `rotulo`), "lista" (`titulo`, `hechas` [..], `pendiente`, `remate`), "carta" (`destacado`, `texto`, `pd`, `firma`) |
 
 Estructura de una pieza (3 a 5 slides): **gancho** (portada con la situación), **desarrollo** (1 a 3 slides, una idea cada una), **cierre** (moraleja o CTA). Frases cortas.
 
 Estructura típica de un carrusel `editorial` (4 o 5 slides): 1) el problema en una situación (chat donde el cliente se va), 2) la solución en acción (agente de IA respondiendo), 3) el orden que queda (pipeline del CRM), 4) el mapa de canales, 5) cierre con la demo en vivo. En `editorial` los nombres de personas son ficticios y el tablero lleva la nota "Ejemplo ilustrativo". Máximo ~55 caracteres por titular; máximo 4 mensajes por slide de chat; máximo 4 columnas y 3 tarjetas por columna en el pipeline; máximo 4 entradas y 3 salidas en el flujo.
 
-Reglas de longitud para que no se corte: titulares de portada hasta ~45 caracteres; en `carta` tipo `lista`, `titulo` corto (menos de 22 caracteres) y `remate` de una línea; en `tierlist` cada fila de una línea; máximo 4 mensajes por slide de `whatsapp`.
+El renderizador **ajusta solo el tamaño** si el contenido no cabe y avisa con `AVISO` si aun así no entra: si lo ves, acorta el texto. Reglas de longitud para que no se corte: titulares de portada hasta ~45 caracteres; en `carta` tipo `lista`, `titulo` corto (menos de 22 caracteres) y `remate` de una línea; en `tierlist` cada fila de una línea; máximo 4 mensajes por slide de `whatsapp`.
 
 ## Formatos con escena de Flow (solo manuales, NO los generes)
 
@@ -69,11 +74,16 @@ Mapa del tesoro, autopsia, escape room, casino y carta de restaurante usan imág
 
 **5 piezas, de lunes a viernes. Sin sábado ni domingo** (el sábado es el día más flojo y las piezas de fin de semana requieren imágenes manuales). Ninguna reel.
 
-Asignación por defecto de formatos:
+**Variedad obligatoria (el contenido no puede sentirse repetido):**
 
-- **Lunes, miércoles y jueves** (días fuertes): formatos con CTA a servicios. Rota entre `editorial`, `whatsapp`, `boleta` y `buscador`, cambiando el orden respecto a la semana anterior (revisa el `NOTAS.md` previo). **Al menos 2 de las 5 piezas de la semana deben ser `editorial` o hablar directamente del CRM o del agente de IA**, que son el diferencial de Empulsa.
-- **Martes**: `tierlist` (pide comentarios, levanta el día más débil de la semana laboral).
-- **Viernes**: `carta` (marca, sin venta).
+- **No hay formato fijo por día de la semana.** Antes martes era siempre tier list y viernes siempre carta: eso se acabó, se notaba la plantilla.
+- **Ningún formato se repite dentro de una semana**, salvo `editorial` (máximo 2). Y **un mismo formato no puede volver antes de 10 días**: antes de elegir, lee los `manifest.json` y `NOTAS.md` de las 2 semanas anteriores y revisa en qué fechas se usó cada formato.
+- **Dos piezas seguidas nunca usan el mismo fondo ni la misma dinámica** (por ejemplo, no pongas dos de fondo oscuro seguidas ni dos de "pregunta y respuesta").
+- **Varía el cierre:** de las 5 piezas de la semana, al menos 2 terminan sin botón de WhatsApp (`cierre` con una pregunta para comentarios, o carta sin CTA); el WhatsApp va en el caption. Las demás cierran con `cta`.
+- **Varía la dinámica**, no solo el diseño: historia (`whatsapp`, `timeline`), desmentir (`mito`), comparar (`antesdespues`), jugar (`quiz`, `tierlist`), mostrar (`email`, `buscador`, `boleta`), explicar (`editorial`), emoción (`carta`).
+- Rotación sugerida para decidir (cámbiala siempre de semana en semana): `editorial`, `mito`, `quiz`, `timeline`, `email`, `antesdespues`, `whatsapp`, `buscador`, `boleta`, `tierlist`, `carta`. Se pueden usar los 11 a lo largo de dos semanas.
+- **Al menos 2 de las 5 piezas de la semana deben ser `editorial` o hablar directamente del CRM o del agente de IA**, que son el diferencial de Empulsa.
+- Los días fuertes (lunes, miércoles y jueves) llevan las piezas con CTA a servicios; martes y viernes, las de más comentarios o más cálidas, pero el formato lo decide la regla de rotación.
 
 **Horario:** todas las piezas se programan a las **11:00 hora de Chile** (`T11:00:00-03:00` en horario de verano, `-04:00` en invierno). La automatización de Make publica en la siguiente ejecución, alrededor de las 11:44. No pongas otras horas: no cambian el resultado.
 

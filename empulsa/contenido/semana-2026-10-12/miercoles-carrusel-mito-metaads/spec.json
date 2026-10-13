@@ -1,0 +1,33 @@
+{
+  "formato": "mito",
+  "slides": [
+    {
+      "portada": {
+        "titulo": "Meta Ads",
+        "sub": "Dos cosas que muchos negocios creen"
+      }
+    },
+    {
+      "mito": {
+        "etiqueta": "Lo que se dice",
+        "frase": "Si pongo más plata en el anuncio, vendo más.",
+        "veredicto": "MITO",
+        "explicacion": "Más presupuesto sin un objetivo claro solo gasta más rápido."
+      }
+    },
+    {
+      "mito": {
+        "etiqueta": "Lo que se dice",
+        "frase": "Responder rápido importa tanto como el anuncio.",
+        "veredicto": "REALIDAD",
+        "explicacion": "Quien escribe por un anuncio puede estar hablando con varios negocios a la vez. Responder a tiempo ayuda a no perderlo."
+      }
+    },
+    {
+      "cta": {
+        "titulo": "¿Quieres que tus anuncios [[lleguen a alguien]]?",
+        "texto": "Armamos tu campaña con un objetivo claro y te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

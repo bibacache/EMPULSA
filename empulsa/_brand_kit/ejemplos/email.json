@@ -1,0 +1,62 @@
+{
+  "formato": "email",
+  "slides": [
+    {
+      "bandeja": {
+        "buscar": "Bandeja de entrada",
+        "titulo": "¿Cuál abre [[tu cliente]] primero?",
+        "correos": [
+          {
+            "de": "Tienda Norte",
+            "asunto": "Últimas horas: 40% en todo",
+            "vista": "Aprovecha antes de que termine la oferta",
+            "hora": "09:12",
+            "leido": true
+          },
+          {
+            "de": "Moda Sur",
+            "asunto": "Nueva colección ya disponible",
+            "vista": "Mira lo nuevo de la temporada",
+            "hora": "08:40",
+            "leido": true
+          },
+          {
+            "de": "Café del Centro",
+            "asunto": "Camila, te guardamos tu pedido",
+            "vista": "Hola Camila, tu pedido sigue esperándote",
+            "hora": "08:15",
+            "destacado": true
+          },
+          {
+            "de": "Ferretería Oeste",
+            "asunto": "Promoción de la semana",
+            "vista": "Revisa los precios de esta semana",
+            "hora": "ayer",
+            "leido": true
+          }
+        ],
+        "remate": "El correo que habla de [[ti]] se abre. El masivo se archiva."
+      }
+    },
+    {
+      "correo": {
+        "titulo": "Así se ve un [[correo con contexto]]",
+        "de": "Café del Centro",
+        "hora": "08:15",
+        "asunto": "Camila, te guardamos tu pedido",
+        "parrafos": [
+          "Hola Camila, vimos que dejaste dos cafés en tu carrito.",
+          "Te los dejamos reservados hasta hoy a las 18:00 para que los pidas cuando quieras."
+        ],
+        "boton": "Terminar mi pedido",
+        "nota": "Ejemplo ilustrativo"
+      }
+    },
+    {
+      "cta": {
+        "titulo": "Correos que se mandan [[solos]], en el momento correcto.",
+        "texto": "Email marketing para tu negocio. Te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

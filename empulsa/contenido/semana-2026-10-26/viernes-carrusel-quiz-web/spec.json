@@ -1,0 +1,53 @@
+{
+  "formato": "quiz",
+  "slides": [
+    {
+      "pregunta": {
+        "kicker": "Pregunta rápida",
+        "pregunta": "Alguien te busca por tu nombre. ¿Qué necesita ver para [[escribirte]]?",
+        "opciones": [
+          {
+            "l": "A",
+            "t": "Una foto vieja y un perfil sin actualizar"
+          },
+          {
+            "l": "B",
+            "t": "Horario, dirección y un botón para contactarte"
+          },
+          {
+            "l": "C",
+            "t": "Un nombre muy original, nada más"
+          }
+        ]
+      }
+    },
+    {
+      "respuesta": {
+        "kicker": "Respuesta",
+        "correcta": "B",
+        "opciones": [
+          {
+            "l": "A",
+            "t": "Una foto vieja y un perfil sin actualizar"
+          },
+          {
+            "l": "B",
+            "t": "Horario, dirección y un botón para contactarte"
+          },
+          {
+            "l": "C",
+            "t": "Un nombre muy original, nada más"
+          }
+        ],
+        "explicacion": "[[La B]]. Si lo encuentra rápido, no tiene por qué buscar otra opción. Una web con SEO te ayuda a mostrarlo cuando te buscan."
+      }
+    },
+    {
+      "cierre": {
+        "titulo": "¿Qué ve alguien que [[te busca hoy]]?",
+        "texto": "Cuéntanos en comentarios. Si quieres revisarlo juntos, te mostramos una demo en vivo.",
+        "pie": "Desde Concepción para todo Chile"
+      }
+    }
+  ]
+}
