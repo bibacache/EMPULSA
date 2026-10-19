@@ -1,0 +1,62 @@
+{
+  "formato": "email",
+  "slides": [
+    {
+      "bandeja": {
+        "buscar": "Bandeja de entrada",
+        "titulo": "¿Abre el cliente que [[no ha vuelto]]?",
+        "correos": [
+          {
+            "de": "Tienda Centro",
+            "asunto": "20% en toda la tienda",
+            "vista": "Solo por esta semana, no te lo pierdas",
+            "hora": "09:00",
+            "leido": true
+          },
+          {
+            "de": "Outlet Norte",
+            "asunto": "Liquidación de temporada",
+            "vista": "Hasta 50% en productos seleccionados",
+            "hora": "08:30",
+            "leido": true
+          },
+          {
+            "de": "Panadería Luna",
+            "asunto": "Javiera, te extrañamos",
+            "vista": "Hace tiempo no te vemos por acá",
+            "hora": "08:10",
+            "destacado": true
+          },
+          {
+            "de": "Ferretería Sur",
+            "asunto": "Catálogo de octubre",
+            "vista": "Revisa las novedades del mes",
+            "hora": "ayer",
+            "leido": true
+          }
+        ],
+        "remate": "El correo con [[nombre y motivo]] se abre. El resto se archiva."
+      }
+    },
+    {
+      "correo": {
+        "titulo": "Así se ve un correo de [[reactivación]]",
+        "de": "Panadería Luna",
+        "hora": "08:10",
+        "asunto": "Javiera, te extrañamos",
+        "parrafos": [
+          "Hola Javiera, notamos que hace dos meses no pasas por acá.",
+          "Te dejamos un pan recién horneado guardado para esta semana, cuando quieras pasar a buscarlo."
+        ],
+        "boton": "Ver el local",
+        "nota": "Ejemplo ilustrativo"
+      }
+    },
+    {
+      "cierre": {
+        "titulo": "¿Cuántos clientes tuyos [[no han vuelto]]?",
+        "texto": "Un correo a tiempo puede ser lo único que falta. Cuéntanos en comentarios."
+      }
+    }
+  ]
+}

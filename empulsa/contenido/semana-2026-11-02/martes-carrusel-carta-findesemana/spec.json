@@ -1,0 +1,29 @@
+{
+  "formato": "carta",
+  "slides": [
+    {
+      "tipo": "sobre",
+      "para": "Para quien igual miró el celular\nel domingo, \"por si acaso\".",
+      "rotulo": "Abrir el domingo en la noche, antes de que empiece la semana."
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Este domingo:",
+      "hechas": [
+        "Te desconectaste un rato",
+        "Almorzaste sin el celular al lado",
+        "No revisaste las notificaciones",
+        "Saliste a caminar"
+      ],
+      "pendiente": "Dejar de pensar en los mensajes que se acumulan",
+      "remate": "Ese no se tacha en un día."
+    },
+    {
+      "tipo": "carta",
+      "destacado": "El domingo también es tuyo.",
+      "texto": "Descansar no te hace perder el negocio. Lo que no alcanzaste a ver hoy, sigue ahí mañana.",
+      "pd": "P.D. Un lunes ordenado empieza en un domingo sin culpa.",
+      "firma": "Con cariño, Empulsa"
+    }
+  ]
+}

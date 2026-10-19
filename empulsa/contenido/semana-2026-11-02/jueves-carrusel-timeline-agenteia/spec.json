@@ -1,0 +1,63 @@
+{
+  "formato": "timeline",
+  "slides": [
+    {
+      "titulo": "Sin agente de IA: un mensaje a las [[23:00]]",
+      "nota": "Ejemplo ilustrativo",
+      "hitos": [
+        {
+          "hora": "23:00",
+          "texto": "Un cliente escribe preguntando por el servicio",
+          "estado": "neutro"
+        },
+        {
+          "hora": "23:01",
+          "texto": "El mensaje queda sin leer hasta el otro día",
+          "estado": "mal"
+        },
+        {
+          "hora": "09:30",
+          "texto": "Alguien lo contesta, casi 11 horas después",
+          "estado": "mal"
+        },
+        {
+          "hora": "09:45",
+          "texto": "El cliente ya había escrito a otro negocio",
+          "estado": "mal"
+        }
+      ]
+    },
+    {
+      "titulo": "Con agente de IA: los mismos [[23:00]]",
+      "nota": "Ejemplo ilustrativo",
+      "hitos": [
+        {
+          "hora": "23:00",
+          "texto": "El cliente escribe y recibe respuesta al momento",
+          "estado": "ok"
+        },
+        {
+          "hora": "23:01",
+          "texto": "El agente sigue el guion armado con el negocio",
+          "estado": "ok"
+        },
+        {
+          "hora": "23:03",
+          "texto": "Resuelve lo simple y deja agendado lo demás",
+          "estado": "ok"
+        },
+        {
+          "hora": "09:30",
+          "texto": "El equipo retoma la conversación ya encaminada",
+          "estado": "ok"
+        }
+      ]
+    },
+    {
+      "cta": {
+        "titulo": "Tu negocio no cierra a las [[23:00]].",
+        "texto": "Un agente de IA responde con tu guion, a cualquier hora. Te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

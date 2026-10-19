@@ -1,0 +1,55 @@
+{
+  "formato": "antesdespues",
+  "slides": [
+    {
+      "portada": {
+        "titulo": "[[Antes y después]] de medir tu anuncio",
+        "sub": "La misma campaña, dos formas de saber qué pasó con ella."
+      }
+    },
+    {
+      "partido": {
+        "antes": {
+          "etiqueta": "Antes",
+          "items": [
+            "El anuncio corre y junta likes y comentarios",
+            "Llegan mensajes, pero nadie sabe cuántos",
+            "Al final del mes solo queda el gasto"
+          ]
+        },
+        "despues": {
+          "etiqueta": "Después",
+          "items": [
+            "Cada mensaje que llega del anuncio queda registrado",
+            "Sabes cuántos preguntaron y cuántos agendaron",
+            "El informe muestra ventas, no solo alcance"
+          ]
+        }
+      }
+    },
+    {
+      "partido": {
+        "antes": {
+          "etiqueta": "Antes",
+          "items": [
+            "Subir presupuesto cuando bajan las ventas",
+            "Sin saber si el problema es el anuncio o la respuesta"
+          ]
+        },
+        "despues": {
+          "etiqueta": "Después",
+          "items": [
+            "Se revisa primero qué pasó con los mensajes que llegaron",
+            "El presupuesto sube cuando el resto del sistema también responde"
+          ]
+        }
+      }
+    },
+    {
+      "cta": {
+        "titulo": "Un anuncio que [[funciona de verdad]] se mide hasta la venta.",
+        "texto": "Campañas de Meta Ads con seguimiento real de cada mensaje. Te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

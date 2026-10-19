@@ -1,0 +1,62 @@
+{
+  "formato": "whatsapp",
+  "slides": [
+    {
+      "banner": "Te escribieron el sábado a las 23:40.\nRespondiste el lunes a las 09:00.",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "texto": "Hola, vi el post. ¿Tienen hora para mañana domingo?",
+          "hora": "23:40"
+        }
+      ]
+    },
+    {
+      "mensajes": [
+        {
+          "de": "cliente",
+          "texto": "Hola, vi el post. ¿Tienen hora para mañana domingo?",
+          "hora": "23:40"
+        },
+        {
+          "chip": "Domingo completo, sin respuesta"
+        },
+        {
+          "de": "cliente",
+          "texto": "¿Siguen ahí? Necesito saber antes del mediodía.",
+          "hora": "09:10"
+        },
+        {
+          "de": "cliente",
+          "texto": "Ya encontré otro lugar, gracias igual.",
+          "hora": "11:50"
+        }
+      ]
+    },
+    {
+      "mensajes": [
+        {
+          "de": "cliente",
+          "texto": "Ya encontré otro lugar, gracias igual.",
+          "hora": "11:50"
+        },
+        {
+          "de": "yo",
+          "texto": "¡Hola! Recién veo tu mensaje, ¿en qué te ayudo?",
+          "hora": "Lunes 09:00"
+        }
+      ],
+      "nota": "El sábado a las 23:40\nnadie estaba mirando el celular."
+    },
+    {
+      "cta": {
+        "titulo": "Un agente de IA puede responder aunque tú no estés mirando el celular.",
+        "textos": [
+          "Contesta con tu guion, a cualquier hora, y deja todo registrado en tu CRM.",
+          "Escríbenos y te mostramos una demo en vivo."
+        ],
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}
