@@ -1,0 +1,65 @@
+{
+  "formato": "nota",
+  "slides": [
+    {
+      "nota": {
+        "carpeta": "Mi negocio",
+        "titulo": "Antes del lunes",
+        "fecha": "Domingo 20:14",
+        "items": [
+          {
+            "t": "¿Quedó algún mensaje sin responder?"
+          },
+          {
+            "t": "¿Tu horario está al día en Instagram y Google?"
+          },
+          {
+            "t": "¿Sabes a quién le debes una cotización?"
+          },
+          {
+            "t": "¿Tus anuncios tienen un objetivo claro?"
+          },
+          {
+            "t": "¿Tus clientes del mes volverán a saber de ti?"
+          }
+        ]
+      }
+    },
+    {
+      "nota": {
+        "carpeta": "Mi negocio",
+        "titulo": "Si respondiste que no",
+        "fecha": "Esto lo ordena cada cosa",
+        "items": [
+          {
+            "t": "Mensajes sin responder → agente de IA con guion",
+            "hecho": true
+          },
+          {
+            "t": "Horario desactualizado → web y SEO",
+            "hecho": true
+          },
+          {
+            "t": "Cotizaciones pendientes → CRM a tu medida",
+            "hecho": true
+          },
+          {
+            "t": "Anuncios sin objetivo → Meta Ads con estrategia",
+            "hecho": true
+          },
+          {
+            "t": "Clientes que no vuelven → email marketing",
+            "hecho": true
+          }
+        ]
+      }
+    },
+    {
+      "cierre": {
+        "titulo": "Guarda esta nota para [[el próximo domingo]].",
+        "texto": "Si quieres revisarla con tu negocio, te mostramos una demo en vivo.",
+        "pie": "Desde Concepción para todo Chile"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "formato": "whatsapp",
+  "slides": [
+    {
+      "banner": "Dijiste que mandabas la cotización el martes.\nHoy es sábado.",
+      "contacto": "Camila",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "texto": "Hola, el martes quedamos en que me mandabas la cotización.",
+          "hora": "09:12"
+        }
+      ]
+    },
+    {
+      "contacto": "Camila",
+      "mensajes": [
+        {
+          "de": "cliente",
+          "texto": "Hola, el martes quedamos en que me mandabas la cotización.",
+          "hora": "09:12"
+        },
+        {
+          "chip": "3 días sin respuesta"
+        },
+        {
+          "de": "cliente",
+          "texto": "¿Sigues por ahí?",
+          "hora": "12:40"
+        }
+      ]
+    },
+    {
+      "contacto": "Camila",
+      "mensajes": [
+        {
+          "de": "yo",
+          "texto": "¡Perdón! Se me pasó por completo. Te la mando ahora.",
+          "hora": "13:05"
+        },
+        {
+          "de": "cliente",
+          "texto": "No te preocupes, ya la recibí de otra empresa.",
+          "hora": "13:07"
+        }
+      ],
+      "nota": "Se te pasó a ti.\nA tu cliente no."
+    },
+    {
+      "cta": {
+        "titulo": "Un CRM no deja que se te pase.",
+        "textos": [
+          "Cada cliente con su próximo paso y un aviso para no olvidarlo.",
+          "Escríbenos y te mostramos una demo en vivo."
+        ],
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

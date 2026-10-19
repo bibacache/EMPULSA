@@ -58,5 +58,29 @@
     "imagen_4": "",
     "imagen_5": "",
     "imagen_6": ""
+  },
+  {
+    "carpeta": "sabado-carrusel-whatsapp-seguimiento",
+    "tipo": "carrusel",
+    "programado_para": "2026-10-24T11:00:00-03:00",
+    "caption": "Dijiste que la cotización salía el martes. Hoy es sábado. 📲\n\nEjemplo ilustrativo de lo que pasa cuando el seguimiento depende de la memoria.\n\n→ El cliente espera, vuelve a escribir y nadie responde\n→ Cuando llega la respuesta, ya compró en otro lugar\n→ No fue mala voluntad: simplemente se te pasó\n\nUn CRM a tu medida deja cada cliente con su próximo paso y un aviso para no olvidarlo.\n\nEscríbenos y te mostramos una demo en vivo.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#crm #seguimiento #ventas #pymes #whatsapp #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-19/sabado-carrusel-whatsapp-seguimiento/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-19/sabado-carrusel-whatsapp-seguimiento/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-19/sabado-carrusel-whatsapp-seguimiento/slide-3.jpg",
+    "imagen_4": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-19/sabado-carrusel-whatsapp-seguimiento/slide-4.jpg",
+    "imagen_5": "",
+    "imagen_6": ""
+  },
+  {
+    "carpeta": "domingo-carrusel-antesdespues-email",
+    "tipo": "carrusel",
+    "programado_para": "2026-10-25T11:00:00-03:00",
+    "caption": "Tu cliente compró una vez. ¿Y después? 📬\n\nLa misma compra, dos recorridos distintos.\n\n→ Antes: no recibe ningún correo y la próxima compra la hace en otro lado\n→ Después: correo de bienvenida con su nombre y un recordatorio cuando le toca volver\n→ Con email marketing, esos correos se envían solos\n\nCuéntanos en comentarios cuántos de tus clientes han comprado una sola vez.\n\nEscríbenos y te mostramos una demo en vivo.\n\n📩 DM o WhatsApp +56 9 3056 9940\n\n#emailmarketing #pymes #ecommerce #clientes #seguimiento #empulsa",
+    "imagen_1": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-19/domingo-carrusel-antesdespues-email/slide-1.jpg",
+    "imagen_2": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-19/domingo-carrusel-antesdespues-email/slide-2.jpg",
+    "imagen_3": "https://raw.githubusercontent.com/bibacache/EMPULSA/main/empulsa/contenido/semana-2026-10-19/domingo-carrusel-antesdespues-email/slide-3.jpg",
+    "imagen_4": "",
+    "imagen_5": "",
+    "imagen_6": ""
   }
 ]

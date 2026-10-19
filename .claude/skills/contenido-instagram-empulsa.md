@@ -1,6 +1,6 @@
 ---
 name: contenido-instagram-empulsa
-description: "Genera contenido orgánico para el Instagram de Empulsa (agencia de Concepción que ofrece desarrollo web y SEO, Meta Ads, CRM a medida, agente de IA de atención y email marketing) con formatos creativos que NO repiten el mismo molde: editorial, chat de WhatsApp, boleta, tier list, buscador, carta manuscrita, mito o realidad, bandeja de correo, antes y después, línea de tiempo y quiz. Escribe el copy, genera las imágenes desde un JSON, los captions y el manifest semanal que lee la automatización de Make. Triggers: 'hazme un post para instagram', 'necesito contenido para empulsa', 'genera un carrusel sobre X', 'dame ideas de contenido', 'hazme el calendario de esta semana', 'contenido para redes de empulsa', 'mejora el instagram de empulsa'."
+description: "Genera contenido orgánico para el Instagram de Empulsa (agencia de Concepción que ofrece desarrollo web y SEO, Meta Ads, CRM a medida, agente de IA de atención y email marketing) con formatos creativos que NO repiten el mismo molde: editorial, chat de WhatsApp, boleta, tier list, buscador, carta manuscrita, mito o realidad, bandeja de correo, antes y después, línea de tiempo, quiz y notas del celular. Escribe el copy, genera las imágenes desde un JSON, los captions y el manifest semanal que lee la automatización de Make. Triggers: 'hazme un post para instagram', 'necesito contenido para empulsa', 'genera un carrusel sobre X', 'dame ideas de contenido', 'hazme el calendario de esta semana', 'contenido para redes de empulsa', 'mejora el instagram de empulsa'."
 ---
 
 # Contenido Instagram Empulsa
@@ -58,6 +58,7 @@ Genera `slide-1.jpg`, `slide-2.jpg`... en 1080x1350 (4:5). Cada slide del JSON s
 | `antesdespues` | Pantalla partida: arriba el problema (antes), abajo la solución (después). Sirve para web, SEO y orden interno. | `portada` {`titulo`, `sub`}, o `partido` {`antes` {`etiqueta`, `items` [..]}, `despues` {`etiqueta`, `items` [..]}} (máximo 3 ítems por lado), o `cta` / `cierre` |
 | `timeline` | Línea de tiempo vertical de lo que le pasa a un cliente en horas o días, con y sin el servicio. | `titulo`, `hitos` [{`hora`, `texto`, `estado`: "mal" o "ok" o "neutro"}] (máximo 4), `remate`, `nota`, o `cta` / `cierre` |
 | `quiz` | Pregunta con 3 opciones y una slide de respuesta. Genera comentarios. | `pregunta` {`kicker`, `pregunta`, `opciones` [{`l`, `t`}]}, o `respuesta` {`kicker`, `correcta`, `opciones`, `explicacion`}, o `cta` / `cierre` |
+| `nota` | App de notas del celular: checklist para el domingo o el lunes. Tono cercano y práctico, ideal para fin de semana. | `nota` {`carpeta`, `titulo`, `fecha`, `items` [{`t`, `hecho`}], `pie`}, o `cta` / `cierre` |
 | `carta` | Pieza de marca cálida, casi sin venta: sobre, lista tachada, carta con posdata. Sin CTA. | `tipo`: "sobre" (`para`, `rotulo`), "lista" (`titulo`, `hechas` [..], `pendiente`, `remate`), "carta" (`destacado`, `texto`, `pd`, `firma`) |
 
 Estructura de una pieza (3 a 5 slides): **gancho** (portada con la situación), **desarrollo** (1 a 3 slides, una idea cada una), **cierre** (moraleja o CTA). Frases cortas.
@@ -81,7 +82,7 @@ Mapa del tesoro, autopsia, escape room, casino y carta de restaurante usan imág
 - **Dos piezas seguidas nunca usan el mismo fondo ni la misma dinámica** (por ejemplo, no pongas dos de fondo oscuro seguidas ni dos de "pregunta y respuesta").
 - **Varía el cierre:** de las 5 piezas de la semana, al menos 2 terminan sin botón de WhatsApp (`cierre` con una pregunta para comentarios, o carta sin CTA); el WhatsApp va en el caption. Las demás cierran con `cta`.
 - **Varía la dinámica**, no solo el diseño: historia (`whatsapp`, `timeline`), desmentir (`mito`), comparar (`antesdespues`), jugar (`quiz`, `tierlist`), mostrar (`email`, `buscador`, `boleta`), explicar (`editorial`), emoción (`carta`).
-- Rotación sugerida para decidir (cámbiala siempre de semana en semana): `editorial`, `mito`, `quiz`, `timeline`, `email`, `antesdespues`, `whatsapp`, `buscador`, `boleta`, `tierlist`, `carta`. Se pueden usar los 11 a lo largo de dos semanas.
+- Rotación sugerida para decidir (cámbiala siempre de semana en semana): `editorial`, `mito`, `quiz`, `timeline`, `email`, `antesdespues`, `whatsapp`, `buscador`, `boleta`, `tierlist`, `carta`. Se pueden usar los 12 a lo largo de dos semanas. Los fines de semana (sábado y domingo) se arman a mano, y cuentan para el cálculo de los 10 días: lee siempre el manifest completo de cada semana, no solo lunes a viernes.
 - **Al menos 2 de las 5 piezas de la semana deben ser `editorial` o hablar directamente del CRM o del agente de IA**, que son el diferencial de Empulsa.
 - Los días fuertes (lunes, miércoles y jueves) llevan las piezas con CTA a servicios; martes y viernes, las de más comentarios o más cálidas, pero el formato lo decide la regla de rotación.
 

@@ -7,3 +7,8 @@ Antes: agente IA editorial, tier list, editorial CRM, buscador, carta. Se cambia
 - Mié 21: `timeline`, CRM (el mismo interesado en 72 horas, sin CRM y con CRM). Cierra con CTA.
 - Jue 22: `buscador`, web (le recomendaron tu negocio, buscó tu nombre). Cierra con CTA.
 - Vie 23: `carta`, marca (comentarios y celular). Sin CTA.
+
+## Fin de semana (agregado a mano el 2026-10-19)
+
+- Sáb 24: `whatsapp`, CRM (le dijiste que mandabas la cotización el martes y es sábado). Cierra con CTA.
+- Dom 25: `antesdespues`, email marketing (tu cliente compró una vez, ¿y después?). Cierra con pregunta para comentarios.

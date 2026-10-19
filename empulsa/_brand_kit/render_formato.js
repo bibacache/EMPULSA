@@ -1,6 +1,6 @@
 // Genera un carrusel 1080x1350 (4:5) de un formato creativo SIN imagen externa, a partir de un JSON.
 // Uso: node render_formato.js "<spec.json>" "<carpeta_salida>"   ->   slide-1.jpg, slide-2.jpg, ...
-// spec.json = { "formato": "whatsapp|boleta|carta|tierlist|buscador|editorial|mito|email|antesdespues|timeline|quiz", "slides": [ {...}, ... ] }  (ver la skill para los campos)
+// spec.json = { "formato": "whatsapp|boleta|carta|tierlist|buscador|editorial|mito|email|antesdespues|timeline|quiz|nota", "slides": [ {...}, ... ] }  (ver la skill para los campos)
 // Portable: usa solo fuentes incluidas en ./fonts (Inter, Courier Prime, Caveat, Playfair Display), funciona igual en Mac y Linux.
 const path = require("path");
 const fs = require("fs");
@@ -265,7 +265,26 @@ function quiz(s) {
   return { ...h, body: `<div class="qz"><div class="fx" data-fit="1110">${head}${ops}${ex}</div></div>` };
 }
 
-const FORMATOS = { whatsapp, boleta, carta, tierlist, buscador, editorial, mito, email, antesdespues, timeline, quiz };
+/* ---------------- nota: app de notas del celular (checklist) ---------------- */
+const noCss = `body{background:#FFF8D6;color:#2b2618;--ac:#D9930D}.fx{display:flow-root}mark{background:none;color:var(--ac)}
+.nb{position:absolute;left:0;right:0;top:0;height:140px;background:#FFE9A0;display:flex;align-items:center;justify-content:space-between;padding:30px 50px 0;font:600 42px ${SANS};color:#B07A00}
+.nb i{font-style:normal;font-weight:400;opacity:.8}
+.np{position:absolute;left:0;right:0;top:140px;bottom:120px;padding:50px 64px 0;background-image:repeating-linear-gradient(transparent 0 111px,rgba(160,120,20,.16) 111px 113px)}
+.np h1{font:800 84px/1.05 ${SANS};letter-spacing:-.02em;margin-bottom:12px}.np .dt{font:400 32px ${SANS};color:#9c8a55;margin-bottom:44px}
+.ni{display:flex;align-items:flex-start;gap:30px;margin-bottom:44px;font:500 56px/1.22 ${SANS}}
+.ni b{flex:none;width:64px;height:64px;margin-top:6px;border-radius:50%;border:5px solid #D9930D;display:flex;align-items:center;justify-content:center;color:#fff;font:700 36px ${SANS}}
+.ni.ok b{background:#D9930D}.ni.ok span{color:#7d7248}
+.np .ft2{margin-top:36px;font:600 46px/1.2 ${SANS};color:#B07A00}
+${ctaCss("#2b2618", "#D9930D", "#fff")}`;
+function nota(s) {
+  const h = { css: noCss, handle: "background:rgba(0,0,0,.08);color:#2b2618" };
+  if (s.cta || s.cierre) return { ...h, body: ctaHtml({ ...(s.cta || s.cierre), sinTelefono: !!s.cierre }) };
+  const n = s.nota;
+  const it = (n.items || []).map((i) => `<div class="ni ${i.hecho ? "ok" : ""}"><b>${i.hecho ? "✓" : ""}</b><span>${nl(i.t)}</span></div>`).join("");
+  return { ...h, body: `<div class="nb"><span>‹ Notas</span><i>${esc(n.carpeta || "Esta semana")}</i></div><div class="np"><div class="fx" data-fit="1000"><h1>${hl(n.titulo)}</h1><div class="dt">${esc(n.fecha || "")}</div>${it}${n.pie ? `<div class="ft2">${nl(n.pie)}</div>` : ""}</div></div>` };
+}
+
+const FORMATOS = { whatsapp, boleta, carta, tierlist, buscador, editorial, mito, email, antesdespues, timeline, quiz, nota };
 
 (async () => {
   const [specPath, outDir] = process.argv.slice(2);

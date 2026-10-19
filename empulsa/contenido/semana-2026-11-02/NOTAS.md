@@ -13,3 +13,8 @@ Variedad: ninguna pieza repite formato; dinámicas alternadas (historia, emoció
 Nada se sustituyó: no hubo ningún pilar sin dato real que forzara un reemplazo, los 5 temas (agente de IA, marca, Meta Ads, agente de IA, email marketing) se armaron con situaciones de ejemplo genéricas, sin inventar cifras, clientes ni resultados reales (los correos y chats usan nombres y negocios ficticios, marcados como "Ejemplo ilustrativo" donde corresponde).
 
 No se ejecutó `ghl_publish.js` ni se programó ni publicó nada: solo queda listo en `manifest.json` para que la automatización de Make lo tome desde GitHub.
+
+## Fin de semana (agregado a mano el 2026-10-19)
+
+- Sáb 7: `quiz`, Meta Ads (cómo sabes si un anuncio funcionó). Cierra con pregunta para comentarios.
+- Dom 8: `boleta`, agente de IA (lo que cuesta atender mensajes a mano). Cierra con CTA.

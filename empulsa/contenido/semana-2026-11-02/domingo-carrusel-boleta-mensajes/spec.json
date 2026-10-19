@@ -1,0 +1,56 @@
+{
+  "formato": "boleta",
+  "slides": [
+    {
+      "fondo": "#2b2a24",
+      "subtitulo": "BOLETA N° 0005",
+      "titulo": "Lo que cuesta\natender mensajes a mano",
+      "meta": [
+        [
+          "Fecha",
+          "cada día"
+        ],
+        [
+          "Atendió",
+          "tú, a toda hora"
+        ]
+      ]
+    },
+    {
+      "fondo": "#23392e",
+      "subtitulo": "DETALLE",
+      "lineas": [
+        {
+          "periodo": "cada mensaje",
+          "texto": "Responder lo mismo otra vez"
+        },
+        {
+          "periodo": "cada noche",
+          "texto": "Revisar el celular antes de dormir"
+        },
+        {
+          "periodo": "cada domingo",
+          "texto": "Contestar sin descansar"
+        }
+      ],
+      "codigo": false,
+      "y": 170
+    },
+    {
+      "fondo": "#5a2a1a",
+      "subtitulo": "TOTAL",
+      "total": "Tu tiempo,\nsin que nadie lo cobre",
+      "pie": "Se cobra cada semana",
+      "sello": "EVITABLE"
+    },
+    {
+      "fondo": "#efe6cf",
+      "y": 260,
+      "cta": {
+        "titulo": "Esta cuenta se puede reducir.",
+        "texto": "Un agente de IA con tu guion responde lo repetido. Escríbenos y te mostramos una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

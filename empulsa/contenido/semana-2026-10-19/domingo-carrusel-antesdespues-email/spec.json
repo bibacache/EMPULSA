@@ -1,0 +1,38 @@
+{
+  "formato": "antesdespues",
+  "slides": [
+    {
+      "portada": {
+        "titulo": "Tu cliente compró una vez. [[¿Y después?]]",
+        "sub": "Dos recorridos para la misma compra"
+      }
+    },
+    {
+      "partido": {
+        "antes": {
+          "etiqueta": "Antes",
+          "items": [
+            "Compra y no recibe ningún correo",
+            "Pasan los meses sin saber de ti",
+            "La próxima compra la hace en otro lado"
+          ]
+        },
+        "despues": {
+          "etiqueta": "Después",
+          "items": [
+            "Recibe un correo de bienvenida con su nombre",
+            "Un recordatorio cuando le toca volver a comprar",
+            "Vuelve a ti porque lo recordaste"
+          ]
+        }
+      }
+    },
+    {
+      "cierre": {
+        "titulo": "¿Cuántos clientes tuyos [[compraron una sola vez]]?",
+        "texto": "Cuéntanos en comentarios. Si quieres verlo con tu negocio, te mostramos una demo en vivo.",
+        "pie": "Desde Concepción para todo Chile"
+      }
+    }
+  ]
+}

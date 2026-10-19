@@ -1,0 +1,55 @@
+{
+  "formato": "buscador",
+  "slides": [
+    {
+      "consulta": "peluquería Concepción hoy",
+      "titulo": "Sábado, 10:00.\nAlguien busca dónde cortarse el pelo.",
+      "resultados": [
+        {
+          "url": "peluqueriacentro.example",
+          "titulo": "Peluquería Centro | Reserva online",
+          "descripcion": "Horario de hoy: 9:00 a 19:00. Reserva por WhatsApp.",
+          "estrellas": "★★★★★ 4,8 · 120 reseñas"
+        },
+        {
+          "url": "facebook.com/salonlosaromos.example",
+          "titulo": "Salón Los Aromos",
+          "descripcion": "Última publicación hace un año. Sin horario visible."
+        }
+      ]
+    },
+    {
+      "consulta": "peluquería Concepción hoy",
+      "resultados": [
+        {
+          "tipo": "fantasma",
+          "url": "peluqueriacentro.example",
+          "titulo": "Peluquería Centro | Reserva online"
+        },
+        {
+          "tipo": "fantasma",
+          "url": "facebook.com/salonlosaromos.example",
+          "titulo": "Salón Los Aromos"
+        },
+        {
+          "tipo": "separador",
+          "texto": "...y tu peluquería, más abajo..."
+        },
+        {
+          "tipo": "tuyo",
+          "url": "tunegocio.example",
+          "titulo": "Tu peluquería",
+          "descripcion": "Sin web, sin horario, sin forma de reservar."
+        }
+      ],
+      "remate": "Se llevan la reserva los que muestran horario y cómo contactarlos."
+    },
+    {
+      "cta": {
+        "titulo": "Que te encuentren y puedan reservar.",
+        "texto": "Web con SEO, horario y botón de WhatsApp. Escríbenos y te mostramos una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

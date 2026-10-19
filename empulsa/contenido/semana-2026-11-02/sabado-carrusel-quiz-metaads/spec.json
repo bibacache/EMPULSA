@@ -1,0 +1,53 @@
+{
+  "formato": "quiz",
+  "slides": [
+    {
+      "pregunta": {
+        "kicker": "Pregunta rápida",
+        "pregunta": "¿Cómo sabes si un anuncio de Meta Ads [[funcionó]]?",
+        "opciones": [
+          {
+            "l": "A",
+            "t": "Tuvo muchos likes y comentarios"
+          },
+          {
+            "l": "B",
+            "t": "Llegaron mensajes de personas que querían comprar"
+          },
+          {
+            "l": "C",
+            "t": "Lo vieron muchas personas"
+          }
+        ]
+      }
+    },
+    {
+      "respuesta": {
+        "kicker": "Respuesta",
+        "correcta": "B",
+        "opciones": [
+          {
+            "l": "A",
+            "t": "Tuvo muchos likes y comentarios"
+          },
+          {
+            "l": "B",
+            "t": "Llegaron mensajes de personas que querían comprar"
+          },
+          {
+            "l": "C",
+            "t": "Lo vieron muchas personas"
+          }
+        ],
+        "explicacion": "[[La B]]. Los likes y el alcance ayudan, pero lo que importa es cuántos de esos mensajes terminan en una venta."
+      }
+    },
+    {
+      "cierre": {
+        "titulo": "¿Cómo mides [[tus anuncios]] hoy?",
+        "texto": "Cuéntanos en comentarios. Si quieres verlo con tu campaña, te mostramos una demo en vivo.",
+        "pie": "Desde Concepción para todo Chile"
+      }
+    }
+  ]
+}
