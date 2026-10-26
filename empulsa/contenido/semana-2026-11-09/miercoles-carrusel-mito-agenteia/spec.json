@@ -1,0 +1,33 @@
+{
+  "formato": "mito",
+  "slides": [
+    {
+      "portada": {
+        "titulo": "Agente de IA",
+        "sub": "Lo que se dice y lo que realmente pasa"
+      }
+    },
+    {
+      "mito": {
+        "etiqueta": "Lo que se dice",
+        "frase": "Tus clientes tienen que aprender a usar algo nuevo.",
+        "veredicto": "MITO",
+        "explicacion": "Escribe por el mismo WhatsApp o Instagram de siempre. Nadie nota que cambió algo."
+      }
+    },
+    {
+      "mito": {
+        "etiqueta": "Lo que se dice",
+        "frase": "Si el agente se equivoca, pierdes al cliente.",
+        "veredicto": "A MEDIAS",
+        "explicacion": "El guion se revisa contigo antes de activarlo, y siempre puede pasarle la conversación a una persona."
+      }
+    },
+    {
+      "cta": {
+        "titulo": "¿Quieres probar cómo [[responde el tuyo]]?",
+        "texto": "Armamos el guion contigo y te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

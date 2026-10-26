@@ -1,0 +1,29 @@
+{
+  "formato": "carta",
+  "slides": [
+    {
+      "tipo": "sobre",
+      "para": "Para quien revisa las ventas del día\nantes de apagar la luz.",
+      "rotulo": "Abrir si hoy vendiste menos de lo que esperabas."
+    },
+    {
+      "tipo": "lista",
+      "titulo": "Lo que sí lograste:",
+      "hechas": [
+        "Abrir aunque no tenías ganas",
+        "Atender con la misma buena cara",
+        "Responder cada mensaje que llegó",
+        "Dejar todo listo para mañana"
+      ],
+      "pendiente": "Que las ventas sean iguales todos los días",
+      "remate": "Eso no depende solo de ti."
+    },
+    {
+      "tipo": "carta",
+      "destacado": "Un día tranquilo no significa que algo esté mal.",
+      "texto": "Las ventas suben y bajan. Lo que construyes día a día no se mide solo en la caja de hoy.",
+      "pd": "P.D. Maneja lo que puedes: que te encuentren y te recuerden. El resto, dale tiempo.",
+      "firma": "Con cariño, Empulsa"
+    }
+  ]
+}

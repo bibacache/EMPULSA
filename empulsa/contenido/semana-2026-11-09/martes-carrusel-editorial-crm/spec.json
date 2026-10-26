@@ -1,0 +1,67 @@
+{
+  "formato": "editorial",
+  "slides": [
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Te escribió hace un mes. [[¿Te acuerdas?]]",
+      "acento": "desliza →",
+      "bloque": {
+        "tipo": "chat",
+        "etiqueta": "WhatsApp · ya fue clienta",
+        "mensajes": [
+          { "de": "cliente", "texto": "Hola, les compré en septiembre, ¿tienen más del mismo modelo?", "hora": "09:40" },
+          { "de": "cliente", "texto": "¿Alguien vio mi mensaje?", "hora": "14:10" },
+          { "de": "cliente", "texto": "Nada, da lo mismo", "hora": "18:00" }
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Tu CRM [[te avisa quién volvió]]",
+      "acento": "antes que se enfríe de nuevo →",
+      "bloque": {
+        "tipo": "pipeline",
+        "etiqueta": "Clientes que ya te compraron",
+        "columnas": [
+          { "titulo": "Compró antes", "tarjetas": [{ "nombre": "Constanza", "detalle": "compra en sept." }, { "nombre": "Benjamín", "detalle": "compra en agosto" }] },
+          { "titulo": "Escribió de nuevo", "tarjetas": [{ "nombre": "Constanza", "detalle": "hoy 09:40", "caliente": true }] },
+          { "titulo": "Por reactivar", "tarjetas": [{ "nombre": "Ignacia", "detalle": "sin compras hace 2 meses" }] },
+          { "titulo": "Fiel", "tarjetas": [{ "nombre": "Tomás", "detalle": "tercera compra" }] }
+        ],
+        "nota": "Ejemplo ilustrativo"
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "Todos tus canales, [[un solo lugar]]",
+      "acento": "sin perder a nadie →",
+      "bloque": {
+        "tipo": "flujo",
+        "etiqueta": "Cómo te escriben",
+        "entradas": [
+          { "texto": "Instagram", "color": "#E1306C" },
+          { "texto": "WhatsApp", "color": "#25D366" },
+          { "texto": "Tu web", "color": "#4a6cf7" }
+        ],
+        "centroEtiqueta": "TU CRM",
+        "centro": "Empulsa",
+        "salidas": [
+          { "texto": "Historial" },
+          { "texto": "Seguimiento" },
+          { "texto": "Recompra" }
+        ]
+      }
+    },
+    {
+      "kicker": "empulsa.cl",
+      "titulo": "¿Quieres ver tu historial [[ordenado]]?",
+      "acento": "te lo mostramos en vivo",
+      "bloque": {
+        "tipo": "cta",
+        "texto": "CRM a tu medida para que ningún cliente que ya te compró se sienta un desconocido.",
+        "boton": "Escríbenos por WhatsApp →",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

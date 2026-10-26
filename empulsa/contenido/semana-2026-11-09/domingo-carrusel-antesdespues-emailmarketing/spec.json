@@ -1,0 +1,56 @@
+{
+  "formato": "antesdespues",
+  "slides": [
+    {
+      "portada": {
+        "titulo": "Dejó productos en el carrito. [[¿Y luego?]]",
+        "sub": "Dos finales para la misma compra a medio hacer"
+      }
+    },
+    {
+      "partido": {
+        "antes": {
+          "etiqueta": "Antes",
+          "items": [
+            "Agrega productos y no termina la compra",
+            "Nadie le vuelve a escribir",
+            "El carrito queda ahí, olvidado"
+          ]
+        },
+        "despues": {
+          "etiqueta": "Después",
+          "items": [
+            "Recibe un correo recordándole su carrito",
+            "Un empujón amable, sin presionar",
+            "Vuelve y termina la compra"
+          ]
+        }
+      }
+    },
+    {
+      "partido": {
+        "antes": {
+          "etiqueta": "Antes",
+          "items": [
+            "Correos genéricos iguales para cualquier tienda",
+            "El cliente los borra sin abrir"
+          ]
+        },
+        "despues": {
+          "etiqueta": "Después",
+          "items": [
+            "Correos con el tono y los productos de tu negocio",
+            "El cliente los reconoce y los abre"
+          ]
+        }
+      }
+    },
+    {
+      "cierre": {
+        "titulo": "¿Cuántos carritos [[se quedan a medio camino]] en tu negocio?",
+        "texto": "Cuéntanos en comentarios. Si quieres verlo con tu negocio, te mostramos una demo en vivo.",
+        "pie": "Desde Concepción para todo Chile"
+      }
+    }
+  ]
+}

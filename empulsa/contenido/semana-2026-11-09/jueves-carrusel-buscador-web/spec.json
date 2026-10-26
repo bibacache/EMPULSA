@@ -1,0 +1,44 @@
+{
+  "formato": "buscador",
+  "slides": [
+    {
+      "consulta": "gasfiter urgencia Concepción",
+      "titulo": "Se le rompió una llave a las 22:00.\nBuscó ayuda ahí mismo.",
+      "resultados": [
+        {
+          "url": "gasfiteriarapida.example",
+          "titulo": "Gasfitería Rápida 24 horas | Agenda online",
+          "descripcion": "Atención de urgencia, agenda por WhatsApp en minutos.",
+          "estrellas": "★★★★★ 4,9 · 86 reseñas"
+        },
+        {
+          "url": "foro.example",
+          "titulo": "Foro: recomienden un gasfiter",
+          "descripcion": "Comentarios de hace 3 años, sin contacto directo."
+        }
+      ]
+    },
+    {
+      "consulta": "gasfiter urgencia Concepción",
+      "resultados": [
+        { "tipo": "fantasma", "url": "Resultado 1", "titulo": "Gasfitería Rápida 24 horas" },
+        { "tipo": "fantasma", "url": "Resultado 2", "titulo": "Foro: recomienden un gasfiter" },
+        { "tipo": "separador", "texto": "…más abajo…" },
+        {
+          "tipo": "tuyo",
+          "url": "tunegocio.example",
+          "titulo": "Tu gasfitería",
+          "descripcion": "Sin web. El teléfono solo aparece en una foto antigua de Instagram."
+        }
+      ],
+      "remate": "A las 22:00 nadie busca tu Instagram.\nBusca quien responda ahora."
+    },
+    {
+      "cta": {
+        "titulo": "Que te encuentren justo cuando te necesitan.",
+        "texto": "Web con SEO para aparecer primero en una urgencia. Escríbenos y te mostramos una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

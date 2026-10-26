@@ -1,0 +1,38 @@
+{
+  "formato": "whatsapp",
+  "slides": [
+    {
+      "banner": "Entre 6 chats a la vez,\nuno se quedó sin leer.",
+      "contacto": "Sofía",
+      "mensajes": [
+        { "de": "cliente", "texto": "Hola, quiero agendar para el jueves", "hora": "11:20" }
+      ]
+    },
+    {
+      "contacto": "Sofía",
+      "mensajes": [
+        { "de": "cliente", "texto": "Hola, quiero agendar para el jueves", "hora": "11:20" },
+        { "chip": "se mezcló con otros 5 chats" },
+        { "de": "cliente", "texto": "¿Alguien me puede confirmar?", "hora": "15:00" }
+      ]
+    },
+    {
+      "contacto": "Sofía",
+      "mensajes": [
+        { "de": "cliente", "texto": "Ya agendé en otro lado, era para hoy", "hora": "16:30" },
+        { "de": "yo", "texto": "¡Hola! Perdón, se nos mezclaron los chats", "hora": "17:45" }
+      ],
+      "nota": "No se te olvidó.\nSe te perdió entre los demás."
+    },
+    {
+      "cta": {
+        "titulo": "Un CRM junta todos tus chats en un solo lugar.",
+        "textos": [
+          "Instagram, WhatsApp y tu web, sin mezclarse.",
+          "Escríbenos y te mostramos una demo en vivo."
+        ],
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}
