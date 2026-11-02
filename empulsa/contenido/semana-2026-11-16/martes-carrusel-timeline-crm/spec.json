@@ -1,0 +1,64 @@
+{
+  "formato": "timeline",
+  "slides": [
+    {
+      "titulo": "Sin CRM: un cliente de taller en [[6 meses]]",
+      "nota": "Ejemplo ilustrativo",
+      "hitos": [
+        {
+          "hora": "Marzo",
+          "texto": "Cristóbal hace una mantención en el taller",
+          "estado": "neutro"
+        },
+        {
+          "hora": "Marzo, una semana después",
+          "texto": "Nadie anota cuándo le toca la próxima revisión",
+          "estado": "mal"
+        },
+        {
+          "hora": "Septiembre",
+          "texto": "Se le vence el cambio de aceite y no lo sabe",
+          "estado": "mal"
+        },
+        {
+          "hora": "Octubre",
+          "texto": "Otro taller lo contacta primero",
+          "estado": "mal"
+        }
+      ]
+    },
+    {
+      "titulo": "Con CRM: los mismos [[6 meses]]",
+      "nota": "Ejemplo ilustrativo",
+      "hitos": [
+        {
+          "hora": "Marzo",
+          "texto": "Queda registrado con la fecha de su próxima mantención",
+          "estado": "ok"
+        },
+        {
+          "hora": "Agosto",
+          "texto": "Le llega un recordatorio automático",
+          "estado": "ok"
+        },
+        {
+          "hora": "Septiembre",
+          "texto": "Agenda su hora sin tener que llamar",
+          "estado": "ok"
+        },
+        {
+          "hora": "Octubre",
+          "texto": "Vuelve al mismo taller",
+          "estado": "ok"
+        }
+      ]
+    },
+    {
+      "cierre": {
+        "titulo": "¿Tu negocio sabe [[cuándo debería volver]] cada cliente?",
+        "texto": "Cuéntanos en comentarios qué tipo de negocio tienes.",
+        "pie": "Desde Concepción para todo Chile"
+      }
+    }
+  ]
+}

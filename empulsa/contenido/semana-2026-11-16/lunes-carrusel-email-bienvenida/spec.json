@@ -1,0 +1,55 @@
+{
+  "formato": "email",
+  "slides": [
+    {
+      "bandeja": {
+        "buscar": "Bandeja de entrada",
+        "titulo": "Antonia compró por primera vez. [[¿Qué le llegó después?]]",
+        "correos": [
+          {
+            "de": "Multitienda Andes",
+            "asunto": "Descuentos de la semana",
+            "vista": "Revisa las ofertas de esta semana",
+            "hora": "09:40",
+            "leido": true
+          },
+          {
+            "de": "Librería Centro",
+            "asunto": "Novedades de la semana",
+            "vista": "Mira los lanzamientos nuevos",
+            "hora": "09:10",
+            "leido": true
+          },
+          {
+            "de": "Vivero Las Encinas",
+            "asunto": "Pedido #1042 confirmado",
+            "vista": "Tu compra fue procesada con éxito",
+            "hora": "08:52",
+            "leido": true
+          }
+        ],
+        "remate": "Un correo de compra. [[Ninguno que la invite a volver]]."
+      }
+    },
+    {
+      "correo": {
+        "titulo": "Así se ve un [[correo que sí invita a volver]]",
+        "de": "Vivero Las Encinas",
+        "hora": "08:55",
+        "asunto": "Antonia, bienvenida al vivero",
+        "parrafos": [
+          "Hola Antonia, gracias por tu primera compra.",
+          "Si tienes dudas sobre cómo cuidar tus plantas, respóndenos este mismo correo."
+        ],
+        "boton": "Ver cómo cuidarlas",
+        "nota": "Ejemplo ilustrativo"
+      }
+    },
+    {
+      "cta": {
+        "titulo": "Cada cliente nuevo puede recibir el correo [[correcto]], sin que tú lo escribas cada vez.",
+        "texto": "Email marketing con la voz de tu negocio. Te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

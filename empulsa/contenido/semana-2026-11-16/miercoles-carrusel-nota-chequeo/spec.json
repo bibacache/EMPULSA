@@ -1,0 +1,37 @@
+{
+  "formato": "nota",
+  "slides": [
+    {
+      "nota": {
+        "carpeta": "Mi negocio",
+        "titulo": "Miércoles, mitad de semana",
+        "fecha": "Miércoles 12:30",
+        "items": [
+          { "t": "¿Cuántos mensajes de hoy siguen sin respuesta?" },
+          { "t": "¿Tu última publicación tiene un link que funciona?" },
+          { "t": "¿Sabes cuánto llevas gastado en anuncios esta semana?" },
+          { "t": "¿Alguien de la semana pasada sigue esperando que le escribas?" }
+        ]
+      }
+    },
+    {
+      "nota": {
+        "carpeta": "Mi negocio",
+        "titulo": "Esto se ordena antes del viernes",
+        "fecha": "Una revisión rápida",
+        "items": [
+          { "t": "Mensajes sin responder → agente de IA que contesta por ti", "hecho": true },
+          { "t": "Links y horarios desactualizados → tu web al día", "hecho": true },
+          { "t": "Gasto en anuncios sin control → Meta Ads con objetivo claro", "hecho": true },
+          { "t": "Clientes de la semana pasada → seguimiento en tu CRM", "hecho": true }
+        ]
+      }
+    },
+    {
+      "cta": {
+        "titulo": "¿Quieres revisar esto [[con tu negocio]]?",
+        "texto": "Te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

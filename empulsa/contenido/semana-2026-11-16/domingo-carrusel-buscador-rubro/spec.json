@@ -1,0 +1,44 @@
+{
+  "formato": "buscador",
+  "slides": [
+    {
+      "consulta": "clases de yoga cerca de mí",
+      "titulo": "Buscaron tu rubro.\nApareció otro.",
+      "resultados": [
+        {
+          "url": "www.respirayoga.example",
+          "titulo": "Estudio de Yoga Respira | Clases y horarios",
+          "descripcion": "Clases grupales y privadas, horarios y ubicación.",
+          "estrellas": "★★★★★ 4,8 · 96 reseñas"
+        },
+        {
+          "url": "www.guiadebarrio.example",
+          "titulo": "Las 8 academias de yoga de tu comuna",
+          "descripcion": "Listado genérico sin información de contacto."
+        }
+      ]
+    },
+    {
+      "consulta": "clases de yoga cerca de mí",
+      "resultados": [
+        { "tipo": "fantasma", "url": "Resultado 1", "titulo": "Estudio de Yoga Respira" },
+        { "tipo": "fantasma", "url": "Resultado 2", "titulo": "Las 8 academias de tu comuna" },
+        { "tipo": "separador", "texto": "…página 2…" },
+        {
+          "tipo": "tuyo",
+          "url": "tu negocio",
+          "titulo": "Tu estudio, en la página siguiente",
+          "descripcion": "Sin web propia, sin reseñas visibles. Quien buscaba ya eligió antes de llegar a ti."
+        }
+      ],
+      "remate": "No te descartaron.\nNunca te vieron."
+    },
+    {
+      "cta": {
+        "titulo": "Estar donde te buscan no es suerte.",
+        "texto": "Escríbenos y te mostramos en una demo en vivo cómo aparece hoy un negocio como el tuyo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

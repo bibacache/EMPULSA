@@ -1,0 +1,33 @@
+{
+  "formato": "mito",
+  "slides": [
+    {
+      "portada": {
+        "titulo": "Web y SEO",
+        "sub": "Dos cosas que muchos negocios creen"
+      }
+    },
+    {
+      "mito": {
+        "etiqueta": "Lo que se dice",
+        "frase": "Si ya estoy en Google Maps, no necesito página web.",
+        "veredicto": "MITO",
+        "explicacion": "Maps muestra tu ubicación, pero no responde lo que el cliente quiere saber antes de elegir: precios, servicios, opiniones ordenadas."
+      }
+    },
+    {
+      "mito": {
+        "etiqueta": "Lo que se dice",
+        "frase": "El SEO se nota recién después de meses.",
+        "veredicto": "REALIDAD",
+        "explicacion": "Aparecer en las búsquedas toma tiempo. Mientras se construye, tu web igual puede convertir a quien ya te encontró."
+      }
+    },
+    {
+      "cierre": {
+        "titulo": "¿Tu negocio aparece cuando [[lo buscan]]?",
+        "texto": "Cuéntanos en los comentarios si alguna vez te buscaste tú mismo en Google."
+      }
+    }
+  ]
+}

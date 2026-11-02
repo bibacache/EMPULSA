@@ -1,0 +1,54 @@
+{
+  "formato": "editorial",
+  "slides": [
+    {
+      "titulo": "Un cliente escribe por su mascota a las 22:40. [[¿Quién responde?]]",
+      "acento": "desliza →",
+      "bloque": {
+        "tipo": "chat",
+        "etiqueta": "WhatsApp · viernes 22:40",
+        "mensajes": [
+          { "de": "cliente", "texto": "Hola, mi perro lleva dos días sin comer. ¿Atienden ahora?", "hora": "22:40" },
+          { "de": "cliente", "texto": "¿Hola?", "hora": "23:05" },
+          { "de": "cliente", "texto": "Voy a buscar otra veterinaria.", "hora": "23:20" }
+        ]
+      }
+    },
+    {
+      "titulo": "Con un agente de IA [[responde al instante]].",
+      "acento": "con tu guion →",
+      "bloque": {
+        "tipo": "chat",
+        "etiqueta": "Mismo mensaje, 22:40",
+        "mensajes": [
+          { "de": "cliente", "texto": "Hola, mi perro lleva dos días sin comer. ¿Atienden ahora?", "hora": "22:40" },
+          { "de": "agente", "texto": "Hola, lamento saber eso. Si es urgente te paso el contacto de urgencias; si puede esperar, te agendo para mañana a primera hora.", "hora": "22:40" },
+          { "de": "cliente", "texto": "Puede esperar a mañana, gracias", "hora": "22:41" },
+          { "de": "agente", "texto": "Listo, quedó agendado a las 09:00. Te esperamos.", "hora": "22:41" }
+        ]
+      }
+    },
+    {
+      "titulo": "El [[mismo guion]], todas las veces.",
+      "acento": "sin perder el tono →",
+      "bloque": {
+        "tipo": "lista",
+        "items": [
+          "Responde con la información que tú le diste",
+          "Sabe cuándo pasarle la conversación a una persona",
+          "Nunca se le olvida agendar"
+        ]
+      }
+    },
+    {
+      "titulo": "¿Quieres que tus clientes [[nunca esperen hasta el día siguiente]]?",
+      "acento": "desde Concepción para todo Chile",
+      "bloque": {
+        "tipo": "cta",
+        "texto": "Agente de IA con guion armado contigo, para que ningún mensaje se quede sin respuesta.",
+        "boton": "Escríbenos por WhatsApp →",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

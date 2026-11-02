@@ -1,0 +1,40 @@
+{
+  "formato": "boleta",
+  "slides": [
+    {
+      "fondo": "#2a1a3b",
+      "subtitulo": "BOLETA N° 0002",
+      "titulo": "Lo que te cuesta un anuncio sin objetivo",
+      "meta": [
+        ["Fecha", "cada campaña"],
+        ["Atendió", "el algoritmo"]
+      ]
+    },
+    {
+      "fondo": "#1f3b34",
+      "subtitulo": "DETALLE",
+      "lineas": [
+        { "periodo": "cada clic", "texto": "Interesados que llegan y no saben qué hacer después" },
+        { "periodo": "cada formulario", "texto": "Datos que nadie alcanza a mirar a tiempo" },
+        { "periodo": "cada semana", "texto": "Presupuesto que sigue sin un objetivo claro" }
+      ],
+      "codigo": false,
+      "y": 170
+    },
+    {
+      "fondo": "#5a1f1a",
+      "total": "Lo que hoy\nse te escapa",
+      "pie": "Se cobra con cada campaña",
+      "sello": "PENDIENTE"
+    },
+    {
+      "fondo": "#efe6cf",
+      "y": 260,
+      "cta": {
+        "titulo": "Esta cuenta se puede parar.",
+        "texto": "Campañas de Meta Ads con un objetivo claro, conectadas a tu seguimiento. Te mostramos una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}
