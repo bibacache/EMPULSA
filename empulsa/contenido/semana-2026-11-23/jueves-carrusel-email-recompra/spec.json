@@ -1,0 +1,37 @@
+{
+  "formato": "email",
+  "slides": [
+    {
+      "bandeja": {
+        "buscar": "Bandeja de entrada",
+        "titulo": "Javiera se cortó el pelo hace 6 semanas. [[¿Qué le llegó?]]",
+        "correos": [
+          { "de": "Multitienda Andes", "asunto": "Descuentos de la semana", "vista": "Revisa las ofertas de esta semana", "hora": "10:40", "leido": true },
+          { "de": "Librería Centro", "asunto": "Novedades de la semana", "vista": "Mira los lanzamientos nuevos", "hora": "10:10", "leido": true },
+          { "de": "Rizos y Ondas", "asunto": "Javiera, tu próximo corte ya se puede agendar", "vista": "Han pasado 6 semanas desde tu última visita", "hora": "10:05", "destacado": true }
+        ],
+        "remate": "El resto son ofertas genéricas. [[Este le habla a ella]]."
+      }
+    },
+    {
+      "correo": {
+        "titulo": "Así se ve un [[correo que recuerda por ti]]",
+        "de": "Rizos y Ondas",
+        "hora": "10:05",
+        "asunto": "Javiera, tu próximo corte ya se puede agendar",
+        "parrafos": [
+          "Hola Javiera, notamos que ya pasaron 6 semanas desde tu última visita.",
+          "Si quieres, te dejamos un horario reservado para esta semana."
+        ],
+        "boton": "Agendar mi hora",
+        "nota": "Ejemplo ilustrativo"
+      }
+    },
+    {
+      "cta": {
+        "titulo": "Acordarse de cada cliente [[no depende de tu memoria]]",
+        "texto": "Email marketing con la voz de tu negocio. Te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

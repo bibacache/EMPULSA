@@ -1,0 +1,33 @@
+{
+  "formato": "whatsapp",
+  "slides": [
+    {
+      "banner": "Domingo 21:00.\nUn cliente escribe tres veces."
+    },
+    {
+      "mensajes": [
+        { "de": "cliente", "texto": "Hola, ¿tienen hora para el sábado?", "hora": "20:58" },
+        { "chip": "2 minutos después" },
+        { "de": "cliente", "texto": "¿Cuánto cuesta el servicio básico?", "hora": "21:00" },
+        { "chip": "6 minutos después" },
+        { "de": "cliente", "texto": "¿Siguen atendiendo hoy?", "hora": "21:06" }
+      ]
+    },
+    {
+      "mensajes": [
+        { "de": "yo", "texto": "¡Hola! Sí, tenemos hora el sábado a las 11:00.", "hora": "21:15" }
+      ],
+      "nota": "17 minutos para una respuesta que pudo ser automática."
+    },
+    {
+      "cta": {
+        "titulo": "Un agente de IA responde al toque, sin que tú estés mirando el celular",
+        "textos": [
+          "Con el guion que armamos junto a ti, a cualquier hora.",
+          "Escríbenos y te mostramos una demo en vivo."
+        ],
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

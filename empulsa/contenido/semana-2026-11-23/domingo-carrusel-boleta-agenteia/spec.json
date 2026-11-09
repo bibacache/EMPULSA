@@ -1,0 +1,41 @@
+{
+  "formato": "boleta",
+  "slides": [
+    {
+      "fondo": "#2a1f3b",
+      "subtitulo": "BOLETA N° 0007",
+      "titulo": "Lo que te cuesta no responder el fin de semana",
+      "meta": [
+        ["Fecha", "sábado y domingo"],
+        ["Atendió", "nadie hasta el lunes"]
+      ]
+    },
+    {
+      "fondo": "#1f2b3b",
+      "subtitulo": "DETALLE",
+      "lineas": [
+        { "periodo": "cada sábado", "texto": "Preguntas que llegan y nadie contesta" },
+        { "periodo": "cada domingo", "texto": "Clientes que le preguntan a otro negocio" },
+        { "periodo": "cada lunes", "texto": "Mensajes acumulados sin orden para responder" }
+      ],
+      "codigo": false,
+      "y": 170
+    },
+    {
+      "fondo": "#5a1f1a",
+      "subtitulo": "TOTAL",
+      "total": "Lo que el fin de semana\nno te muestra",
+      "pie": "Se cobra cada semana",
+      "sello": "PENDIENTE"
+    },
+    {
+      "fondo": "#efe6cf",
+      "y": 260,
+      "cta": {
+        "titulo": "Un agente de IA puede responder incluso el domingo",
+        "texto": "Con el guion que armamos junto a ti. Escríbenos y te mostramos una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

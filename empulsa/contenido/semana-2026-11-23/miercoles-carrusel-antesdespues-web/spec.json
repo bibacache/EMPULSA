@@ -1,0 +1,56 @@
+{
+  "formato": "antesdespues",
+  "slides": [
+    {
+      "portada": {
+        "titulo": "Tu negocio, [[antes y después]] de aparecer en Google",
+        "sub": "La misma búsqueda, dos resultados distintos."
+      }
+    },
+    {
+      "partido": {
+        "antes": {
+          "etiqueta": "Antes",
+          "items": [
+            "Solo apareces si alguien ya sabe tu nombre",
+            "En el buscador aparecen otros negocios, tú no",
+            "El cliente elige al primero que ve"
+          ]
+        },
+        "despues": {
+          "etiqueta": "Después",
+          "items": [
+            "Tu web aparece cuando buscan lo que ofreces",
+            "Tu ficha muestra horario, dirección y WhatsApp",
+            "El cliente llega directo a ti"
+          ]
+        }
+      }
+    },
+    {
+      "partido": {
+        "antes": {
+          "etiqueta": "Antes",
+          "items": [
+            "Buscan tu rubro en tu comuna a las 23:00",
+            "Tu web no existe o no está optimizada"
+          ]
+        },
+        "despues": {
+          "etiqueta": "Después",
+          "items": [
+            "Tu ficha sigue ahí a cualquier hora",
+            "El cliente confirma antes de escribirte"
+          ]
+        }
+      }
+    },
+    {
+      "cierre": {
+        "titulo": "¿Cuál de los dos [[te representa hoy]]?",
+        "texto": "Cuéntanos en comentarios. Si quieres verlo con tu negocio, te mostramos una demo en vivo.",
+        "pie": "Desde Concepción para todo Chile"
+      }
+    }
+  ]
+}

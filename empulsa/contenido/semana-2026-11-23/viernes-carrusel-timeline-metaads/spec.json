@@ -1,0 +1,29 @@
+{
+  "formato": "timeline",
+  "slides": [
+    {
+      "titulo": "Un lead de Meta Ads, [[sin seguimiento]]",
+      "nota": "Ejemplo ilustrativo",
+      "hitos": [
+        { "hora": "Día 1, 10:00", "texto": "Hace clic en el anuncio y deja sus datos", "estado": "neutro" },
+        { "hora": "Día 1, 18:00", "texto": "Nadie le ha escrito todavía", "estado": "mal" },
+        { "hora": "Día 3", "texto": "Ya ni se acuerda de qué anuncio era", "estado": "mal" }
+      ]
+    },
+    {
+      "titulo": "El mismo lead, [[con seguimiento ordenado]]",
+      "nota": "Ejemplo ilustrativo",
+      "hitos": [
+        { "hora": "Día 1, 10:00", "texto": "Hace clic en el anuncio y deja sus datos", "estado": "neutro" },
+        { "hora": "Día 1, 10:20", "texto": "Recibe el primer mensaje", "estado": "ok" },
+        { "hora": "Día 2", "texto": "Queda su siguiente paso agendado", "estado": "ok" }
+      ]
+    },
+    {
+      "cta": {
+        "titulo": "¿Qué le pasa a [[tus leads]] después del clic?",
+        "texto": "Campañas de Meta Ads con seguimiento para que ningún anuncio se pierda. Te mostramos una demo en vivo."
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "formato": "tierlist",
+  "slides": [
+    {
+      "titulo": "Tier list: dónde guardas los datos de tus clientes",
+      "filas": [
+        ["S", "?"],
+        ["A", "?"],
+        ["B", "?"],
+        ["C", "?"],
+        ["D", "?"]
+      ]
+    },
+    {
+      "titulo": "¿En qué tier estás tú?",
+      "filas": [
+        ["S", "CRM a tu medida: cada cliente con su historial y su siguiente paso"],
+        ["A", "Planilla compartida, pero alguien tiene que actualizarla"],
+        ["B", "Agenda de papel al lado del teléfono"],
+        ["C", "Todo queda solo en el chat de WhatsApp"],
+        ["D", "Un post it que se pierde o se despega"]
+      ]
+    },
+    {
+      "zoom": {
+        "letra": "D",
+        "titulo": "Un post it que se pierde o se despega.",
+        "texto": "El dato existió, pero nadie lo encuentra cuando el cliente vuelve a escribir."
+      }
+    },
+    {
+      "cta": {
+        "titulo": "¿En qué tier guardas tú los datos de tus clientes?",
+        "texto": "Te armamos un CRM a tu medida. Escríbenos y te mostramos una demo en vivo.",
+        "telefono": "+56 9 3056 9940"
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "formato": "nota",
+  "slides": [
+    {
+      "nota": {
+        "carpeta": "Mi negocio",
+        "titulo": "Antes de desconectarte el finde",
+        "fecha": "Sábado",
+        "items": [
+          { "t": "¿Tu web se ve bien desde el celular?" },
+          { "t": "¿Alguien quedó sin respuesta esta semana?" },
+          { "t": "¿Tus anuncios siguen corriendo sin que los mires?" },
+          { "t": "¿Tienes un correo listo para el que compra y no vuelve?" }
+        ]
+      }
+    },
+    {
+      "nota": {
+        "carpeta": "Mi negocio",
+        "titulo": "Esto se puede dejar armado",
+        "fecha": "Sin que lo mires tú",
+        "items": [
+          { "t": "Mensajes del sábado sin responder → agente de IA que contesta por ti", "hecho": true },
+          { "t": "Web que no se ve bien en el celular → una web que sí funciona", "hecho": true },
+          { "t": "Anuncios corriendo sin que los mires → Meta Ads con seguimiento", "hecho": true },
+          { "t": "El que compró una vez y no vuelve → un correo que lo trae de vuelta", "hecho": true }
+        ]
+      }
+    },
+    {
+      "cierre": {
+        "titulo": "¿Cuál de estas [[te falta revisar]]?",
+        "texto": "Cuéntanos en comentarios cuál es la tuya."
+      }
+    }
+  ]
+}
